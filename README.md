@@ -10,6 +10,8 @@ Meridian is a design framework for creating overview-detail interfaces (ODIs) th
 
 > **_We are currently working towards open-sourcing the repository. Thank you for your patience!_**
 
+_If you are curious or have any questions, feel free to send me an email at: bdmin@ucsd.edu_
+
 
 ----
 
