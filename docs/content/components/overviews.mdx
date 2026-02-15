@@ -1,0 +1,398 @@
+# Overview Types
+
+Overview components display collections of items. Meridian provides four built-in overview types.
+
+## OverviewConfig Interface
+
+All overviews share this base configuration:
+
+```typescript
+interface OverviewConfig {
+  id?: string;
+  type: string;
+  itemView?: ItemView;
+  bindingId?: string;
+  items?: FetchedItemType[];
+  shownAttributes?: AttributeSelectionScope;
+  hiddenAttributes?: string[];
+  className?: string;
+  style?: CSSProperties;
+  itemClassName?: string;
+  itemStyle?: CSSProperties;
+  overviews?: (Overview | string)[];
+  detailViews?: (DetailView | string)[];
+  showIn?: Role[];
+}
+```
+
+## Grid Overview
+
+Responsive grid layout that adapts to screen size.
+
+```typescript
+{
+  type: "grid",
+  itemView: { type: "profile" },
+  className: "my-grid",
+  detailViews: [{
+    type: "basic",
+    openFrom: ["title"]
+  }]
+}
+```
+
+**Features:**
+- Responsive columns (adjusts to screen width)
+- Consistent item sizing
+- Gap control via CSS
+- Supports all item view types
+
+**Best for:**
+- Product catalogs
+- Image galleries
+- Profile directories
+- Card-based layouts
+
+**Example:**
+```typescript
+overviews: [{
+  type: "grid",
+  itemView: { type: "profile" },
+  shownAttributes: ["title", "thumbnail", "key-attribute", "badge"],
+  className: "grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
+}]
+```
+
+## List Overview
+
+Vertical list layout with full-width items.
+
+```typescript
+{
+  type: "list",
+  itemView: { type: "vertical" },
+  detailViews: [{
+    type: "basic",
+    openFrom: ["item"]
+  }]
+}
+```
+
+**Features:**
+- Full-width items
+- Vertical stacking
+- Good for detailed items
+- Scrollable
+
+**Best for:**
+- News feeds
+- Search results
+- Detailed listings
+- Timeline views
+
+**Example:**
+```typescript
+overviews: [{
+  type: "list",
+  itemView: { type: "vertical" },
+  shownAttributes: "all",
+  itemClassName: "border-b py-4"
+}]
+```
+
+## Map Overview
+
+Geographic visualization using Google Maps.
+
+```typescript
+{
+  type: "map",
+  itemView: { type: "pin" },
+  mapConfig: {
+    center: { lat: 37.7749, lng: -122.4194 },
+    zoom: 12
+  }
+}
+```
+
+**Features:**
+- Google Maps integration
+- Pin-based item rendering
+- Clustering support
+- Interactive markers
+
+**Best for:**
+- Real estate listings
+- Store locators
+- Event locations
+- Geographic data
+
+**Requirements:**
+- Items must have latitude/longitude data
+- Google Maps API key configured
+
+**Example:**
+```typescript
+overviews: [{
+  type: "map",
+  itemView: { type: "pin" },
+  shownAttributes: ["title", "thumbnail", "key-attribute"],
+  detailViews: [{
+    type: "basic",
+    openIn: "side-by-side",
+    openFrom: ["item"]
+  }]
+}]
+```
+
+## Table Overview
+
+Tabular data display with rows and columns.
+
+```typescript
+{
+  type: "table",
+  shownAttributes: ["title", "subtitle", "key-attribute", "spec"],
+  className: "data-table"
+}
+```
+
+**Features:**
+- Column-based layout
+- Sortable columns
+- Fixed headers
+- Responsive scrolling
+
+**Best for:**
+- Data tables
+- Comparison views
+- Spreadsheet-like data
+- Structured information
+
+**Example:**
+```typescript
+overviews: [{
+  type: "table",
+  shownAttributes: ["title", "price", "rating", "stock"],
+  className: "min-w-full divide-y divide-gray-200"
+}]
+```
+
+## Attribute Filtering
+
+Control which attributes appear:
+
+### shownAttributes
+
+Show specific attributes by role or ID:
+
+```typescript
+{
+  type: "grid",
+  shownAttributes: ["title", "thumbnail", "key-attribute"]
+}
+
+// Or show all
+{
+  type: "grid",
+  shownAttributes: "all"
+}
+```
+
+### hiddenAttributes
+
+Hide specific attributes:
+
+```typescript
+{
+  type: "grid",
+  shownAttributes: "all",
+  hiddenAttributes: ["description", "spec", "footer"]
+}
+```
+
+## Nested Overviews
+
+Overviews can contain other overviews:
+
+```typescript
+{
+  type: "list",
+  bindingId: "categories",
+  detailViews: [{
+    type: "basic",
+    overviews: [{
+      type: "grid",
+      bindingId: "products"
+    }]
+  }]
+}
+```
+
+## Styling
+
+### Container Styling
+
+```typescript
+{
+  type: "grid",
+  className: "p-4 bg-gray-50",
+  style: {
+    maxWidth: "1200px",
+    margin: "0 auto"
+  }
+}
+```
+
+### Item Styling
+
+```typescript
+{
+  type: "grid",
+  itemClassName: "rounded-lg shadow-md hover:shadow-lg transition",
+  itemStyle: {
+    padding: "16px",
+    background: "white"
+  }
+}
+```
+
+## Detail Views
+
+Associate detail views with overviews:
+
+```typescript
+{
+  type: "grid",
+  detailViews: [
+    {
+      type: "basic",
+      openFrom: ["title"],      // Click title to open
+      openIn: "side-by-side"    // Open mode
+    },
+    {
+      type: "basic",
+      openFrom: ["item"],       // Click anywhere on item
+      openIn: "new-page"
+    }
+  ]
+}
+```
+
+## Complete Examples
+
+### E-commerce Product Grid
+
+```typescript
+{
+  type: "grid",
+  itemView: { type: "profile" },
+  shownAttributes: ["title", "thumbnail", "key-attribute", "badge", "rating"],
+  hiddenAttributes: ["description", "spec"],
+  className: "grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-6",
+  itemClassName: "bg-white rounded-lg shadow hover:shadow-xl transition-shadow",
+  detailViews: [{
+    type: "basic",
+    openFrom: ["title", "thumbnail"],
+    openIn: "side-by-side",
+    shownAttributes: "all"
+  }]
+}
+```
+
+### Real Estate Map
+
+```typescript
+{
+  type: "map",
+  itemView: { type: "pin" },
+  shownAttributes: ["title", "key-attribute", "thumbnail"],
+  mapConfig: {
+    center: { lat: 37.7749, lng: -122.4194 },
+    zoom: 11,
+    clustering: true
+  },
+  detailViews: [{
+    type: "basic",
+    openFrom: ["item"],
+    openIn: "side-by-side",
+    shownAttributes: ["title", "key-attribute", "thumbnail", "spec", "description", "action"]
+  }]
+}
+```
+
+### Data Table
+
+```typescript
+{
+  type: "table",
+  shownAttributes: [
+    "title",
+    "category",
+    "price",
+    "stock",
+    "rating",
+    "action"
+  ],
+  className: "w-full border-collapse",
+  itemClassName: "hover:bg-gray-50",
+  detailViews: [{
+    type: "basic",
+    openFrom: ["title"],
+    openIn: "new-page"
+  }]
+}
+```
+
+## Best Practices
+
+### 1. Choose the Right Overview Type
+
+- **Grid**: Visual items with images
+- **List**: Detailed text-heavy items
+- **Map**: Geographic data
+- **Table**: Structured data for comparison
+
+### 2. Optimize Attribute Display
+
+```typescript
+// Overview - show key info only
+{
+  type: "grid",
+  shownAttributes: ["title", "thumbnail", "key-attribute"]
+}
+
+// Detail - show everything
+detailViews: [{
+  type: "basic",
+  shownAttributes: "all"
+}]
+```
+
+### 3. Use Appropriate Item Views
+
+```typescript
+// Grid works well with profile
+{ type: "grid", itemView: { type: "profile" } }
+
+// List works well with vertical
+{ type: "list", itemView: { type: "vertical" } }
+
+// Map requires pin
+{ type: "map", itemView: { type: "pin" } }
+```
+
+### 4. Provide Visual Feedback
+
+```typescript
+{
+  type: "grid",
+  itemClassName: "transition-transform hover:scale-105 cursor-pointer"
+}
+```
+
+## Next Steps
+
+- [Item Views](/components/item-views) - Customize item rendering
+- [Detail Views](/components/detail-views) - Configure detail pages
+- [Custom Components](/components/custom-components) - Build custom overviews

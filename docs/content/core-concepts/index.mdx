@@ -1,0 +1,129 @@
+# Core Concepts
+
+Understanding the core concepts of Meridian is essential for building effective overview-detail interfaces. This section covers the fundamental building blocks of the framework.
+
+## Overview-Detail Interfaces (ODI)
+
+An Overview-Detail Interface is a common design pattern that consists of two main components:
+
+1. **Overview**: A collection view that displays multiple items simultaneously (e.g., grid, list, table, map)
+2. **Detail View**: A focused view that shows detailed information about a single item
+
+Meridian extends this pattern with **malleability** - the ability for users to customize the interface to their needs.
+
+## The Three Dimensions of Malleability
+
+Meridian supports customization across three dimensions:
+
+### 1. Content Malleability
+Users can toggle which attributes are visible in the interface. For example:
+- Show/hide product descriptions in an e-commerce view
+- Toggle between different data fields in a dashboard
+
+### 2. Composition Malleability
+Users can change the structure of views:
+- Switch between different overview types (grid → list → map)
+- Add or remove detail views
+- Create nested ODIs within attributes
+
+### 3. Layout Malleability
+Users can arrange views spatially:
+- Position views in tabs, panels, or side-by-side
+- Adjust the placement and orientation of views
+
+## Key Components
+
+### ODI Specification
+The root object that defines your entire interface:
+
+```typescript
+interface ODI {
+  dataBinding: DataBindingType[];
+  overviews: Overview[];
+  detailViews?: DetailView[];
+  viewLayout?: ViewLayout[];
+  malleability?: Malleability;
+}
+```
+
+### Data Binding
+Connects your data to the visual representation through attributes:
+
+```typescript
+interface DataBindingType {
+  id?: string;
+  binding: BindingItemType;
+}
+```
+
+### Attributes
+The fundamental units of data display. Each attribute represents a piece of information to be shown:
+
+```typescript
+interface AttributeType {
+  id?: string;
+  value?: string;          // Path to data (e.g., ".title")
+  label?: string;          // Display label
+  type?: string;           // Attribute type (image, price, link, etc.)
+  roles?: Role[];          // Semantic roles (title, subtitle, etc.)
+  transform?: Transform[]; // Data transformations
+  condition?: Condition;   // Conditional rendering
+}
+```
+
+### Roles
+Semantic labels that describe the purpose of attributes:
+- **title**: Main heading
+- **subtitle**: Secondary text
+- **description**: Longer explanatory text
+- **thumbnail**: Preview image
+- **key-attribute**: Important highlighted information
+- **action**: Interactive elements
+
+## Data Flow
+
+1. **Raw Data** → Your application provides data as an array of objects
+2. **Data Binding** → Meridian maps data to attributes based on the specification
+3. **Rendering** → Components display attributes according to their types and roles
+4. **Interaction** → Users can customize what they see (malleability)
+
+## Declarative Specification
+
+Meridian uses a declarative approach - you describe **what** you want, not **how** to build it:
+
+```typescript
+// Declarative: Describe the structure
+const odi: ODI = {
+  dataBinding: [{
+    binding: {
+      itemId: ".id",
+      attributes: [
+        { value: ".title", roles: ["title"] }
+      ]
+    }
+  }],
+  overviews: [{
+    type: "grid"
+  }]
+};
+
+// Meridian handles all the rendering logic
+```
+
+## Type Safety
+
+Meridian is built with TypeScript and provides comprehensive type definitions:
+- Compile-time validation of your ODI specifications
+- IntelliSense support in modern IDEs
+- Reduced runtime errors
+
+## Next Topics
+
+Dive deeper into each concept:
+
+- [ODI Structure](/core-concepts/odi-structure) - Learn about the root ODI object
+- [Data Binding](/core-concepts/data-binding) - Understand how to connect data to views
+- [Attributes](/core-concepts/attributes) - Explore the attribute system
+- [Roles](/core-concepts/roles) - Learn about semantic attribute roles
+- [Transformations](/core-concepts/transformations) - Transform data dynamically
+- [Conditions](/core-concepts/conditions) - Conditional rendering of attributes

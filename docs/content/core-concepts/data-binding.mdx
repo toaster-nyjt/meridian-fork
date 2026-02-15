@@ -1,0 +1,435 @@
+# Data Binding
+
+Data binding is the process of connecting your raw data to the visual representation in Meridian. It defines how data fields map to attributes that can be displayed in your interface.
+
+## DataBindingType Interface
+
+```typescript
+interface DataBindingType {
+  id?: string;
+  binding: BindingItemType;
+}
+```
+
+## BindingItemType Interface
+
+```typescript
+interface BindingItemType {
+  itemId: string;                    // Path to unique identifier
+  pathToItems?: string;              // Path to collection (default: '.')
+  roles?: Role[];                    // Roles for the entire item
+  attributes: AttributeType[];       // Attribute definitions
+  internalAttributes?: AttributeType[]; // Hidden attributes for logic
+}
+```
+
+## Basic Example
+
+Given this data:
+
+```typescript
+const data = [
+  {
+    id: "1",
+    title: "iPhone 15",
+    brand: "Apple",
+    price: 999,
+    image: "/iphone.jpg"
+  },
+  {
+    id: "2",
+    title: "Galaxy S24",
+    brand: "Samsung",
+    price: 899,
+    image: "/galaxy.jpg"
+  }
+];
+```
+
+Bind it with:
+
+```typescript
+const binding: DataBindingType = {
+  id: "phones",
+  binding: {
+    itemId: ".id",
+    attributes: [
+      { value: ".title", roles: ["title"] },
+      { value: ".brand", roles: ["subtitle"] },
+      { value: ".price", type: "price", roles: ["key-attribute"] },
+      { value: ".image", type: "image", roles: ["thumbnail"] }
+    ]
+  }
+};
+```
+
+## Key Concepts
+
+### Item Identifier (itemId)
+
+The `itemId` is required and must point to a unique identifier for each item:
+
+```typescript
+binding: {
+  itemId: ".id",  // Uses dot notation to access the 'id' field
+  // ...
+}
+```
+
+**Nested paths:**
+```typescript
+itemId: ".user.id"       // Access nested fields
+itemId: ".metadata[0]"   // Access array elements
+```
+
+### Path to Items (pathToItems)
+
+When your data is nested, use `pathToItems` to specify where the collection lives:
+
+```typescript
+const data = {
+  results: [
+    { id: "1", name: "Item 1" },
+    { id: "2", name: "Item 2" }
+  ]
+};
+
+binding: {
+  pathToItems: ".results",  // Tell Meridian where the array is
+  itemId: ".id",
+  attributes: [{ value: ".name", roles: ["title"] }]
+}
+```
+
+**Default:** If not specified, defaults to `"."` (the data itself is the collection).
+
+### Internal Attributes
+
+Internal attributes are used for logic but not displayed directly:
+
+```typescript
+binding: {
+  itemId: ".id",
+  internalAttributes: [
+    { id: "type", value: ".type" },
+    { id: "status", value: ".status" }
+  ],
+  attributes: [
+    {
+      // Conditionally show attributes based on internal ones
+      condition: {
+        comparison: {
+          field: ".type",
+          operator: "==",
+          value: "premium"
+        }
+      },
+      attributes: [
+        { value: ".premiumFeature", roles: ["key-attribute"] }
+      ]
+    }
+  ]
+}
+```
+
+## Multiple Data Bindings
+
+You can define multiple data bindings for different types of items:
+
+```typescript
+const odi: ODI = {
+  dataBinding: [
+    {
+      id: "categories",
+      binding: {
+        itemId: ".id",
+        attributes: [
+          { value: ".name", roles: ["title"] },
+          { value: ".description", roles: ["description"] }
+        ]
+      }
+    },
+    {
+      id: "products",
+      binding: {
+        itemId: ".id",
+        attributes: [
+          { value: ".title", roles: ["title"] },
+          { value: ".price", type: "price", roles: ["key-attribute"] }
+        ]
+      }
+    }
+  ],
+  overviews: [{
+    type: "list",
+    bindingId: "categories",  // Reference by ID
+    detailViews: [{
+      type: "basic",
+      overviews: [{
+        type: "grid",
+        bindingId: "products"  // Different binding for nested view
+      }]
+    }]
+  }]
+};
+```
+
+## Conditional Attributes
+
+Show different attributes based on item properties:
+
+```typescript
+binding: {
+  itemId: ".id",
+  internalAttributes: [
+    { id: "type", value: ".type" }
+  ],
+  attributes: [
+    // Attributes for type "product"
+    {
+      condition: {
+        comparison: {
+          field: ".type",
+          operator: "==",
+          value: "product"
+        }
+      },
+      attributes: [
+        { value: ".title", roles: ["title"] },
+        { value: ".price", type: "price", roles: ["key-attribute"] }
+      ]
+    },
+    // Attributes for type "service"
+    {
+      condition: {
+        comparison: {
+          field: ".type",
+          operator: "==",
+          value: "service"
+        }
+      },
+      attributes: [
+        { value: ".serviceName", roles: ["title"] },
+        { value: ".hourlyRate", type: "price", roles: ["key-attribute"] }
+      ]
+    }
+  ]
+}
+```
+
+## Nested Data Structures
+
+### Array Fields
+
+Transform arrays into displayable attributes:
+
+```typescript
+const data = {
+  id: "1",
+  name: "Product",
+  features: ["Feature 1", "Feature 2", "Feature 3"]
+};
+
+binding: {
+  itemId: ".id",
+  attributes: [
+    { value: ".name", roles: ["title"] },
+    {
+      value: ".features",
+      transform: [{ map: "." }],  // Each array item becomes an attribute
+      roles: ["spec"]
+    }
+  ]
+}
+```
+
+### Nested Objects
+
+Access nested object properties:
+
+```typescript
+const data = {
+  id: "1",
+  title: "Product",
+  pricing: {
+    retail: 99.99,
+    sale: 79.99,
+    currency: "USD"
+  }
+};
+
+binding: {
+  itemId: ".id",
+  attributes: [
+    { value: ".title", roles: ["title"] },
+    {
+      label: "Pricing",
+      attributes: [
+        { value: ".pricing.retail", type: "price", label: "Retail" },
+        { value: ".pricing.sale", type: "price", label: "Sale" }
+      ]
+    }
+  ]
+}
+```
+
+## Working with Complex Data
+
+### Example: E-commerce Product
+
+```typescript
+const product = {
+  id: "iphone-15",
+  type: "product",
+  title: "iPhone 15 Pro",
+  brand: "Apple",
+  description: "The most powerful iPhone ever.",
+  rating: 4.8,
+  reviews: 1247,
+  images: ["image1.jpg", "image2.jpg", "image3.jpg"],
+  pricing: {
+    base: 999,
+    sale: 899
+  },
+  specs: [
+    { name: "Storage", value: "256GB" },
+    { name: "Display", value: "6.1 inch" },
+    { name: "Chip", value: "A17 Pro" }
+  ],
+  availability: {
+    inStock: true,
+    shipping: "2-day"
+  }
+};
+
+const binding: DataBindingType = {
+  binding: {
+    itemId: ".id",
+    internalAttributes: [
+      { id: "type", value: ".type" }
+    ],
+    attributes: [
+      // Basic info
+      { value: ".title", roles: ["title"] },
+      { value: ".brand", roles: ["subtitle"] },
+      { value: ".description", roles: ["description"] },
+
+      // Images
+      {
+        value: ".images",
+        type: "image",
+        roles: ["thumbnail"],
+        transform: [{ map: "." }]
+      },
+
+      // Ratings
+      { value: ".rating", roles: ["rating"] },
+      { value: ".reviews", roles: ["reviews"] },
+
+      // Pricing
+      {
+        label: "Price",
+        type: "price",
+        value: ".pricing.sale",
+        roles: ["key-attribute"]
+      },
+
+      // Specs as list
+      {
+        value: ".specs",
+        roles: ["spec"],
+        transform: [{
+          map: {
+            attributes: [
+              { value: ".name", roles: ["title"] },
+              { value: ".value" }
+            ]
+          }
+        }]
+      },
+
+      // Availability
+      {
+        condition: {
+          comparison: {
+            field: ".availability.inStock",
+            operator: "==",
+            value: true
+          }
+        },
+        attributes: [
+          {
+            value: "In Stock",
+            roles: ["badge"]
+          }
+        ]
+      }
+    ]
+  }
+};
+```
+
+## Best Practices
+
+### 1. Use Consistent Paths
+Maintain consistent naming in your data structure:
+
+```typescript
+// Good
+{ id: "1", title: "...", description: "..." }
+{ id: "2", title: "...", description: "..." }
+
+// Avoid
+{ id: "1", title: "...", desc: "..." }
+{ id: "2", name: "...", description: "..." }
+```
+
+### 2. Leverage Internal Attributes
+Use internal attributes for conditional logic:
+
+```typescript
+internalAttributes: [
+  { id: "status", value: ".status" },
+  { id: "type", value: ".type" }
+]
+```
+
+### 3. Define Bindings Separately
+Keep bindings in separate files for reusability:
+
+```typescript
+// bindings/products.ts
+export const productsBinding: DataBindingType = {
+  id: "products",
+  binding: { /* ... */ }
+};
+
+// odi.ts
+import { productsBinding } from './bindings/products';
+
+const odi: ODI = {
+  dataBinding: [productsBinding],
+  overviews: [/* ... */]
+};
+```
+
+### 4. Validate Data Shape
+Ensure your data matches the binding specification:
+
+```typescript
+// Type your data
+interface Product {
+  id: string;
+  title: string;
+  price: number;
+}
+
+const products: Product[] = [/* ... */];
+```
+
+## Next Steps
+
+- [Attributes](/core-concepts/attributes) - Learn about the attribute system
+- [Transformations](/core-concepts/transformations) - Transform data dynamically
+- [Conditions](/core-concepts/conditions) - Conditional attribute rendering
+- [Roles](/core-concepts/roles) - Understand attribute roles

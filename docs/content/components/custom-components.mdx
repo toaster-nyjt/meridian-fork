@@ -1,0 +1,232 @@
+# Custom Components
+
+Meridian allows you to create custom components for overviews, item views, detail views, and attribute types.
+
+## Custom Overview Components
+
+```typescript
+import { CustomOverviewType, OverviewConfig } from 'meridian';
+
+const MyCustomOverview: CustomOverviewType = {
+  type: "my-overview",
+  view: ({ overview, items, options }) => (
+    <div className="my-custom-overview">
+      {items.map((item, index) => (
+        <div key={item.itemId}>
+          {/* Render item */}
+        </div>
+      ))}
+    </div>
+  )
+};
+
+// Register
+import { overviewTypesMap } from 'meridian';
+overviewTypesMap["my-overview"] = MyCustomOverview;
+
+// Use
+overviews: [{
+  type: "my-overview"
+}]
+```
+
+## Custom Item Views
+
+```typescript
+import { CustomItemViewType } from 'meridian';
+
+const MyCustomItem: CustomItemViewType = {
+  type: "my-item",
+  view: ({ attributes, item, options }) => {
+    const title = attributes.find(a => a.roles?.includes("title"));
+    const thumbnail = attributes.find(a => a.roles?.includes("thumbnail"));
+
+    return (
+      <div className="my-custom-item">
+        {thumbnail && <img src={thumbnail.value} alt={title?.value} />}
+        <h3>{title?.value}</h3>
+      </div>
+    );
+  }
+};
+
+// Register
+import { itemViewTypesMap } from 'meridian';
+itemViewTypesMap["my-item"] = MyCustomItem;
+
+// Use
+itemView: { type: "my-item" }
+```
+
+## Custom Detail Views
+
+```typescript
+import { CustomDetailViewType } from 'meridian';
+
+const MyCustomDetail: CustomDetailViewType = {
+  type: "my-detail",
+  view: ({ attributes, item, options }) => (
+    <div className="my-custom-detail">
+      {/* Custom detail rendering */}
+    </div>
+  )
+};
+
+// Register
+import { detailViewTypesMap } from 'meridian';
+detailViewTypesMap["my-detail"] = MyCustomDetail;
+
+// Use
+detailViews: [{
+  type: "my-detail"
+}]
+```
+
+## Custom Attribute Types
+
+```typescript
+import { attributeTypesMap } from 'meridian';
+
+attributeTypesMap['star-rating'] = {
+  view: ({ attribute, item, options }) => {
+    const rating = Number(attribute.value) || 0;
+    return (
+      <div className="star-rating">
+        {Array.from({ length: 5 }).map((_, i) => (
+          <span key={i} className={i < rating ? 'filled' : 'empty'}>
+            ⭐
+          </span>
+        ))}
+      </div>
+    );
+  }
+};
+
+// Use in attributes
+{
+  value: ".rating",
+  type: "star-rating",
+  roles: ["rating"]
+}
+```
+
+## Using the Attribute Component
+
+Render attributes within custom components:
+
+```typescript
+import { Attribute } from 'meridian';
+
+const MyCustomItem: CustomItemViewType = {
+  type: "my-item",
+  view: ({ attributes, item, options }) => {
+    const title = attributes.find(a => a.roles?.includes("title"));
+    const description = attributes.find(a => a.roles?.includes("description"));
+
+    return (
+      <div className="my-item">
+        <Attribute
+          attribute={title}
+          options={options}
+          className="item-title"
+        />
+        <Attribute
+          attribute={description}
+          options={options}
+          className="item-description"
+        />
+      </div>
+    );
+  }
+};
+```
+
+## Component Props
+
+### Overview Component Props
+
+```typescript
+{
+  overview: OverviewConfig;
+  items: FetchedItemType[];
+  options: ViewOptions;
+}
+```
+
+### Item View Props
+
+```typescript
+{
+  attributes: FetchedAttributeType[];
+  item: FetchedItemType;
+  options: ViewOptions;
+}
+```
+
+### Detail View Props
+
+```typescript
+{
+  attributes: FetchedAttributeType[];
+  item: FetchedItemType;
+  options: ViewOptions;
+}
+```
+
+### Attribute Type Props
+
+```typescript
+{
+  attribute: FetchedAttributeType;
+  item: FetchedItemType;
+  options: ViewOptions;
+}
+```
+
+## Complete Example
+
+### Custom Kanban Board Overview
+
+```typescript
+import { CustomOverviewType, Attribute } from 'meridian';
+
+const KanbanOverview: CustomOverviewType = {
+  type: "kanban",
+  view: ({ overview, items, options }) => {
+    const statuses = ['todo', 'in-progress', 'done'];
+
+    return (
+      <div className="kanban-board">
+        {statuses.map(status => (
+          <div key={status} className="kanban-column">
+            <h3>{status}</h3>
+            {items
+              .filter(item => item.status === status)
+              .map(item => (
+                <div key={item.itemId} className="kanban-card">
+                  {item.attributes.map((attr, i) => (
+                    <Attribute
+                      key={i}
+                      attribute={attr}
+                      options={options}
+                    />
+                  ))}
+                </div>
+              ))}
+          </div>
+        ))}
+      </div>
+    );
+  }
+};
+
+overviewTypesMap["kanban"] = KanbanOverview;
+```
+
+## Best Practices
+
+1. **Use Built-in Components**: Only create custom components when built-ins don't meet your needs
+2. **Leverage Attribute Component**: Use `<Attribute>` to maintain consistency
+3. **Respect Roles**: Honor attribute roles in your custom renderers
+4. **Type Safety**: Define proper TypeScript types for your components
+5. **Register Once**: Register custom components at app initialization

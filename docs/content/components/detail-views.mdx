@@ -1,0 +1,322 @@
+# Detail Views
+
+Detail views show focused information about a single item. They can open in various modes and display comprehensive item information.
+
+## DetailViewConfig Interface
+
+```typescript
+interface DetailViewConfig {
+  id?: string;
+  type: string;
+  openIn?: OpenViewIn;
+  openFrom?: AttributeSelectionScope;
+  openBy?: OpenViewBy;
+  bindingId?: string;
+  items?: FetchedItemType[];
+  shownAttributes?: AttributeSelectionScope;
+  hiddenAttributes?: string[];
+  overviews?: (Overview | string)[];
+  detailViews?: (DetailView | string)[];
+}
+
+type OpenViewIn = "new-page" | "side-by-side" | "replace" | "pop-up" | "tooltip";
+type OpenViewBy = "click" | "hover";
+```
+
+## Basic Detail View
+
+Standard detail page layout:
+
+```typescript
+{
+  type: "basic",
+  openFrom: ["title"],
+  openIn: "side-by-side",
+  shownAttributes: "all"
+}
+```
+
+## Opening Modes (openIn)
+
+### new-page
+
+Opens in a new page/route:
+
+```typescript
+{
+  type: "basic",
+  openIn: "new-page",
+  openFrom: ["item"]
+}
+```
+
+**Use when:** Full page navigation is appropriate
+
+### side-by-side
+
+Opens next to the overview:
+
+```typescript
+{
+  type: "basic",
+  openIn: "side-by-side",
+  openFrom: ["title"]
+}
+```
+
+**Use when:** Comparing items, quick reference needed
+
+### pop-up
+
+Opens in a modal overlay:
+
+```typescript
+{
+  type: "basic",
+  openIn: "pop-up",
+  openFrom: ["title"]
+}
+```
+
+**Use when:** Quick peek without navigation
+
+### tooltip
+
+Opens as a tooltip:
+
+```typescript
+{
+  type: "basic",
+  openIn: "tooltip",
+  openBy: "hover",
+  openFrom: ["thumbnail"]
+}
+```
+
+**Use when:** Brief supplementary information
+
+### replace
+
+Replaces the current view:
+
+```typescript
+{
+  type: "basic",
+  openIn: "replace",
+  openFrom: ["item"]
+}
+```
+
+**Use when:** Linear navigation flow
+
+## Opening Triggers (openFrom)
+
+Specify which attributes trigger the detail view:
+
+```typescript
+// Open from title
+openFrom: ["title"]
+
+// Open from multiple attributes
+openFrom: ["title", "thumbnail", "action"]
+
+// Open from entire item
+openFrom: ["item"]
+
+// Open from any role
+openFrom: ["title", "subtitle", "key-attribute"]
+```
+
+## Opening Events (openBy)
+
+```typescript
+// Click to open (default)
+openBy: "click"
+
+// Hover to open
+openBy: "hover"
+```
+
+## Nested Views
+
+Detail views can contain overviews and other detail views:
+
+```typescript
+{
+  type: "basic",
+  openFrom: ["title"],
+  openIn: "side-by-side",
+  shownAttributes: ["title", "description", "key-attribute"],
+
+  // Show related items
+  overviews: [{
+    type: "grid",
+    bindingId: "related-products",
+    itemView: { type: "compact" }
+  }],
+
+  // Nested details
+  detailViews: [{
+    type: "basic",
+    openFrom: ["item"],
+    openIn: "replace"
+  }]
+}
+```
+
+## Custom Detail Views
+
+Create custom detail renderers:
+
+```typescript
+import { CustomDetailViewType } from 'meridian';
+
+const CustomDetail: CustomDetailViewType = {
+  type: "my-detail",
+  view: ({ attributes, item, options }) => (
+    <div className="custom-detail">
+      <header>
+        {/* Custom header */}
+      </header>
+      <main>
+        {/* Custom content */}
+      </main>
+    </div>
+  )
+};
+
+// Register
+import { detailViewTypesMap } from 'meridian';
+detailViewTypesMap["my-detail"] = CustomDetail;
+
+// Use
+detailViews: [{
+  type: "my-detail",
+  openFrom: ["item"]
+}]
+```
+
+## Complete Examples
+
+### E-commerce Product Detail
+
+```typescript
+detailViews: [{
+  type: "basic",
+  openFrom: ["title", "thumbnail"],
+  openIn: "side-by-side",
+  shownAttributes: [
+    "title",
+    "subtitle",
+    "thumbnail",
+    "key-attribute",
+    "description",
+    "spec",
+    "rating",
+    "reviews",
+    "action"
+  ],
+
+  // Related products
+  overviews: [{
+    type: "grid",
+    bindingId: "related",
+    itemView: { type: "profile" },
+    shownAttributes: ["thumbnail", "title", "key-attribute"]
+  }]
+}]
+```
+
+### Quick Preview
+
+```typescript
+detailViews: [{
+  type: "basic",
+  openFrom: ["thumbnail"],
+  openIn: "pop-up",
+  openBy: "hover",
+  shownAttributes: ["title", "thumbnail", "description", "key-attribute"]
+}]
+```
+
+### Hierarchical Navigation
+
+```typescript
+// Category detail with products
+detailViews: [{
+  type: "basic",
+  openFrom: ["item"],
+  openIn: "replace",
+  shownAttributes: ["title", "description"],
+
+  // Products in category
+  overviews: [{
+    type: "grid",
+    bindingId: "products",
+    itemView: { type: "profile" },
+
+    // Product details
+    detailViews: [{
+      type: "basic",
+      openFrom: ["item"],
+      openIn: "side-by-side",
+      shownAttributes: "all"
+    }]
+  }]
+}]
+```
+
+## Best Practices
+
+### Choose Appropriate Opening Mode
+
+```typescript
+// Full details → new-page
+{ openIn: "new-page" }
+
+// Quick reference → side-by-side
+{ openIn: "side-by-side" }
+
+// Preview → pop-up
+{ openIn: "pop-up" }
+
+// Tooltip info → tooltip
+{ openIn: "tooltip", openBy: "hover" }
+```
+
+### Progressive Disclosure
+
+Show overview first, details on demand:
+
+```typescript
+{
+  type: "grid",
+  shownAttributes: ["title", "thumbnail", "key-attribute"],
+
+  detailViews: [{
+    type: "basic",
+    openFrom: ["title"],
+    shownAttributes: "all"  // Show everything in detail
+  }]
+}
+```
+
+### Provide Multiple Entry Points
+
+```typescript
+detailViews: [
+  {
+    // Quick preview on thumbnail hover
+    openFrom: ["thumbnail"],
+    openIn: "tooltip",
+    openBy: "hover",
+    shownAttributes: ["title", "description"]
+  },
+  {
+    // Full detail on title click
+    openFrom: ["title"],
+    openIn: "new-page",
+    shownAttributes: "all"
+  }
+]
+```

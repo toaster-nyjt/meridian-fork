@@ -1,0 +1,277 @@
+.item-view {
+  border-radius: 12px;
+
+  .thumbnail-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    .thumbnail {
+      width: 240px;
+      height: 240px;
+      overflow: hidden;
+    }
+  }
+
+
+  .content-area {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    .header-area {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      .column {
+        display: flex;
+        flex-direction: column;
+      }
+      .row {
+        display: flex;
+        flex-direction: row;
+        gap: 6px;
+      }
+      .title-area {
+        display: flex;
+        flex-direction: row;
+        gap: 4px;
+      }
+      .title {
+        width: fit-content;
+        font-size: 18px;
+        font-weight: 600;
+      }
+      .subtitle {
+        display: flex;
+        flex-direction: row;
+        font-size: 14px;
+        color: #6b7280;
+      }
+    }
+  }
+
+  .badge {
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    padding: 4px 8px;
+    font-size: 12px;
+    color: black;
+    // background-color: rgba(204, 218, 240, 0.7);
+    border-radius: 6px;
+    font-weight: 600;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .tag {
+    background-color: #e2e2e2;
+    border-radius: 6px;
+    padding: 4px 8px;
+    font-size: 12px;
+    color: black;
+  }
+
+  .description {
+    font-size: 12px;
+    color: #6b7280;
+  }
+
+  .key-attribute {
+    width: fit-content;
+    margin-top: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #dae1f1;
+    border-radius: 6px;
+    padding: 4px 8px;
+    color: #2b416e;
+  }
+
+  .link {
+    text-decoration: underline;
+    color: #5b6373;
+    font-size: 12px;
+  }
+
+  .specs {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    font-size: 14px;
+    color: #6b7280;
+    .spec {
+      border-bottom: 1px solid #e5e7eb;
+    }
+  }
+
+  .caption {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 6px;
+    font-style: italic;
+    font-size: 12px;
+    color: #3d4046;
+    text-align: center;
+  }
+
+  .unlabeled {
+    font-size: 12px;
+  }
+  .action {
+    font-weight: 600;
+    background-color: #00000020;
+    border-radius: 6px;
+    padding: 4px 8px;
+  }
+  .link {
+    text-decoration: underline;
+  }
+
+  .abs-float {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 70;
+  }
+
+  .fl {
+    display: flex;
+  }
+
+  .col {
+    display: flex;
+    flex-direction: column;
+  }
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+  .j-c {
+    justify-content: center;
+  }
+  .i-c {
+    align-items: center;
+  }
+  .g-1 {
+    gap: 4px;
+  }
+  .g-2 {
+    gap: 8px;
+  }
+  .g-3 {
+    gap: 12px;
+  }
+
+  .lg {
+    font-size: 18px;
+  }
+  .md {
+    font-size: 16px;
+  }
+  .sm {
+    font-size: 14px;
+  }
+  .xs {
+    font-size: 12px;
+  }
+
+  .f-m {
+    font-weight: 500;
+  }
+  .f-b {
+    font-weight: 700;
+  }
+}
+
+.item-hover:hover {
+  background-color: #eff0f0;
+  transition: background-color 0.1s ease-in-out;
+}
+
+.item-profile {
+  background-color: #f9fafb;
+  width: 100%;
+  position: relative;
+  display: flex;
+  gap: 16px;
+  padding: 8px;
+
+  
+}
+
+.item-vertical {
+  background-color: #f9fafb;
+  width: 300px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+.item-pin {
+  width: fit-content;
+  position: relative;
+  display: flex;
+  gap: 16px;
+  padding: 2px 6px;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-compact {
+  width: 100%;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 4px;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  justify-content: start;
+  align-items: center;
+  .image {
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+  }
+  .non-image {
+    max-width: 240px;
+  }
+}
+
+.item-view.drag-over {
+  background-color: white;
+}
+
+.drag-over-indicator {
+  position: absolute;
+  top: 0;
+  // left: 0;
+  border-radius: 12px;
+  width: 100%;
+  height: 100%;
+  transition: 0.15s ease-out;
+}
+
+.drag-over-indicator.drag-over-2 {
+  left: 0;
+  width: 34%;
+  background-color: #f0f0f0;
+}
+
+.drag-over-indicator.drag-over {
+  right: 0;
+  width: 34%;
+  background-color: #f0f0f0;
+}
+
+.resize {
+  position: relative;
+  overflow: visible;
+  resize: both;
+}

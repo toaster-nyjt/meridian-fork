@@ -1,0 +1,180 @@
+# API Reference
+
+Complete API documentation for Meridian.
+
+## Core Types
+
+### ODI
+```typescript
+interface ODI {
+  dataBinding: DataBindingType[];
+  overviews: Overview[];
+  detailViews?: DetailView[];
+  viewLayout?: ViewLayout[];
+  malleability?: Malleability;
+}
+```
+
+### DataBindingType
+```typescript
+interface DataBindingType {
+  id?: string;
+  binding: BindingItemType;
+}
+
+interface BindingItemType {
+  itemId: string;
+  pathToItems?: string;
+  roles?: Role[];
+  attributes: AttributeType[];
+  internalAttributes?: AttributeType[];
+}
+```
+
+### AttributeType
+```typescript
+interface AttributeType {
+  id?: string;
+  itemId?: string;
+  value?: string;
+  label?: string;
+  roles?: Role[];
+  type?: AttributeValueType;
+  internalAttributes?: AttributeType[];
+  attributes?: AttributeType[];
+  transform?: AttributeTransformType[];
+  condition?: AttributeConditionType;
+}
+```
+
+### Overview Types
+```typescript
+type Overview =
+  | OverviewBasicListType
+  | OverviewBasicGridType
+  | OverviewBasicMapType
+  | CustomOverviewType;
+
+interface OverviewConfig {
+  id?: string;
+  type: string;
+  itemView?: ItemView;
+  bindingId?: string;
+  items?: FetchedItemType[];
+  shownAttributes?: AttributeSelectionScope;
+  hiddenAttributes?: string[];
+  className?: string;
+  style?: CSSProperties;
+  itemClassName?: string;
+  itemStyle?: CSSProperties;
+  overviews?: (Overview | string)[];
+  detailViews?: (DetailView | string)[];
+  showIn?: Role[];
+}
+```
+
+### Detail View Types
+```typescript
+interface DetailViewConfig {
+  id?: string;
+  type: string;
+  openIn?: OpenViewIn;
+  openFrom?: AttributeSelectionScope;
+  openBy?: OpenViewBy;
+  bindingId?: string;
+  items?: FetchedItemType[];
+  shownAttributes?: AttributeSelectionScope;
+  hiddenAttributes?: string[];
+  overviews?: (Overview | string)[];
+  detailViews?: (DetailView | string)[];
+}
+
+type OpenViewIn = "new-page" | "side-by-side" | "replace" | "pop-up" | "tooltip";
+type OpenViewBy = "click" | "hover";
+```
+
+### Malleability
+```typescript
+interface Malleability {
+  disabled?: boolean;
+  content?: {
+    disabled?: boolean | AttributeSelectionScope;
+    types?: MalleableContentType[];
+  };
+  composition?: {
+    disabled?: boolean | ("overview" | "detail")[];
+    types?: MalleableCompositionType[];
+  };
+  layout?: {
+    disabled?: boolean | {overviewId?: string; detailId?: string}[];
+    types?: MalleableLayoutType[];
+  };
+}
+```
+
+## Renderer Component
+
+### MeridianRenderer
+
+```typescript
+interface MeridianRendererProps {
+  odi: ODI;
+  data: any[];
+  onOpenDetailNewPage?: (item: FetchedItemType) => void;
+  className?: string;
+  style?: CSSProperties;
+}
+```
+
+**Usage:**
+```tsx
+<MeridianRenderer
+  odi={myODI}
+  data={myData}
+  onOpenDetailNewPage={(item) => router.push(`/detail/${item.itemId}`)}
+/>
+```
+
+## Exports
+
+### Components
+```typescript
+import {
+  MeridianRenderer,
+  MeridianOverview,
+  Attribute
+} from 'meridian';
+```
+
+### Types
+```typescript
+import type {
+  ODI,
+  DataBindingType,
+  AttributeType,
+  Overview,
+  DetailView,
+  Malleability
+} from 'meridian';
+```
+
+### Type Maps
+```typescript
+import {
+  overviewTypesMap,
+  itemViewTypesMap,
+  detailViewTypesMap,
+  attributeTypesMap
+} from 'meridian';
+```
+
+### Store Hooks
+```typescript
+import { useODI } from 'meridian';
+```
+
+## See Also
+
+- [Type Reference](/api/types) - Complete type definitions
+- [MeridianRenderer](/api/renderer) - Renderer component documentation
+- [Custom Components](/components/custom-components) - Extending Meridian

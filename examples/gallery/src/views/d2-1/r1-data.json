@@ -1,0 +1,595 @@
+[
+  {
+    "id": "att-ad",
+    "type": "ad",
+    "imgsrc": "/examples/r1/assets/card-offer.webp",
+    "tag": "Storage offer ends July 23",
+    "pretitle": "Break your contract",
+    "title": "Switch to AT&T today and get up to $800 per line",
+    "description": "Learn how to get a reward card to pay off your phone balance—up to 10 lines.",
+    "offers": [
+      {
+        "header": "",
+        "text": "Up to $800 via reward card (redemption required). Restrictions apply.",
+        "linkName": "See offer details"
+      }
+    ]
+  },
+  {
+    "id": "iphone-16-pro-max",
+    "type": "product",
+    "brand": "Apple",
+    "title": "iPhone 16 Pro Max",
+    "taglineImg": "/examples/r1/assets/iphone-16-pro-max/tagline.svg",
+    "rating": 4.2,
+    "reviews": 8540,
+    "link": "/buy/phones/apple-iphone-16-pro-max.html",
+    "badge": "Trade an old iPhone, any condition",
+    "description": "iPhone 16 Pro Max. Built for Apple Intelligence. Featuring a stunning titanium design. Camera Control. 4K 120 fps Dolby Vision. And A18 Pro chip.",
+    "features": [
+      "STUNNING TITANIUM DESIGN-iPhone 16 Pro has a strong and light titanium design with a larger 6.3-inch Super Retina XDR display. It's remarkably durable with the latest-generation Ceramic Shield material that's 2x tougher than any smartphone glass.",
+      "BUILT FOR APPLE INTELLIGENCE-Apple Intelligence is the personal intelligence system that helps you write, express yourself, and get things done effortlessly. With groundbreaking privacy protections, it gives you peace of mind that no one else can access your data.",
+      "TAKE TOTAL CAMERA CONTROL-Camera Control gives you an easier way to quickly access camera tools, like zoom or depth of field, so you can take the perfect shot in record time.",
+      "MAGNIFICENT SHOTS-Take your videos to a whole new level with 4K 120 fps Dolby Vision, enabled by the 48MP Fusion camera. The improved 48MP Ultra Wide camera lets you capture mesmerizing detail in macro photos and wide-angle shots."
+    ],
+    "footnotes": [
+      "Apple Intelligence features will be available in beta in U.S. English later this year."
+    ],
+    "offers": [
+      {
+        "header": "",
+        "text": "Req's elig. unlimited & trade-in. Price after 36 mo. credits. Speed restr's & other terms apply.",
+        "linkName": "See offer details"
+      },
+      {
+        "header": "Get iPhone 16 Pro Max for up to $1,000 off",
+        "text": "Save when you trade in your old iPhone in any condition and get a qualifying unlimited plan. Req's trade-in of iPhone 13 Pro or higher. Savings via bill credits. Speed restrictions & other terms apply.",
+        "linkName": "See offer details"
+      },
+      {
+        "header": "",
+        "text": "Req.'s 0% APR 36-mo. agmt and svc. Well-qual. customers.",
+        "linkName": "See price details"
+      }
+    ],
+    "model": [
+      {
+        "name": "iPhone 16 Pro",
+        "id": "iphone-16-pro",
+        "size": "6.3-inch display",
+        "price": 27.78
+      },
+      {
+        "name": "iPhone 16 Pro Max",
+        "id": "iphone-16-pro-max",
+        "size": "6.9-inch display",
+        "price": 33.34
+      }
+    ],
+    "colors": [
+      {
+        "name": "Desert Titanium",
+        "hex": "#B79A86",
+        "images": [
+          "/examples/r1/assets/iphone-16-pro-max/desert/desert-titanium-hero-zoom.webp",
+          "/examples/r1/assets/iphone-16-pro-max/desert/desert-titanium-1.webp",
+          "/examples/r1/assets/iphone-16-pro-max/desert/desert-titanium-2.webp",
+          "/examples/r1/assets/iphone-16-pro-max/desert/desert-titanium-3.webp",
+          "/examples/r1/assets/iphone-16-pro-max/desert/desert-titanium-4.webp"
+        ]
+      },
+      {
+        "name": "Black Titanium",
+        "hex": "#353535",
+        "images": [
+          "/examples/r1/assets/iphone-16-pro-max/black/black-titanium-hero-zoom.webp",
+          "/examples/r1/assets/iphone-16-pro-max/black/black-titanium-1.webp",
+          "/examples/r1/assets/iphone-16-pro-max/black/black-titanium-2.webp",
+          "/examples/r1/assets/iphone-16-pro-max/black/black-titanium-3.webp",
+          "/examples/r1/assets/iphone-16-pro-max/black/black-titanium-4.webp"
+        ]
+      },
+      {
+        "name": "White Titanium",
+        "hex": "#F0EFEB",
+        "images": [
+          "/examples/r1/assets/iphone-16-pro-max/white/white-titanium-hero-zoom.webp",
+          "/examples/r1/assets/iphone-16-pro-max/white/white-titanium-1.webp",
+          "/examples/r1/assets/iphone-16-pro-max/white/white-titanium-2.webp",
+          "/examples/r1/assets/iphone-16-pro-max/white/white-titanium-3.webp",
+          "/examples/r1/assets/iphone-16-pro-max/white/white-titanium-4.webp"
+        ]
+      },
+      {
+        "name": "Natural Titanium",
+        "hex": "#BAB4AA",
+        "images": [
+          "/examples/r1/assets/iphone-16-pro-max/natural/natural-titanium-hero-zoom.webp",
+          "/examples/r1/assets/iphone-16-pro-max/natural/natural-titanium-1.webp",
+          "/examples/r1/assets/iphone-16-pro-max/natural/natural-titanium-2.webp",
+          "/examples/r1/assets/iphone-16-pro-max/natural/natural-titanium-3.webp",
+          "/examples/r1/assets/iphone-16-pro-max/natural/natural-titanium-4.webp"
+        ]
+      }
+    ],
+    "capacity": [
+      {
+        "price": 33.34,
+        "retailPrice": 1199.99,
+        "dealPrice": 5.56,
+        "capacity": "256 GB"
+      },
+      {
+        "price": 38.89,
+        "retailPrice": 1399.99,
+        "dealPrice": 11.12,
+        "capacity": "512 GB"
+      },
+      {
+        "price": 44.45,
+        "retailPrice": 1599.99,
+        "dealPrice": 16.67,
+        "capacity": "1 TB"
+      }
+    ]
+  },
+  {
+    "id": "iphone-16-pro",
+    "type": "product",
+    "brand": "Apple",
+    "title": "iPhone 16 Pro",
+    "taglineImg": "/examples/r1/assets/iphone-16-pro/tagline.svg",
+    "rating": 4.2,
+    "reviews": 4472,
+    "link": "/buy/phones/apple-iphone-16-pro.html",
+    "badge": "Trade an old iPhone, any condition",
+    "description": "iPhone 16 Pro. Built for Apple Intelligence. Featuring a stunning titanium design. Camera Control. 4K 120 fps Dolby Vision. And A18 Pro chip.",
+    "features": [
+      "STUNNING TITANIUM DESIGN-iPhone 16 Pro has a strong and light titanium design with a larger 6.3-inch Super Retina XDR display. It's remarkably durable with the latest-generation Ceramic Shield material that's 2x tougher than any smartphone glass.",
+      "BUILT FOR APPLE INTELLIGENCE-Apple Intelligence is the personal intelligence system that helps you write, express yourself, and get things done effortlessly. With groundbreaking privacy protections, it gives you peace of mind that no one else can access your data.",
+      "TAKE TOTAL CAMERA CONTROL-Camera Control gives you an easier way to quickly access camera tools, like zoom or depth of field, so you can take the perfect shot in record time.",
+      "MAGNIFICENT SHOTS-Take your videos to a whole new level with 4K 120 fps Dolby Vision, enabled by the 48MP Fusion camera. The improved 48MP Ultra Wide camera lets you capture mesmerizing detail in macro photos and wide-angle shots."
+    ],
+    "offers": [
+      {
+        "header": "Limited Time",
+        "text": "Req's trade-in of eligible device and elig. unlimited plan (speed restr's apply). Price after up to $1000 in credits over 36 mos. Other terms apply.",
+        "linkName": "See offer details"
+      },
+      {
+        "header": "",
+        "text": "All monthly pricing req's 0% APR, 36-mo. installment agmt. $0 down for well-qual. customers. Tax on full price due at sale. Restrictions apply.",
+        "linkName": "See price details"
+      },
+      {
+        "header": "Get iPhone 16 Pro on us",
+        "text": "Save when you trade in your old iPhone in any condition and get a qualifying unlimited plan. Req's trade-in of iPhone 13 Pro or higher. Savings via bill credits. Speed restrictions & other terms apply.",
+        "linkName": "See offer details"
+      }
+    ],
+    "model": [
+      {
+        "name": "iPhone 16 Pro",
+        "id": "iphone-16-pro",
+        "size": "6.3-inch display",
+        "price": 27.78
+      },
+      {
+        "name": "iPhone 16 Pro Max",
+        "id": "iphone-16-pro-max",
+        "size": "6.9-inch display",
+        "price": 33.34
+      }
+    ],
+    "colors": [
+      {
+        "name": "Desert Titanium",
+        "hex": "#B79A86",
+        "images": [
+          "/examples/r1/assets/iphone-16-pro/desert/desert-titanium-hero-zoom.webp",
+          "/examples/r1/assets/iphone-16-pro/desert/desert-titanium-1.webp",
+          "/examples/r1/assets/iphone-16-pro/desert/desert-titanium-2.webp",
+          "/examples/r1/assets/iphone-16-pro/desert/desert-titanium-3.webp",
+          "/examples/r1/assets/iphone-16-pro/desert/desert-titanium-4.webp"
+        ]
+      },
+      {
+        "name": "Black Titanium",
+        "hex": "#353535",
+        "images": [
+          "/examples/r1/assets/iphone-16-pro/black/black-titanium-hero-zoom.webp",
+          "/examples/r1/assets/iphone-16-pro/black/black-titanium-1.webp",
+          "/examples/r1/assets/iphone-16-pro/black/black-titanium-2.webp",
+          "/examples/r1/assets/iphone-16-pro/black/black-titanium-3.webp",
+          "/examples/r1/assets/iphone-16-pro/black/black-titanium-4.webp"
+        ]
+      },
+      {
+        "name": "White Titanium",
+        "hex": "#F0EFEB",
+        "images": [
+          "/examples/r1/assets/iphone-16-pro/white/white-titanium-hero-zoom.webp",
+          "/examples/r1/assets/iphone-16-pro/white/white-titanium-1.webp",
+          "/examples/r1/assets/iphone-16-pro/white/white-titanium-2.webp",
+          "/examples/r1/assets/iphone-16-pro/white/white-titanium-3.webp",
+          "/examples/r1/assets/iphone-16-pro/white/white-titanium-4.webp"
+        ]
+      },
+      {
+        "name": "Natural Titanium",
+        "hex": "#BAB4AA",
+        "images": [
+          "/examples/r1/assets/iphone-16-pro/natural/natural-titanium-hero-zoom.webp",
+          "/examples/r1/assets/iphone-16-pro/natural/natural-titanium-1.webp",
+          "/examples/r1/assets/iphone-16-pro/natural/natural-titanium-2.webp",
+          "/examples/r1/assets/iphone-16-pro/natural/natural-titanium-3.webp",
+          "/examples/r1/assets/iphone-16-pro/natural/natural-titanium-4.webp"
+        ]
+      }
+    ],
+    "capacity": [
+      {
+        "price": 27.78,
+        "retailPrice": 999.99,
+        "dealPrice": 0.0,
+        "capacity": "128 GB"
+      },
+      {
+        "price": 30.56,
+        "retailPrice": 1099.99,
+        "dealPrice": 2.78,
+        "capacity": "256 GB"
+      },
+      {
+        "price": 36.12,
+        "retailPrice": 1299.99,
+        "dealPrice": 8.34,
+        "capacity": "512 GB"
+      },
+      {
+        "price": 41.67,
+        "retailPrice": 1499.99,
+        "dealPrice": 13.89,
+        "capacity": "1 TB"
+      }
+    ]
+  },
+  {
+    "id": "iphone-16",
+    "type": "product",
+    "brand": "Apple",
+    "title": "iPhone 16",
+    "taglineImg": "/examples/r1/assets/iphone-16/tagline.svg",
+    "rating": 4.3,
+    "reviews": 808,
+    "link": "/buy/phones/apple-iphone-16.html",
+    "badge": "Trade an old iPhone, any condition",
+    "description": "iPhone 16. Built for Apple Intelligence. Featuring Camera Control. 48MP Fusion camera. Five vibrant colors. And A18 chip.",
+    "features": [
+      "BUILT FOR APPLE INTELLIGENCE—Apple Intelligence is the personal intelligence system that helps you write, express yourself, and get things done effortlessly. With groundbreaking privacy protections, it gives you peace of mind that no one else can access your data.",
+      "TAKE TOTAL CAMERA CONTROL—Camera Control gives you an easier way to quickly access camera tools,like zoom or depth of field, so you can take the perfect shot in record time.",
+      "GET FURTHER AND CLOSER—The improved Ultra Wide camera with autofocus lets you takes incredibly detailed macro photos and videos. Use the 48MP Fusion camera for stunning high-resolution images, and zoom in with the 2x optical-quality Telephoto.",
+      "PHOTOGRAPHIC STYLES—The latest-generation Photographic Styles give you greater creative flexibility, so you can make every photo even more you. And you can reverse any of those styles anytime you want."
+    ],
+    "offers": [
+      {
+        "header": "Get iPhone 16",
+        "text": "Save when you trade in your old iPhone in any condition and get a qualifying unlimited plan. Savings via bill credits. Speed restrictions & other terms apply.",
+        "linkName": "See offer details"
+      },
+      {
+        "header": "",
+        "text": "Req's elig. unlimited & trade-in. Price after 36 mo. credits. Speed restr's & other terms apply.",
+        "linkName": "See offer details"
+      },
+      {
+        "header": "",
+        "text": "Req.'s 0% APR 36-mo. agmt and svc. Well-qual. customers.",
+        "linkName": "See price details"
+      }
+    ],
+    "model": [
+      {
+        "name": "iPhone 16",
+        "display": "6.1-inch display",
+        "price": 23.06
+      },
+      {
+        "name": "iPhone 16 Plus",
+        "display": "6.7-inch display",
+        "price": 10.99
+      }
+    ],
+    "colors": [
+      {
+        "name": "Black",
+        "hex": "#35383A",
+        "images": [
+          "/examples/r1/assets/iphone-16/black/black-hero-zoom.webp",
+          "/examples/r1/assets/iphone-16/black/black-1.webp",
+          "/examples/r1/assets/iphone-16/black/black-2.webp",
+          "/examples/r1/assets/iphone-16/black/black-3.webp",
+          "/examples/r1/assets/iphone-16/black/black-4.webp"
+        ]
+      },
+      {
+        "name": "Teal",
+        "hex": "#A7CECB",
+        "images": [
+          "/examples/r1/assets/iphone-16/teal/teal-hero-zoom.webp",
+          "/examples/r1/assets/iphone-16/teal/teal-1.webp",
+          "/examples/r1/assets/iphone-16/teal/teal-2.webp",
+          "/examples/r1/assets/iphone-16/teal/teal-3.webp",
+          "/examples/r1/assets/iphone-16/teal/teal-4.webp"
+        ]
+      },
+      {
+        "name": "Pink",
+        "hex": "#EFA5D3",
+        "images": [
+          "/examples/r1/assets/iphone-16/pink/pink-hero-zoom.webp",
+          "/examples/r1/assets/iphone-16/pink/pink-1.webp",
+          "/examples/r1/assets/iphone-16/pink/pink-2.webp",
+          "/examples/r1/assets/iphone-16/pink/pink-3.webp",
+          "/examples/r1/assets/iphone-16/pink/pink-4.webp"
+        ]
+      },
+      {
+        "name": "White",
+        "hex": "#F9F9F9",
+        "images": [
+          "/examples/r1/assets/iphone-16/white/white-hero-zoom.webp",
+          "/examples/r1/assets/iphone-16/white/white-1.webp",
+          "/examples/r1/assets/iphone-16/white/white-2.webp",
+          "/examples/r1/assets/iphone-16/white/white-3.webp",
+          "/examples/r1/assets/iphone-16/white/white-4.webp"
+        ]
+      },
+      {
+        "name": "Ultramarine",
+        "hex": "#90A4F0",
+        "images": [
+          "/examples/r1/assets/iphone-16/ultramarine/ultramarine-hero-zoom.webp",
+          "/examples/r1/assets/iphone-16/ultramarine/ultramarine-1.webp",
+          "/examples/r1/assets/iphone-16/ultramarine/ultramarine-2.webp",
+          "/examples/r1/assets/iphone-16/ultramarine/ultramarine-3.webp",
+          "/examples/r1/assets/iphone-16/ultramarine/ultramarine-4.webp"
+        ]
+      }
+    ],
+    "capacity": [
+      {
+        "price": 23.06,
+        "retailPrice": 829.99,
+        "dealPrice": 0.0,
+        "capacity": "128 GB"
+      },
+      {
+        "price": 25.84,
+        "retailPrice": 929.99,
+        "dealPrice": 0.0,
+        "capacity": "256 GB"
+      },
+      {
+        "price": 31.39,
+        "retailPrice": 1129.99,
+        "dealPrice": 0.0,
+        "capacity": "512 GB"
+      }
+    ]
+  },
+  {
+    "id": "galaxy-s25-ultra",
+    "type": "product",
+    "brand": "Samsung",
+    "title": "Galaxy S25 Ultra",
+    "taglineImg": "/examples/r1/assets/galaxy-s25-ultra/tagline.svg",
+    "rating": 4.7,
+    "reviews": 10320,
+    "link": "/buy/phones/samsung-galaxy-s25-ultra.html",
+    "badge": "New! $0 with trade-in.",
+    "description": "Elevate your life with the new Samsung Galaxy S25 Ultra. Experience the next evolution of Galaxy AI, featuring Now Brief for personalized insights and tips to keep you ahead of your day.",
+    "features": [
+      "Cross App Action: Multiple tasks with one ask.",
+      "Now Brief: Personalized insights and tips.",
+      "Audio Eraser: Minimize unwanted noises.",
+      "Most powerful Galaxy processor yet.",
+      "Game with lifelike details on 6.9-inch display."
+    ],
+    "offers": [
+      {
+        "header": "Limited Time",
+        "text": "Req's trade-in of eligible device and elig. unlimited plan (speed restr's apply). Price after up to $1300 in credits over 36 mos. Other terms apply.",
+        "linkName": "See offer details"
+      },
+      {
+        "header": "",
+        "text": "All monthly pricing req's 0% APR, 36-mo. installment agmt. $0 down for well-qual. customers. Tax on full price due at sale. Restrictions apply.",
+        "linkName": "See price details"
+      },
+      {
+        "header": "Get Samsung Galaxy S25 Ultra on us",
+        "text": "Save with eligible trade-in and qualifying unlimited plan. Savings via bill credits. Speed restrictions & other terms apply.",
+        "linkName": "See offer details"
+      },
+      {
+        "header": "Add a Galaxy Tab and/or an eligible Galaxy Watch for $0.99/mo. each",
+        "text": "Save when you buy this device. Savings via bill credits. Other terms apply.",
+        "linkName": "See offer details"
+      },
+      {
+        "header": "Save 50% on Samsung accessories",
+        "text": "When you purchase any Samsung connected device. Ends 5/8/25. Samsung connected device req's elig. postpaid svc. wireless & other terms & restr's apply.",
+        "linkName": "See offer details"
+      }
+    ],
+    "model": [
+      {
+        "name": "Galaxy S25 Ultra",
+        "id": "galaxy-s25-ultra",
+        "size": "6.8-inch display",
+        "price": 36.12
+      }
+    ],
+    "colors": [
+      {
+        "name": "Titanium Black",
+        "hex": "#414144",
+        "images": [
+          "/examples/r1/assets/galaxy-s25-ultra/black/titanium-black-hero-zoom.webp",
+          "/examples/r1/assets/galaxy-s25-ultra/black/titanium-black-2.webp",
+          "/examples/r1/assets/galaxy-s25-ultra/black/titanium-black-3.webp",
+          "/examples/r1/assets/galaxy-s25-ultra/black/titanium-black-4.webp"
+        ]
+      },
+      {
+        "name": "Titanium Silverblue",
+        "hex": "#8395B2",
+        "images": [
+          "/examples/r1/assets/galaxy-s25-ultra/silverblue/titanium-silverblue-hero-zoom.webp",
+          "/examples/r1/assets/galaxy-s25-ultra/silverblue/titanium-silverblue-2.webp",
+          "/examples/r1/assets/galaxy-s25-ultra/silverblue/titanium-silverblue-3.webp",
+          "/examples/r1/assets/galaxy-s25-ultra/silverblue/titanium-silverblue-4.webp"
+        ]
+      },
+      {
+        "name": "Titanium Gray",
+        "hex": "#AAA195",
+        "images": [
+          "/examples/r1/assets/galaxy-s25-ultra/gray/titanium-gray-hero-zoom.webp",
+          "/examples/r1/assets/galaxy-s25-ultra/gray/titanium-gray-2.webp",
+          "/examples/r1/assets/galaxy-s25-ultra/gray/titanium-gray-3.webp",
+          "/examples/r1/assets/galaxy-s25-ultra/gray/titanium-gray-4.webp"
+        ]
+      },
+      {
+        "name": "Titanium Whitesilver",
+        "hex": "#D4D4D0",
+        "images": [
+          "/examples/r1/assets/galaxy-s25-ultra/whitesilver/titanium-whitesilver-hero-zoom.webp",
+          "/examples/r1/assets/galaxy-s25-ultra/whitesilver/titanium-whitesilver-2.webp",
+          "/examples/r1/assets/galaxy-s25-ultra/whitesilver/titanium-whitesilver-3.webp",
+          "/examples/r1/assets/galaxy-s25-ultra/whitesilver/titanium-whitesilver-4.webp"
+        ]
+      }
+    ],
+    "capacity": [
+      {
+        "price": 36.12,
+        "retailPrice": 1299.99,
+        "dealPrice": 0.0,
+        "capacity": "256 GB"
+      },
+      {
+        "price": 39.45,
+        "retailPrice": 1419.99,
+        "dealPrice": 3.34,
+        "capacity": "512 GB"
+      }
+    ]
+  },
+  {
+    "id": "iphone-15",
+    "type": "product",
+    "brand": "Apple",
+    "title": "iPhone 15",
+    "taglineImg": "/examples/r1/assets/iphone-15/tagline.svg",
+    "rating": 4.2,
+    "reviews": 3561,
+    "link": "/buy/phones/apple-iphone-15.html",
+    "badge": "No trade-in required",
+    "description": "iPhone 15 brings you Dynamic Island, a 48MP Main camera, and USB-C—all in a durable color-infused glass and aluminum design.",
+    "features": [
+      "Dynamic island comes to iPhone 15—Experience a whole new way to interact with your iPhone. Dynamic Island bubbles up alerts and Live Activities, so you can see what's happening without leaving what you're doing.",
+      "Innovative design—iPhone 15 features a durable color-infused glass and aluminum design with a contoured edge. The Ceramic Shield front is tougher than any smartphone glass.",
+      "48MP Main camera with 2x telephoto—Capture super-high-resolution photos with the 48MP Main camera. And get closer to subjects with the 2x optical-quality Telephoto.",
+      "Next-generation portraits—Take portraits with more detail, better low-light performance, and rich, vibrant colors. Now you can shift the focus after you take the photo."
+    ],
+    "offers": [
+      {
+        "header": "",
+        "text": "Req's. elig. unlimited svc (speed restr's apply). Price after credits over 36 mo. Other terms apply.",
+        "linkName": "See offer details"
+      },
+      {
+        "header": "",
+        "text": "All monthly pricing req's 0% APR, 36-mo. installment agmt. $0 down for well-qual. customers. Tax on full price due at sale. Restrictions apply.",
+        "linkName": "See price details"
+      },
+      {
+        "header": "Get iPhone 15 128GB for $5.99/mo.",
+        "text": "Save when you purchase on installment with qualifying unlimited plan. No trade-in required. Switch online to get $200 off a new phone line. Savings via bill credits. Speed restrictions & other terms apply.",
+        "linkName": "See offer details"
+      }
+    ],
+    "model": [
+      {
+        "name": "iPhone 15",
+        "id": "iphone-15",
+        "size": "6.1-inch display",
+        "price": 5.99
+      },
+      {
+        "name": "iPhone 15 Plus",
+        "id": "iphone-15-plus",
+        "size": "6.7-inch display",
+        "price": 23.06
+      }
+    ],
+    "colors": [
+      {
+        "name": "Black",
+        "hex": "#35383A",
+        "images": [
+          "/examples/r1/assets/iphone-15/black/black-hero-zoom.webp",
+          "/examples/r1/assets/iphone-15/black/black-1.webp",
+          "/examples/r1/assets/iphone-15/black/black-2.webp"
+        ]
+      },
+      {
+        "name": "Yellow",
+        "hex": "#E9E2C1",
+        "images": [
+          "/examples/r1/assets/iphone-15/yellow/yellow-hero-zoom.webp",
+          "/examples/r1/assets/iphone-15/yellow/yellow-1.webp",
+          "/examples/r1/assets/iphone-15/yellow/yellow-2.webp"
+        ]
+      },
+      {
+        "name": "Green",
+        "hex": "#C9D3C3",
+        "images": [
+          "/examples/r1/assets/iphone-15/green/green-hero-zoom.webp",
+          "/examples/r1/assets/iphone-15/green/green-1.webp",
+          "/examples/r1/assets/iphone-15/green/green-2.webp"
+        ]
+      },
+      {
+        "name": "Blue",
+        "hex": "#CFD8DB",
+        "images": [
+          "/examples/r1/assets/iphone-15/blue/blue-hero-zoom.webp",
+          "/examples/r1/assets/iphone-15/blue/blue-1.webp",
+          "/examples/r1/assets/iphone-15/blue/blue-2.webp"
+        ]
+      },
+      {
+        "name": "pink",
+        "hex": "#E8CACC",
+        "images": [
+          "/examples/r1/assets/iphone-15/pink/pink-hero-zoom.webp",
+          "/examples/r1/assets/iphone-15/pink/pink-1.webp",
+          "/examples/r1/assets/iphone-15/pink/pink-2.webp"
+        ]
+      }
+    ],
+    "capacity": [
+      {
+        "price": 20.28,
+        "retailPrice": 729.99,
+        "dealPrice": 5.99,
+        "capacity": "128 GB"
+      }
+    ]
+  }
+]

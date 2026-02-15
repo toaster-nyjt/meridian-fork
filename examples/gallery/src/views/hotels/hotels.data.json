@@ -1,0 +1,4645 @@
+[
+  {
+      "itemId": "77391",
+      "details": {
+          "itemId": "77391",
+          "location_id": "77391",
+          "name": "La Jolla Cove Hotel",
+          "description": "Escape to an oceanfront getaway on the sapphire shores of La Jolla, California. Located on the coast of La Jolla Cove, our beachfront hotel in San Diego offers an exclusive stay mixed with the easygoing spirit of San Diego.",
+          "web_url": "https://www.tripadvisor.com/Hotel_Review-g32578-d77391-Reviews-La_Jolla_Cove_Hotel-La_Jolla_San_Diego_California.html?m=66827",
+          "address_obj": {
+              "street1": "1155 Coast Blvd",
+              "city": "La Jolla",
+              "state": "California",
+              "country": "United States",
+              "postalcode": "92037",
+              "address_string": "1155 Coast Blvd, La Jolla, San Diego, CA 92037"
+          },
+          "ancestors": [
+              {
+                  "level": "City",
+                  "name": "La Jolla",
+                  "location_id": "32578"
+              },
+              {
+                  "level": "Municipality",
+                  "name": "San Diego",
+                  "location_id": "60750"
+              },
+              {
+                  "abbrv": "CA",
+                  "level": "State",
+                  "name": "California",
+                  "location_id": "28926"
+              },
+              {
+                  "level": "Country",
+                  "name": "United States",
+                  "location_id": "191"
+              }
+          ],
+          "latitude": "32.84991",
+          "longitude": "-117.2733",
+          "timezone": "America/Los_Angeles",
+          "phone": "8584592621",
+          "write_review": "https://www.tripadvisor.com/UserReview-g32578-d77391-La_Jolla_Cove_Hotel-La_Jolla_San_Diego_California.html?m=66827",
+          "ranking_data": {
+              "geo_location_id": "32578",
+              "ranking_string": "#17 of 23 hotels in La Jolla",
+              "geo_location_name": "La Jolla",
+              "ranking_out_of": "23",
+              "ranking": "17"
+          },
+          "rating": "3.5",
+          "rating_image_url": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/3.5-66827-5.svg",
+          "num_reviews": "1657",
+          "review_rating_count": {
+              "1": "238",
+              "2": "180",
+              "3": "240",
+              "4": "446",
+              "5": "553"
+          },
+          "subratings": {
+              "0": {
+                  "name": "rate_location",
+                  "localized_name": "Location",
+                  "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.5.svg",
+                  "value": "4.5"
+              },
+              "1": {
+                  "name": "rate_sleep",
+                  "localized_name": "Sleep Quality",
+                  "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss3.5.svg",
+                  "value": "3.5"
+              },
+              "2": {
+                  "name": "rate_room",
+                  "localized_name": "Rooms",
+                  "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss3.5.svg",
+                  "value": "3.5"
+              },
+              "3": {
+                  "name": "rate_service",
+                  "localized_name": "Service",
+                  "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.0.svg",
+                  "value": "4.0"
+              },
+              "4": {
+                  "name": "rate_value",
+                  "localized_name": "Value",
+                  "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss3.5.svg",
+                  "value": "3.5"
+              },
+              "5": {
+                  "name": "rate_cleanliness",
+                  "localized_name": "Cleanliness",
+                  "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss3.5.svg",
+                  "value": "3.5"
+              }
+          },
+          "photo_count": "1105",
+          "see_all_photos": "https://www.tripadvisor.com/Hotel_Review-g32578-d77391-m66827-Reviews-La_Jolla_Cove_Hotel-La_Jolla_San_Diego_California.html#photos",
+          "price_level": "$$$",
+          "hours": {
+              "periods": [
+                  {
+                      "open": {
+                          "day": 1,
+                          "time": "0000"
+                      },
+                      "close": {
+                          "day": 1,
+                          "time": "0000"
+                      }
+                  },
+                  {
+                      "open": {
+                          "day": 2,
+                          "time": "0000"
+                      },
+                      "close": {
+                          "day": 2,
+                          "time": "0000"
+                      }
+                  },
+                  {
+                      "open": {
+                          "day": 3,
+                          "time": "0000"
+                      },
+                      "close": {
+                          "day": 3,
+                          "time": "0000"
+                      }
+                  },
+                  {
+                      "open": {
+                          "day": 4,
+                          "time": "0000"
+                      },
+                      "close": {
+                          "day": 4,
+                          "time": "0000"
+                      }
+                  },
+                  {
+                      "open": {
+                          "day": 5,
+                          "time": "0000"
+                      },
+                      "close": {
+                          "day": 5,
+                          "time": "0000"
+                      }
+                  },
+                  {
+                      "open": {
+                          "day": 6,
+                          "time": "0000"
+                      },
+                      "close": {
+                          "day": 6,
+                          "time": "0000"
+                      }
+                  },
+                  {
+                      "open": {
+                          "day": 7,
+                          "time": "0000"
+                      },
+                      "close": {
+                          "day": 7,
+                          "time": "0000"
+                      }
+                  }
+              ],
+              "weekday_text": [
+                  "Monday: 00:00 - 00:00",
+                  "Tuesday: 00:00 - 00:00",
+                  "Wednesday: 00:00 - 00:00",
+                  "Thursday: 00:00 - 00:00",
+                  "Friday: 00:00 - 00:00",
+                  "Saturday: 00:00 - 00:00",
+                  "Sunday: 00:00 - 00:00"
+              ]
+          },
+          "amenities": [
+              "Pool",
+              "Internet",
+              "Free Internet",
+              "Kitchenette",
+              "Free Wifi",
+              "Suites",
+              "Beachfront",
+              "Wifi",
+              "Public Wifi",
+              "Meeting rooms",
+              "Hot Tub",
+              "Non-smoking rooms",
+              "Air conditioning",
+              "Family Rooms",
+              "Multilingual Staff",
+              "Accessible rooms",
+              "Non-smoking hotel",
+              "Heated pool",
+              "Flatscreen TV",
+              "Rooftop Terrace",
+              "Private Balcony",
+              "Outdoor pool",
+              "Parking",
+              "Facilities for Disabled Guests",
+              "English",
+              "Fence Around Pool",
+              "24-Hour Front Desk",
+              "Iron",
+              "Outdoor Furniture",
+              "Parking Garage",
+              "Pool / Beach Towels",
+              "Spanish",
+              "Wake Up Service / Alarm Clock",
+              "Beach Access"
+          ],
+          "category": {
+              "name": "hotel",
+              "localized_name": "Hotel"
+          },
+          "subcategory": [
+              {
+                  "name": "hotel",
+                  "localized_name": "Hotel"
+              }
+          ],
+          "styles": [
+              "Marina View",
+              "Harbor View"
+          ],
+          "neighborhood_info": [],
+          "trip_types": [
+              {
+                  "name": "business",
+                  "localized_name": "Business",
+                  "value": "95"
+              },
+              {
+                  "name": "couples",
+                  "localized_name": "Couples",
+                  "value": "493"
+              },
+              {
+                  "name": "solo",
+                  "localized_name": "Solo travel",
+                  "value": "69"
+              },
+              {
+                  "name": "family",
+                  "localized_name": "Family",
+                  "value": "545"
+              },
+              {
+                  "name": "friends",
+                  "localized_name": "Friends getaway",
+                  "value": "105"
+              }
+          ],
+          "awards": [],
+          "photos": [
+              {
+                  "id": 481250014,
+                  "is_blessed": false,
+                  "caption": "",
+                  "published_date": "2021-02-26T21:39:38.985Z",
+                  "images": {
+                      "thumbnail": {
+                          "height": 50,
+                          "width": 50,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-t/1c/af/4a/de/la-jolla-cove-hotel-suites.jpg"
+                      },
+                      "small": {
+                          "height": 150,
+                          "width": 150,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-l/1c/af/4a/de/la-jolla-cove-hotel-suites.jpg"
+                      },
+                      "medium": {
+                          "height": 171,
+                          "width": 250,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-f/1c/af/4a/de/la-jolla-cove-hotel-suites.jpg"
+                      },
+                      "large": {
+                          "height": 376,
+                          "width": 550,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-s/1c/af/4a/de/la-jolla-cove-hotel-suites.jpg"
+                      },
+                      "original": {
+                          "height": 874,
+                          "width": 1280,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1c/af/4a/de/la-jolla-cove-hotel-suites.jpg"
+                      }
+                  },
+                  "album": "Room/Suite",
+                  "source": {
+                      "name": "Management",
+                      "localized_name": "Management"
+                  },
+                  "user": {
+                      "username": "Management"
+                  }
+              },
+              {
+                  "id": 481249879,
+                  "is_blessed": false,
+                  "caption": "",
+                  "published_date": "2021-02-26T21:34:53.002Z",
+                  "images": {
+                      "thumbnail": {
+                          "height": 50,
+                          "width": 50,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-t/1c/af/4a/57/la-jolla-cove-hotel-suites.jpg"
+                      },
+                      "small": {
+                          "height": 150,
+                          "width": 150,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-l/1c/af/4a/57/la-jolla-cove-hotel-suites.jpg"
+                      },
+                      "medium": {
+                          "height": 167,
+                          "width": 250,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-f/1c/af/4a/57/la-jolla-cove-hotel-suites.jpg"
+                      },
+                      "large": {
+                          "height": 367,
+                          "width": 550,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-s/1c/af/4a/57/la-jolla-cove-hotel-suites.jpg"
+                      },
+                      "original": {
+                          "height": 836,
+                          "width": 1254,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-o/1c/af/4a/57/la-jolla-cove-hotel-suites.jpg"
+                      }
+                  },
+                  "album": "Other",
+                  "source": {
+                      "name": "Management",
+                      "localized_name": "Management"
+                  },
+                  "user": {
+                      "username": "Management"
+                  }
+              },
+              {
+                  "id": 481250008,
+                  "is_blessed": false,
+                  "caption": "",
+                  "published_date": "2021-02-26T21:39:22.076Z",
+                  "images": {
+                      "thumbnail": {
+                          "height": 50,
+                          "width": 50,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-t/1c/af/4a/d8/la-jolla-cove-hotel-suites.jpg"
+                      },
+                      "small": {
+                          "height": 150,
+                          "width": 150,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-l/1c/af/4a/d8/la-jolla-cove-hotel-suites.jpg"
+                      },
+                      "medium": {
+                          "height": 187,
+                          "width": 250,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-f/1c/af/4a/d8/la-jolla-cove-hotel-suites.jpg"
+                      },
+                      "large": {
+                          "height": 412,
+                          "width": 550,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-s/1c/af/4a/d8/la-jolla-cove-hotel-suites.jpg"
+                      },
+                      "original": {
+                          "height": 959,
+                          "width": 1280,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1c/af/4a/d8/la-jolla-cove-hotel-suites.jpg"
+                      }
+                  },
+                  "album": "Other",
+                  "source": {
+                      "name": "Management",
+                      "localized_name": "Management"
+                  },
+                  "user": {
+                      "username": "Management"
+                  }
+              },
+              {
+                  "id": 481250011,
+                  "is_blessed": false,
+                  "caption": "",
+                  "published_date": "2021-02-26T21:39:35.727Z",
+                  "images": {
+                      "thumbnail": {
+                          "height": 50,
+                          "width": 50,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-t/1c/af/4a/db/la-jolla-cove-hotel-suites.jpg"
+                      },
+                      "small": {
+                          "height": 150,
+                          "width": 150,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-l/1c/af/4a/db/la-jolla-cove-hotel-suites.jpg"
+                      },
+                      "medium": {
+                          "height": 167,
+                          "width": 250,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-f/1c/af/4a/db/la-jolla-cove-hotel-suites.jpg"
+                      },
+                      "large": {
+                          "height": 367,
+                          "width": 550,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-s/1c/af/4a/db/la-jolla-cove-hotel-suites.jpg"
+                      },
+                      "original": {
+                          "height": 853,
+                          "width": 1280,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1c/af/4a/db/la-jolla-cove-hotel-suites.jpg"
+                      }
+                  },
+                  "album": "Other",
+                  "source": {
+                      "name": "Management",
+                      "localized_name": "Management"
+                  },
+                  "user": {
+                      "username": "Management"
+                  }
+              },
+              {
+                  "id": 482703507,
+                  "is_blessed": false,
+                  "caption": "",
+                  "published_date": "2021-03-22T20:58:32.047Z",
+                  "images": {
+                      "thumbnail": {
+                          "height": 50,
+                          "width": 50,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-t/1c/c5/78/93/la-jolla-cove-hotel-suites.jpg"
+                      },
+                      "small": {
+                          "height": 150,
+                          "width": 150,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-l/1c/c5/78/93/la-jolla-cove-hotel-suites.jpg"
+                      },
+                      "medium": {
+                          "height": 158,
+                          "width": 250,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-f/1c/c5/78/93/la-jolla-cove-hotel-suites.jpg"
+                      },
+                      "large": {
+                          "height": 347,
+                          "width": 550,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-s/1c/c5/78/93/la-jolla-cove-hotel-suites.jpg"
+                      },
+                      "original": {
+                          "height": 807,
+                          "width": 1280,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1c/c5/78/93/la-jolla-cove-hotel-suites.jpg"
+                      }
+                  },
+                  "album": "Room/Suite",
+                  "source": {
+                      "name": "Management",
+                      "localized_name": "Management"
+                  },
+                  "user": {
+                      "username": "Management"
+                  }
+              }
+          ]
+      },
+      "location_id": "77391",
+      "name": "La Jolla Cove Hotel",
+      "distance": "1.0321723900720585",
+      "bearing": "northwest",
+      "address_obj": {
+          "street1": "1155 Coast Blvd",
+          "city": "La Jolla",
+          "state": "California",
+          "country": "United States",
+          "postalcode": "92037",
+          "address_string": "1155 Coast Blvd, La Jolla, San Diego, CA 92037"
+      }
+  },
+  {
+      "itemId": "217262",
+      "details": {
+          "itemId": "217262",
+          "location_id": "217262",
+          "name": "La Jolla Shores Hotel",
+          "description": "For decades, the La Jolla Shores Hotel has been the year-round beach retreat of choice for families and vacationers of all types. Nestled right on the ocean in the popular La Jolla Shores, CA community, the hotel’s friendly, warm and welcoming staff is a highlight of the experience.",
+          "web_url": "https://www.tripadvisor.com/Hotel_Review-g32578-d217262-Reviews-La_Jolla_Shores_Hotel-La_Jolla_San_Diego_California.html?m=66827",
+          "address_obj": {
+              "street1": "8110 Camino Del Oro",
+              "street2": "",
+              "city": "La Jolla",
+              "state": "California",
+              "country": "United States",
+              "postalcode": "92037-3199",
+              "address_string": "8110 Camino Del Oro, La Jolla, San Diego, CA 92037-3199"
+          },
+          "ancestors": [
+              {
+                  "level": "City",
+                  "name": "La Jolla",
+                  "location_id": "32578"
+              },
+              {
+                  "level": "Municipality",
+                  "name": "San Diego",
+                  "location_id": "60750"
+              },
+              {
+                  "abbrv": "CA",
+                  "level": "State",
+                  "name": "California",
+                  "location_id": "28926"
+              },
+              {
+                  "level": "Country",
+                  "name": "United States",
+                  "location_id": "191"
+              }
+          ],
+          "latitude": "32.854916",
+          "longitude": "-117.25794",
+          "timezone": "America/Los_Angeles",
+          "write_review": "https://www.tripadvisor.com/UserReview-g32578-d217262-La_Jolla_Shores_Hotel-La_Jolla_San_Diego_California.html?m=66827",
+          "ranking_data": {
+              "geo_location_id": "32578",
+              "ranking_string": "#12 of 23 hotels in La Jolla",
+              "geo_location_name": "La Jolla",
+              "ranking_out_of": "23",
+              "ranking": "12"
+          },
+          "rating": "4.0",
+          "rating_image_url": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.0-66827-5.svg",
+          "num_reviews": "1387",
+          "review_rating_count": {
+              "1": "77",
+              "2": "98",
+              "3": "167",
+              "4": "380",
+              "5": "665"
+          },
+          "subratings": {
+              "0": {
+                  "name": "rate_location",
+                  "localized_name": "Location",
+                  "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss5.0.svg",
+                  "value": "5.0"
+              },
+              "1": {
+                  "name": "rate_sleep",
+                  "localized_name": "Sleep Quality",
+                  "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.0.svg",
+                  "value": "4.0"
+              },
+              "2": {
+                  "name": "rate_room",
+                  "localized_name": "Rooms",
+                  "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.0.svg",
+                  "value": "4.0"
+              },
+              "3": {
+                  "name": "rate_service",
+                  "localized_name": "Service",
+                  "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.5.svg",
+                  "value": "4.5"
+              },
+              "4": {
+                  "name": "rate_value",
+                  "localized_name": "Value",
+                  "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.0.svg",
+                  "value": "4.0"
+              },
+              "5": {
+                  "name": "rate_cleanliness",
+                  "localized_name": "Cleanliness",
+                  "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.0.svg",
+                  "value": "4.0"
+              }
+          },
+          "photo_count": "463",
+          "see_all_photos": "https://www.tripadvisor.com/Hotel_Review-g32578-d217262-m66827-Reviews-La_Jolla_Shores_Hotel-La_Jolla_San_Diego_California.html#photos",
+          "price_level": "$$$$",
+          "amenities": [
+              "Pool",
+              "Restaurant",
+              "Beachfront",
+              "Fitness center",
+              "Internet",
+              "Free Internet",
+              "Bar/Lounge",
+              "Wifi",
+              "Free Wifi",
+              "Kids Activities",
+              "Suites",
+              "Wheelchair access",
+              "Dry Cleaning",
+              "Meeting rooms",
+              "Non-smoking rooms",
+              "Laundry Service",
+              "Banquet Room",
+              "Air conditioning",
+              "Multilingual Staff",
+              "Refrigerator in room",
+              "Conference Facilities",
+              "Non-smoking hotel",
+              "Safe",
+              "Flatscreen TV",
+              "Private Balcony",
+              "Outdoor pool",
+              "Housekeeping",
+              "Bath / Shower",
+              "Coffee / Tea Maker",
+              "English",
+              "24-Hour Front Desk",
+              "Pool / Beach Towels",
+              "Paid Private Parking On-site",
+              "Sun Loungers / Beach Chairs",
+              "Hot Tub",
+              "Business center",
+              "Concierge",
+              "Family Rooms",
+              "Self-Serve Laundry",
+              "Heated pool",
+              "Kids pool",
+              "Parking",
+              "Facilities for Disabled Guests",
+              "Electric vehicle charging station",
+              "Baggage Storage",
+              "Bathrobes",
+              "24-Hour Check-in",
+              "Fence Around Pool",
+              "Complimentary Instant Coffee",
+              "Complimentary Toiletries",
+              "Hair Dryer",
+              "Happy Hour",
+              "Highchairs Available",
+              "Interconnected room(s) available",
+              "Iron",
+              "Kitchenware",
+              "Massage",
+              "Newspaper",
+              "Outdoor Dining Area",
+              "Outdoor Furniture",
+              "Parking Garage",
+              "Patio",
+              "Picnic Area",
+              "Pool View",
+              "Pool with View",
+              "Paid Public Parking On-site",
+              "24-Hour Security",
+              "Special Diet Menus",
+              "Stovetop",
+              "Street Parking",
+              "Sun Umbrellas",
+              "Table Tennis",
+              "Telephone",
+              "Vending Machine",
+              "Wake Up Service / Alarm Clock",
+              "Wardrobe / Closet",
+              "Wine / Champagne",
+              "Beach Access"
+          ],
+          "category": {
+              "name": "hotel",
+              "localized_name": "Hotel"
+          },
+          "subcategory": [
+              {
+                  "name": "hotel",
+                  "localized_name": "Hotel"
+              }
+          ],
+          "styles": [
+              "Residential Neighborhood",
+              "Harbor View"
+          ],
+          "neighborhood_info": [],
+          "trip_types": [
+              {
+                  "name": "business",
+                  "localized_name": "Business",
+                  "value": "160"
+              },
+              {
+                  "name": "couples",
+                  "localized_name": "Couples",
+                  "value": "339"
+              },
+              {
+                  "name": "solo",
+                  "localized_name": "Solo travel",
+                  "value": "43"
+              },
+              {
+                  "name": "family",
+                  "localized_name": "Family",
+                  "value": "609"
+              },
+              {
+                  "name": "friends",
+                  "localized_name": "Friends getaway",
+                  "value": "76"
+              }
+          ],
+          "awards": [],
+          "photos": [
+              {
+                  "id": 740276363,
+                  "is_blessed": false,
+                  "caption": "La Jolla Shores Hotel",
+                  "published_date": "2024-05-10T09:14:38.694Z",
+                  "images": {
+                      "thumbnail": {
+                          "height": 50,
+                          "width": 50,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-t/2c/1f/b8/8b/la-jolla-shores-hotel.jpg"
+                      },
+                      "small": {
+                          "height": 150,
+                          "width": 150,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-l/2c/1f/b8/8b/la-jolla-shores-hotel.jpg"
+                      },
+                      "medium": {
+                          "height": 167,
+                          "width": 250,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-f/2c/1f/b8/8b/la-jolla-shores-hotel.jpg"
+                      },
+                      "large": {
+                          "height": 367,
+                          "width": 550,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-s/2c/1f/b8/8b/la-jolla-shores-hotel.jpg"
+                      },
+                      "original": {
+                          "height": 801,
+                          "width": 1200,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-o/2c/1f/b8/8b/la-jolla-shores-hotel.jpg"
+                      }
+                  },
+                  "album": "Hotel & Grounds",
+                  "source": {
+                      "name": "Management",
+                      "localized_name": "Management"
+                  }
+              },
+              {
+                  "id": 248963646,
+                  "is_blessed": false,
+                  "caption": "",
+                  "published_date": "2017-03-31T23:34:11.505Z",
+                  "images": {
+                      "thumbnail": {
+                          "height": 50,
+                          "width": 50,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-t/0e/d6/e2/3e/photo2jpg.jpg"
+                      },
+                      "small": {
+                          "height": 150,
+                          "width": 150,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-l/0e/d6/e2/3e/photo2jpg.jpg"
+                      },
+                      "medium": {
+                          "height": 188,
+                          "width": 250,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-f/0e/d6/e2/3e/photo2jpg.jpg"
+                      },
+                      "large": {
+                          "height": 413,
+                          "width": 550,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-s/0e/d6/e2/3e/photo2jpg.jpg"
+                      },
+                      "original": {
+                          "height": 1536,
+                          "width": 2048,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/d6/e2/3e/photo2jpg.jpg"
+                      }
+                  },
+                  "album": "Other",
+                  "source": {
+                      "name": "Traveler",
+                      "localized_name": "Traveler"
+                  },
+                  "user": {
+                      "username": "F3643TSkarenl"
+                  }
+              },
+              {
+                  "id": 248963647,
+                  "is_blessed": false,
+                  "caption": "",
+                  "published_date": "2017-03-31T23:34:11.534Z",
+                  "images": {
+                      "thumbnail": {
+                          "height": 50,
+                          "width": 50,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-t/0e/d6/e2/3f/photo3jpg.jpg"
+                      },
+                      "small": {
+                          "height": 150,
+                          "width": 150,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-l/0e/d6/e2/3f/photo3jpg.jpg"
+                      },
+                      "medium": {
+                          "height": 188,
+                          "width": 250,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-f/0e/d6/e2/3f/photo3jpg.jpg"
+                      },
+                      "large": {
+                          "height": 413,
+                          "width": 550,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-s/0e/d6/e2/3f/photo3jpg.jpg"
+                      },
+                      "original": {
+                          "height": 1440,
+                          "width": 1920,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/d6/e2/3f/photo3jpg.jpg"
+                      }
+                  },
+                  "album": "Other",
+                  "source": {
+                      "name": "Traveler",
+                      "localized_name": "Traveler"
+                  },
+                  "user": {
+                      "username": "F3643TSkarenl"
+                  }
+              },
+              {
+                  "id": 242971030,
+                  "is_blessed": false,
+                  "caption": "Dining room has an outstanding view of the ocean",
+                  "published_date": "2017-02-20T03:03:25.729Z",
+                  "images": {
+                      "thumbnail": {
+                          "height": 50,
+                          "width": 50,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-t/0e/7b/71/96/dining-room-has-an-outstanding.jpg"
+                      },
+                      "small": {
+                          "height": 150,
+                          "width": 150,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-l/0e/7b/71/96/dining-room-has-an-outstanding.jpg"
+                      },
+                      "medium": {
+                          "height": 188,
+                          "width": 250,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-f/0e/7b/71/96/dining-room-has-an-outstanding.jpg"
+                      },
+                      "large": {
+                          "height": 413,
+                          "width": 550,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-s/0e/7b/71/96/dining-room-has-an-outstanding.jpg"
+                      },
+                      "original": {
+                          "height": 1500,
+                          "width": 2000,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/7b/71/96/dining-room-has-an-outstanding.jpg"
+                      }
+                  },
+                  "album": "Dining    ",
+                  "source": {
+                      "name": "Traveler",
+                      "localized_name": "Traveler"
+                  },
+                  "user": {
+                      "username": "stanw734"
+                  }
+              },
+              {
+                  "id": 241251758,
+                  "is_blessed": false,
+                  "caption": "View from the room",
+                  "published_date": "2017-02-08T18:30:50.259Z",
+                  "images": {
+                      "thumbnail": {
+                          "height": 50,
+                          "width": 50,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-t/0e/61/35/ae/view-from-the-room.jpg"
+                      },
+                      "small": {
+                          "height": 150,
+                          "width": 150,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-l/0e/61/35/ae/view-from-the-room.jpg"
+                      },
+                      "medium": {
+                          "height": 188,
+                          "width": 250,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-f/0e/61/35/ae/view-from-the-room.jpg"
+                      },
+                      "large": {
+                          "height": 412,
+                          "width": 550,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-s/0e/61/35/ae/view-from-the-room.jpg"
+                      },
+                      "original": {
+                          "height": 1224,
+                          "width": 1632,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/61/35/ae/view-from-the-room.jpg"
+                      }
+                  },
+                  "album": "View from Room",
+                  "source": {
+                      "name": "Traveler",
+                      "localized_name": "Traveler"
+                  },
+                  "user": {
+                      "username": "Sasquatchonsugarlaof"
+                  }
+              }
+          ]
+      },
+      "location_id": "217262",
+      "name": "La Jolla Shores Hotel",
+      "distance": "0.8468004712635926",
+      "bearing": "north",
+      "address_obj": {
+          "street1": "8110 Camino Del Oro",
+          "street2": "",
+          "city": "La Jolla",
+          "state": "California",
+          "country": "United States",
+          "postalcode": "92037-3199",
+          "address_string": "8110 Camino Del Oro, La Jolla, San Diego, CA 92037-3199"
+      }
+  },
+  {
+      "itemId": "77413",
+      "details": {
+          "itemId": "77413",
+          "location_id": "77413",
+          "name": "La Jolla Beach & Tennis Club",
+          "description": "Along the shores of the California coast stands one of the region’s most timeless beachfront resorts, a treasured destination for more than 80 years that still feels like a San Diego secret – La Jolla Beach & Tennis Club. Explore this landmark hotel.",
+          "web_url": "https://www.tripadvisor.com/Hotel_Review-g32578-d77413-Reviews-La_Jolla_Beach_Tennis_Club-La_Jolla_San_Diego_California.html?m=66827",
+          "address_obj": {
+              "street1": "2000 Spindrift Drive",
+              "street2": "",
+              "city": "La Jolla",
+              "state": "California",
+              "country": "United States",
+              "postalcode": "92037-3237",
+              "address_string": "2000 Spindrift Drive, La Jolla, San Diego, CA 92037-3237"
+          },
+          "ancestors": [
+              {
+                  "level": "City",
+                  "name": "La Jolla",
+                  "location_id": "32578"
+              },
+              {
+                  "level": "Municipality",
+                  "name": "San Diego",
+                  "location_id": "60750"
+              },
+              {
+                  "abbrv": "CA",
+                  "level": "State",
+                  "name": "California",
+                  "location_id": "28926"
+              },
+              {
+                  "level": "Country",
+                  "name": "United States",
+                  "location_id": "191"
+              }
+          ],
+          "latitude": "32.852554",
+          "longitude": "-117.260414",
+          "timezone": "America/Los_Angeles",
+          "write_review": "https://www.tripadvisor.com/UserReview-g32578-d77413-La_Jolla_Beach_Tennis_Club-La_Jolla_San_Diego_California.html?m=66827",
+          "ranking_data": {
+              "geo_location_id": "32578",
+              "ranking_string": "#11 of 23 hotels in La Jolla",
+              "geo_location_name": "La Jolla",
+              "ranking_out_of": "23",
+              "ranking": "11"
+          },
+          "rating": "4.5",
+          "rating_image_url": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.5-66827-5.svg",
+          "num_reviews": "572",
+          "review_rating_count": {
+              "1": "28",
+              "2": "34",
+              "3": "50",
+              "4": "100",
+              "5": "360"
+          },
+          "subratings": {
+              "0": {
+                  "name": "rate_location",
+                  "localized_name": "Location",
+                  "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss5.0.svg",
+                  "value": "5.0"
+              },
+              "1": {
+                  "name": "rate_sleep",
+                  "localized_name": "Sleep Quality",
+                  "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.5.svg",
+                  "value": "4.5"
+              },
+              "2": {
+                  "name": "rate_room",
+                  "localized_name": "Rooms",
+                  "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.0.svg",
+                  "value": "4.0"
+              },
+              "3": {
+                  "name": "rate_service",
+                  "localized_name": "Service",
+                  "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.5.svg",
+                  "value": "4.5"
+              },
+              "4": {
+                  "name": "rate_value",
+                  "localized_name": "Value",
+                  "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.0.svg",
+                  "value": "4.0"
+              },
+              "5": {
+                  "name": "rate_cleanliness",
+                  "localized_name": "Cleanliness",
+                  "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.5.svg",
+                  "value": "4.5"
+              }
+          },
+          "photo_count": "238",
+          "see_all_photos": "https://www.tripadvisor.com/Hotel_Review-g32578-d77413-m66827-Reviews-La_Jolla_Beach_Tennis_Club-La_Jolla_San_Diego_California.html#photos",
+          "price_level": "$$$$",
+          "amenities": [
+              "Pool",
+              "Free parking",
+              "Restaurant",
+              "Suites",
+              "Beachfront",
+              "Wheelchair access",
+              "Internet",
+              "Kids Activities",
+              "Free Internet",
+              "Bar/Lounge",
+              "Wifi",
+              "Free Wifi",
+              "Non-smoking rooms",
+              "Tennis Court",
+              "Laundry Service",
+              "Air conditioning",
+              "Multilingual Staff",
+              "Microwave",
+              "Flatscreen TV",
+              "Outdoor pool",
+              "Parking",
+              "Kitchenette",
+              "Dry Cleaning",
+              "Meeting rooms",
+              "Golf course",
+              "Business center",
+              "Fitness center",
+              "Concierge",
+              "Banquet Room",
+              "Family Rooms",
+              "Self-Serve Laundry",
+              "Refrigerator in room",
+              "Conference Facilities",
+              "Non-smoking hotel",
+              "Safe",
+              "Heated pool",
+              "Kids pool",
+              "Breakfast Available",
+              "Facilities for Disabled Guests",
+              "Housekeeping",
+              "Electric vehicle charging station",
+              "Bath / Shower",
+              "Bathrobes",
+              "BBQ Facilities",
+              "24-Hour Check-in",
+              "Children's Playground",
+              "Coffee / Tea Maker",
+              "English",
+              "Facial Treatments",
+              "Complimentary Toiletries",
+              "24-Hour Front Desk",
+              "Full Body Massage",
+              "Gift Shop",
+              "Hair Dryer",
+              "Highchairs Available",
+              "Interconnected room(s) available",
+              "Iron",
+              "Kids' Outdoor Play Equipment",
+              "Kitchenware",
+              "Massage",
+              "Newspaper",
+              "Outdoor Dining Area",
+              "Outdoor Fireplace",
+              "Outdoor Furniture",
+              "Patio",
+              "Picnic Area",
+              "Pool / Beach Towels",
+              "24-Hour Security",
+              "Stovetop",
+              "Sun Loungers / Beach Chairs",
+              "Sun Umbrellas",
+              "Telephone",
+              "Wake Up Service / Alarm Clock",
+              "Wardrobe / Closet",
+              "Wine / Champagne",
+              "Beach Access"
+          ],
+          "category": {
+              "name": "hotel",
+              "localized_name": "Hotel"
+          },
+          "subcategory": [
+              {
+                  "name": "hotel",
+                  "localized_name": "Hotel"
+              }
+          ],
+          "styles": [
+              "Hidden Gem",
+              "Residential Neighborhood"
+          ],
+          "neighborhood_info": [],
+          "trip_types": [
+              {
+                  "name": "business",
+                  "localized_name": "Business",
+                  "value": "43"
+              },
+              {
+                  "name": "couples",
+                  "localized_name": "Couples",
+                  "value": "108"
+              },
+              {
+                  "name": "solo",
+                  "localized_name": "Solo travel",
+                  "value": "20"
+              },
+              {
+                  "name": "family",
+                  "localized_name": "Family",
+                  "value": "276"
+              },
+              {
+                  "name": "friends",
+                  "localized_name": "Friends getaway",
+                  "value": "51"
+              }
+          ],
+          "awards": [],
+          "photos": [
+              {
+                  "id": 740276327,
+                  "is_blessed": false,
+                  "caption": "Exclusive Beach",
+                  "published_date": "2024-05-10T09:14:35.988Z",
+                  "images": {
+                      "thumbnail": {
+                          "height": 50,
+                          "width": 50,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-t/2c/1f/b8/67/exclusive-beach.jpg"
+                      },
+                      "small": {
+                          "height": 150,
+                          "width": 150,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-l/2c/1f/b8/67/exclusive-beach.jpg"
+                      },
+                      "medium": {
+                          "height": 167,
+                          "width": 250,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-f/2c/1f/b8/67/exclusive-beach.jpg"
+                      },
+                      "large": {
+                          "height": 367,
+                          "width": 550,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-s/2c/1f/b8/67/exclusive-beach.jpg"
+                      },
+                      "original": {
+                          "height": 853,
+                          "width": 1280,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2c/1f/b8/67/exclusive-beach.jpg"
+                      }
+                  },
+                  "album": "Pool/Beach Area",
+                  "source": {
+                      "name": "Management",
+                      "localized_name": "Management"
+                  }
+              },
+              {
+                  "id": 59873085,
+                  "is_blessed": false,
+                  "caption": "Beachfront Suite",
+                  "published_date": "2013-03-02T18:10:15.36Z",
+                  "images": {
+                      "thumbnail": {
+                          "height": 50,
+                          "width": 50,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-t/03/91/97/3d/la-jolla-beach-and-tennis.jpg"
+                      },
+                      "small": {
+                          "height": 150,
+                          "width": 150,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-l/03/91/97/3d/la-jolla-beach-and-tennis.jpg"
+                      },
+                      "medium": {
+                          "height": 166,
+                          "width": 250,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-f/03/91/97/3d/la-jolla-beach-and-tennis.jpg"
+                      },
+                      "large": {
+                          "height": 365,
+                          "width": 550,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-s/03/91/97/3d/la-jolla-beach-and-tennis.jpg"
+                      },
+                      "original": {
+                          "height": 1330,
+                          "width": 2000,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-o/03/91/97/3d/la-jolla-beach-and-tennis.jpg"
+                      }
+                  },
+                  "album": "Room/Suite",
+                  "source": {
+                      "name": "Management",
+                      "localized_name": "Management"
+                  },
+                  "user": {
+                      "username": "Management"
+                  }
+              },
+              {
+                  "id": 84544795,
+                  "is_blessed": false,
+                  "caption": "Location of #202: Best suite!",
+                  "published_date": "2013-11-19T22:06:36.501Z",
+                  "images": {
+                      "thumbnail": {
+                          "height": 50,
+                          "width": 50,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-t/05/0a/0d/1b/la-jolla-beach-and-tennis.jpg"
+                      },
+                      "small": {
+                          "height": 150,
+                          "width": 150,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-l/05/0a/0d/1b/la-jolla-beach-and-tennis.jpg"
+                      },
+                      "medium": {
+                          "height": 181,
+                          "width": 250,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-f/05/0a/0d/1b/la-jolla-beach-and-tennis.jpg"
+                      },
+                      "large": {
+                          "height": 399,
+                          "width": 550,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-s/05/0a/0d/1b/la-jolla-beach-and-tennis.jpg"
+                      },
+                      "original": {
+                          "height": 604,
+                          "width": 832,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-o/05/0a/0d/1b/la-jolla-beach-and-tennis.jpg"
+                      }
+                  },
+                  "album": "Room/Suite",
+                  "source": {
+                      "name": "Traveler",
+                      "localized_name": "Traveler"
+                  },
+                  "user": {
+                      "username": "ewkIowa"
+                  }
+              },
+              {
+                  "id": 202831244,
+                  "is_blessed": false,
+                  "caption": "",
+                  "published_date": "2016-07-20T19:06:06.607Z",
+                  "images": {
+                      "thumbnail": {
+                          "height": 50,
+                          "width": 50,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-t/0c/16/f5/8c/photo2jpg.jpg"
+                      },
+                      "small": {
+                          "height": 150,
+                          "width": 150,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-l/0c/16/f5/8c/photo2jpg.jpg"
+                      },
+                      "medium": {
+                          "height": 188,
+                          "width": 250,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-f/0c/16/f5/8c/photo2jpg.jpg"
+                      },
+                      "large": {
+                          "height": 413,
+                          "width": 550,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-s/0c/16/f5/8c/photo2jpg.jpg"
+                      },
+                      "original": {
+                          "height": 1536,
+                          "width": 2048,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-o/0c/16/f5/8c/photo2jpg.jpg"
+                      }
+                  },
+                  "album": "Other",
+                  "source": {
+                      "name": "Traveler",
+                      "localized_name": "Traveler"
+                  },
+                  "user": {
+                      "username": "625maline"
+                  }
+              },
+              {
+                  "id": 194988537,
+                  "is_blessed": false,
+                  "caption": "Tennis courts",
+                  "published_date": "2016-06-15T17:31:56.392Z",
+                  "images": {
+                      "thumbnail": {
+                          "height": 50,
+                          "width": 50,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-t/0b/9f/49/f9/tennis-courts.jpg"
+                      },
+                      "small": {
+                          "height": 150,
+                          "width": 150,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-l/0b/9f/49/f9/tennis-courts.jpg"
+                      },
+                      "medium": {
+                          "height": 166,
+                          "width": 250,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-f/0b/9f/49/f9/tennis-courts.jpg"
+                      },
+                      "large": {
+                          "height": 366,
+                          "width": 550,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-s/0b/9f/49/f9/tennis-courts.jpg"
+                      },
+                      "original": {
+                          "height": 480,
+                          "width": 720,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-o/0b/9f/49/f9/tennis-courts.jpg"
+                      }
+                  },
+                  "album": "Family/Play Areas",
+                  "source": {
+                      "name": "Traveler",
+                      "localized_name": "Traveler"
+                  },
+                  "user": {
+                      "username": "Quitawood"
+                  }
+              }
+          ]
+      },
+      "location_id": "77413",
+      "name": "La Jolla Beach & Tennis Club",
+      "distance": "0.70050937490139",
+      "bearing": "north",
+      "address_obj": {
+          "street1": "2000 Spindrift Drive",
+          "street2": "",
+          "city": "La Jolla",
+          "state": "California",
+          "country": "United States",
+          "postalcode": "92037-3237",
+          "address_string": "2000 Spindrift Drive, La Jolla, San Diego, CA 92037-3237"
+      }
+  },
+  {
+      "itemId": "77404",
+      "details": {
+          "itemId": "77404",
+          "location_id": "77404",
+          "name": "Empress Hotel La Jolla",
+          "description": "Experience the Jewel of Southern California at the Empress Hotel, a Boutique hotel in the heart of La Jolla Village. Stroll to La Jolla Cove and take in stunning sunsets and breathtaking coastline views. La Jolla Village is home to fabulous restaurants, galleries and shops all steps from the Lobby of this Upscale Boutique Hotel. The Empress La Jolla is a short drive away from popular San Diego attractions such as The Gaslamp, Old Town and Seaport Village. Family travel to San Diego Zoo, Sea World and Legoland can begin here in large rooms with two beds, a short drive to attractions and a block from the Sea Lions at Children's Beach. Business Travel is also made easy at Empress Hotel with Complimentary WiFi and a Business Center just minutes from UCSD, Scripps Medical, Bio-Med Companies and UTC Westfield Center. The Empress Hotel La Jolla is the perfect location to embark on an unforgettable vacation or business trip.Check our website for special packages.",
+          "web_url": "https://www.tripadvisor.com/Hotel_Review-g32578-d77404-Reviews-Empress_Hotel_La_Jolla-La_Jolla_San_Diego_California.html?m=66827",
+          "address_obj": {
+              "street1": "7766 Fay Ave",
+              "street2": "",
+              "city": "La Jolla",
+              "state": "California",
+              "country": "United States",
+              "postalcode": "92037",
+              "address_string": "7766 Fay Ave, La Jolla, San Diego, CA 92037"
+          },
+          "ancestors": [
+              {
+                  "level": "City",
+                  "name": "La Jolla",
+                  "location_id": "32578"
+              },
+              {
+                  "level": "Municipality",
+                  "name": "San Diego",
+                  "location_id": "60750"
+              },
+              {
+                  "abbrv": "CA",
+                  "level": "State",
+                  "name": "California",
+                  "location_id": "28926"
+              },
+              {
+                  "level": "Country",
+                  "name": "United States",
+                  "location_id": "191"
+              }
+          ],
+          "latitude": "32.844597",
+          "longitude": "-117.27537",
+          "timezone": "America/Los_Angeles",
+          "write_review": "https://www.tripadvisor.com/UserReview-g32578-d77404-Empress_Hotel_La_Jolla-La_Jolla_San_Diego_California.html?m=66827",
+          "ranking_data": {
+              "geo_location_id": "32578",
+              "ranking_string": "#6 of 23 hotels in La Jolla",
+              "geo_location_name": "La Jolla",
+              "ranking_out_of": "23",
+              "ranking": "6"
+          },
+          "rating": "4.5",
+          "rating_image_url": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.5-66827-5.svg",
+          "num_reviews": "1477",
+          "review_rating_count": {
+              "1": "21",
+              "2": "21",
+              "3": "76",
+              "4": "384",
+              "5": "975"
+          },
+          "subratings": {
+              "0": {
+                  "name": "rate_location",
+                  "localized_name": "Location",
+                  "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss5.0.svg",
+                  "value": "5.0"
+              },
+              "1": {
+                  "name": "rate_sleep",
+                  "localized_name": "Sleep Quality",
+                  "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.5.svg",
+                  "value": "4.5"
+              },
+              "2": {
+                  "name": "rate_room",
+                  "localized_name": "Rooms",
+                  "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.5.svg",
+                  "value": "4.5"
+              },
+              "3": {
+                  "name": "rate_service",
+                  "localized_name": "Service",
+                  "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.5.svg",
+                  "value": "4.5"
+              },
+              "4": {
+                  "name": "rate_value",
+                  "localized_name": "Value",
+                  "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.5.svg",
+                  "value": "4.5"
+              },
+              "5": {
+                  "name": "rate_cleanliness",
+                  "localized_name": "Cleanliness",
+                  "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.5.svg",
+                  "value": "4.5"
+              }
+          },
+          "photo_count": "306",
+          "see_all_photos": "https://www.tripadvisor.com/Hotel_Review-g32578-d77404-m66827-Reviews-Empress_Hotel_La_Jolla-La_Jolla_San_Diego_California.html#photos",
+          "price_level": "$$$$",
+          "amenities": [
+              "Self-Serve Laundry",
+              "Kids Stay Free",
+              "Electric vehicle charging station",
+              "Restaurant",
+              "Business center",
+              "Internet",
+              "Room service",
+              "Free Internet",
+              "Wifi",
+              "Free Wifi",
+              "Suites",
+              "Wheelchair access",
+              "Bar/Lounge",
+              "Pets Allowed",
+              "Meeting rooms",
+              "Non-smoking rooms",
+              "Fitness center",
+              "Concierge",
+              "Banquet Room",
+              "Air conditioning",
+              "Family Rooms",
+              "Multilingual Staff",
+              "Accessible rooms",
+              "Microwave",
+              "Refrigerator in room",
+              "Conference Facilities",
+              "Non-smoking hotel",
+              "Safe",
+              "Flatscreen TV",
+              "Facilities for Disabled Guests",
+              "Housekeeping",
+              "Bathrobes",
+              "Blackout Curtains",
+              "Coffee / Tea Maker",
+              "Desk",
+              "English",
+              "Complimentary Instant Coffee",
+              "Complimentary Toiletries",
+              "24-Hour Front Desk",
+              "Hair Dryer",
+              "Iron",
+              "Ironing Service",
+              "Paid Private Parking On-site",
+              "Paid Public Parking Nearby",
+              "Spanish",
+              "Wake Up Service / Alarm Clock",
+              "Free Wifi in the Business Center",
+              "Laptop Safe",
+              "Secured Parking",
+              "Vending Machine",
+              "Beach Access"
+          ],
+          "category": {
+              "name": "hotel",
+              "localized_name": "Hotel"
+          },
+          "subcategory": [
+              {
+                  "name": "hotel",
+                  "localized_name": "Hotel"
+              }
+          ],
+          "styles": [
+              "Quiet",
+              "Modern"
+          ],
+          "neighborhood_info": [],
+          "trip_types": [
+              {
+                  "name": "business",
+                  "localized_name": "Business",
+                  "value": "208"
+              },
+              {
+                  "name": "couples",
+                  "localized_name": "Couples",
+                  "value": "541"
+              },
+              {
+                  "name": "solo",
+                  "localized_name": "Solo travel",
+                  "value": "79"
+              },
+              {
+                  "name": "family",
+                  "localized_name": "Family",
+                  "value": "392"
+              },
+              {
+                  "name": "friends",
+                  "localized_name": "Friends getaway",
+                  "value": "102"
+              }
+          ],
+          "awards": [
+              {
+                  "award_type": "Travelers Choice",
+                  "year": "2024",
+                  "images": {
+                      "tiny": "https://static.tacdn.com/img2/travelers_choice/widgets/tchotel_2024_L.png",
+                      "small": "https://static.tacdn.com/img2/travelers_choice/widgets/tchotel_2024_L.png",
+                      "large": "https://static.tacdn.com/img2/travelers_choice/widgets/tchotel_2024_L.png"
+                  },
+                  "categories": [],
+                  "display_name": "Travelers Choice"
+              },
+              {
+                  "award_type": "Travelers Choice",
+                  "year": "2023",
+                  "images": {
+                      "tiny": "https://static.tacdn.com/img2/travelers_choice/widgets/tchotel_2023_L.png",
+                      "small": "https://static.tacdn.com/img2/travelers_choice/widgets/tchotel_2023_L.png",
+                      "large": "https://static.tacdn.com/img2/travelers_choice/widgets/tchotel_2023_L.png"
+                  },
+                  "categories": [],
+                  "display_name": "Travelers Choice"
+              }
+          ],
+          "photos": [
+              {
+                  "id": 478865531,
+                  "is_blessed": false,
+                  "caption": "Exterior two blocks from the Pacific Ocean",
+                  "published_date": "2021-01-19T00:32:45.685Z",
+                  "images": {
+                      "thumbnail": {
+                          "height": 50,
+                          "width": 50,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-t/1c/8a/e8/7b/exterior-two-blocks-from.jpg"
+                      },
+                      "small": {
+                          "height": 150,
+                          "width": 150,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-l/1c/8a/e8/7b/exterior-two-blocks-from.jpg"
+                      },
+                      "medium": {
+                          "height": 167,
+                          "width": 250,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-f/1c/8a/e8/7b/exterior-two-blocks-from.jpg"
+                      },
+                      "large": {
+                          "height": 367,
+                          "width": 550,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-s/1c/8a/e8/7b/exterior-two-blocks-from.jpg"
+                      },
+                      "original": {
+                          "height": 853,
+                          "width": 1280,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1c/8a/e8/7b/exterior-two-blocks-from.jpg"
+                      }
+                  },
+                  "album": "Hotel & Grounds",
+                  "source": {
+                      "name": "Management",
+                      "localized_name": "Management"
+                  },
+                  "user": {
+                      "username": "Management"
+                  }
+              },
+              {
+                  "id": 454960292,
+                  "is_blessed": false,
+                  "caption": "Hotel Entrance",
+                  "published_date": "2020-03-09T03:20:36.366Z",
+                  "images": {
+                      "thumbnail": {
+                          "height": 50,
+                          "width": 50,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-t/1b/1e/24/a4/hotel-entrance.jpg"
+                      },
+                      "small": {
+                          "height": 150,
+                          "width": 150,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-l/1b/1e/24/a4/hotel-entrance.jpg"
+                      },
+                      "medium": {
+                          "height": 167,
+                          "width": 250,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-f/1b/1e/24/a4/hotel-entrance.jpg"
+                      },
+                      "large": {
+                          "height": 367,
+                          "width": 550,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-s/1b/1e/24/a4/hotel-entrance.jpg"
+                      },
+                      "original": {
+                          "height": 853,
+                          "width": 1280,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1b/1e/24/a4/hotel-entrance.jpg"
+                      }
+                  },
+                  "album": "Hotel & Grounds",
+                  "source": {
+                      "name": "Management",
+                      "localized_name": "Management"
+                  },
+                  "user": {
+                      "username": "Management"
+                  }
+              },
+              {
+                  "id": 454960043,
+                  "is_blessed": false,
+                  "caption": "",
+                  "published_date": "2020-03-09T03:16:36.167Z",
+                  "images": {
+                      "thumbnail": {
+                          "height": 50,
+                          "width": 50,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-t/1b/1e/23/ab/empress-hotel-la-jolla.jpg"
+                      },
+                      "small": {
+                          "height": 150,
+                          "width": 150,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-l/1b/1e/23/ab/empress-hotel-la-jolla.jpg"
+                      },
+                      "medium": {
+                          "height": 167,
+                          "width": 250,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-f/1b/1e/23/ab/empress-hotel-la-jolla.jpg"
+                      },
+                      "large": {
+                          "height": 367,
+                          "width": 550,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-s/1b/1e/23/ab/empress-hotel-la-jolla.jpg"
+                      },
+                      "original": {
+                          "height": 853,
+                          "width": 1280,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1b/1e/23/ab/empress-hotel-la-jolla.jpg"
+                      }
+                  },
+                  "album": "Room/Suite",
+                  "source": {
+                      "name": "Management",
+                      "localized_name": "Management"
+                  },
+                  "user": {
+                      "username": "Management"
+                  }
+              },
+              {
+                  "id": 454960155,
+                  "is_blessed": false,
+                  "caption": "",
+                  "published_date": "2020-03-09T03:18:23.535Z",
+                  "images": {
+                      "thumbnail": {
+                          "height": 50,
+                          "width": 50,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-t/1b/1e/24/1b/empress-hotel-la-jolla.jpg"
+                      },
+                      "small": {
+                          "height": 150,
+                          "width": 150,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-l/1b/1e/24/1b/empress-hotel-la-jolla.jpg"
+                      },
+                      "medium": {
+                          "height": 167,
+                          "width": 250,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-f/1b/1e/24/1b/empress-hotel-la-jolla.jpg"
+                      },
+                      "large": {
+                          "height": 367,
+                          "width": 550,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-s/1b/1e/24/1b/empress-hotel-la-jolla.jpg"
+                      },
+                      "original": {
+                          "height": 853,
+                          "width": 1280,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1b/1e/24/1b/empress-hotel-la-jolla.jpg"
+                      }
+                  },
+                  "album": "Room/Suite",
+                  "source": {
+                      "name": "Management",
+                      "localized_name": "Management"
+                  },
+                  "user": {
+                      "username": "Management"
+                  }
+              },
+              {
+                  "id": 454960111,
+                  "is_blessed": false,
+                  "caption": "",
+                  "published_date": "2020-03-09T03:17:19.048Z",
+                  "images": {
+                      "thumbnail": {
+                          "height": 50,
+                          "width": 50,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-t/1b/1e/23/ef/empress-hotel-la-jolla.jpg"
+                      },
+                      "small": {
+                          "height": 150,
+                          "width": 150,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-l/1b/1e/23/ef/empress-hotel-la-jolla.jpg"
+                      },
+                      "medium": {
+                          "height": 167,
+                          "width": 250,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-f/1b/1e/23/ef/empress-hotel-la-jolla.jpg"
+                      },
+                      "large": {
+                          "height": 367,
+                          "width": 550,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-s/1b/1e/23/ef/empress-hotel-la-jolla.jpg"
+                      },
+                      "original": {
+                          "height": 853,
+                          "width": 1280,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1b/1e/23/ef/empress-hotel-la-jolla.jpg"
+                      }
+                  },
+                  "album": "Bathroom",
+                  "source": {
+                      "name": "Management",
+                      "localized_name": "Management"
+                  },
+                  "user": {
+                      "username": "Management"
+                  }
+              }
+          ]
+      },
+      "location_id": "77404",
+      "name": "Empress Hotel La Jolla",
+      "distance": "1.0314691429954732",
+      "bearing": "west",
+      "address_obj": {
+          "street1": "7766 Fay Ave",
+          "street2": "",
+          "city": "La Jolla",
+          "state": "California",
+          "country": "United States",
+          "postalcode": "92037",
+          "address_string": "7766 Fay Ave, La Jolla, San Diego, CA 92037"
+      }
+  },
+  {
+      "itemId": "119731",
+      "details": {
+          "itemId": "119731",
+          "location_id": "119731",
+          "name": "Hotel La Jolla, Curio Collection by Hilton",
+          "description": "Daily Mandatory Destination Charge includes: Premium guest internet access (up to 3 devices); daily $30 food and beverage credit for use in all hotel outlets; 2 hour bike rental. Nestled in the heart of La Jolla Shores, Hotel La Jolla stands as a testament to refined luxury. Renowned for its sweeping ocean views and warm inviting ambiance, our landmark destination welcomes guests to bask in the California sunshine and enjoy incomparable dining. Our guest rooms and suites offer plush bedding and sophisticated amenities, as well as furnished balconies or patios, many with sparkling ocean views. Guests enjoy dining at Sea and Sky, the penthouse restaurant featuring James Beard nominated Chef Anthony Wells, set to debut in March 2024. Hiatus Lounge, located on the ground floor and adjacent to the pool and lobby, is a lushly landscaped tropical oasis featuring an outdoor fireplace where guests enjoy refreshing libations in an inviting alfresco.",
+          "web_url": "https://www.tripadvisor.com/Hotel_Review-g32578-d119731-Reviews-Hotel_La_Jolla_Curio_Collection_by_Hilton-La_Jolla_San_Diego_California.html?m=66827",
+          "address_obj": {
+              "street1": "7955 La Jolla Shores Drive",
+              "street2": "",
+              "city": "La Jolla",
+              "state": "California",
+              "country": "United States",
+              "postalcode": "92037",
+              "address_string": "7955 La Jolla Shores Drive, La Jolla, San Diego, CA 92037"
+          },
+          "ancestors": [
+              {
+                  "level": "City",
+                  "name": "La Jolla",
+                  "location_id": "32578"
+              },
+              {
+                  "level": "Municipality",
+                  "name": "San Diego",
+                  "location_id": "60750"
+              },
+              {
+                  "abbrv": "CA",
+                  "level": "State",
+                  "name": "California",
+                  "location_id": "28926"
+              },
+              {
+                  "level": "Country",
+                  "name": "United States",
+                  "location_id": "191"
+              }
+          ],
+          "latitude": "32.851196",
+          "longitude": "-117.25324",
+          "timezone": "America/Los_Angeles",
+          "phone": "18444428746",
+          "write_review": "https://www.tripadvisor.com/UserReview-g32578-d119731-Hotel_La_Jolla_Curio_Collection_by_Hilton-La_Jolla_San_Diego_California.html?m=66827",
+          "ranking_data": {
+              "geo_location_id": "32578",
+              "ranking_string": "#18 of 23 hotels in La Jolla",
+              "geo_location_name": "La Jolla",
+              "ranking_out_of": "23",
+              "ranking": "18"
+          },
+          "rating": "4.0",
+          "rating_image_url": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.0-66827-5.svg",
+          "num_reviews": "13",
+          "review_rating_count": {
+              "1": "3",
+              "2": "0",
+              "3": "1",
+              "4": "1",
+              "5": "8"
+          },
+          "subratings": {
+              "0": {
+                  "name": "rate_location",
+                  "localized_name": "Location",
+                  "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss5.0.svg",
+                  "value": "5.0"
+              },
+              "1": {
+                  "name": "rate_sleep",
+                  "localized_name": "Sleep Quality",
+                  "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.5.svg",
+                  "value": "4.5"
+              },
+              "2": {
+                  "name": "rate_room",
+                  "localized_name": "Rooms",
+                  "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss5.0.svg",
+                  "value": "5.0"
+              },
+              "3": {
+                  "name": "rate_service",
+                  "localized_name": "Service",
+                  "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss5.0.svg",
+                  "value": "5.0"
+              },
+              "4": {
+                  "name": "rate_value",
+                  "localized_name": "Value",
+                  "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.5.svg",
+                  "value": "4.5"
+              },
+              "5": {
+                  "name": "rate_cleanliness",
+                  "localized_name": "Cleanliness",
+                  "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss5.0.svg",
+                  "value": "5.0"
+              }
+          },
+          "photo_count": "102",
+          "see_all_photos": "https://www.tripadvisor.com/Hotel_Review-g32578-d119731-m66827-Reviews-Hotel_La_Jolla_Curio_Collection_by_Hilton-La_Jolla_San_Diego_California.html#photos",
+          "price_level": "$$$$",
+          "hours": {
+              "periods": [
+                  {
+                      "open": {
+                          "day": 1,
+                          "time": "0000"
+                      },
+                      "close": {
+                          "day": 1,
+                          "time": "0000"
+                      }
+                  },
+                  {
+                      "open": {
+                          "day": 2,
+                          "time": "0000"
+                      },
+                      "close": {
+                          "day": 2,
+                          "time": "0000"
+                      }
+                  },
+                  {
+                      "open": {
+                          "day": 3,
+                          "time": "0000"
+                      },
+                      "close": {
+                          "day": 3,
+                          "time": "0000"
+                      }
+                  },
+                  {
+                      "open": {
+                          "day": 4,
+                          "time": "0000"
+                      },
+                      "close": {
+                          "day": 4,
+                          "time": "0000"
+                      }
+                  },
+                  {
+                      "open": {
+                          "day": 5,
+                          "time": "0000"
+                      },
+                      "close": {
+                          "day": 5,
+                          "time": "0000"
+                      }
+                  },
+                  {
+                      "open": {
+                          "day": 6,
+                          "time": "0000"
+                      },
+                      "close": {
+                          "day": 6,
+                          "time": "0000"
+                      }
+                  },
+                  {
+                      "open": {
+                          "day": 7,
+                          "time": "0000"
+                      },
+                      "close": {
+                          "day": 7,
+                          "time": "0000"
+                      }
+                  }
+              ],
+              "weekday_text": [
+                  "Monday: 00:00 - 00:00",
+                  "Tuesday: 00:00 - 00:00",
+                  "Wednesday: 00:00 - 00:00",
+                  "Thursday: 00:00 - 00:00",
+                  "Friday: 00:00 - 00:00",
+                  "Saturday: 00:00 - 00:00",
+                  "Sunday: 00:00 - 00:00"
+              ]
+          },
+          "amenities": [
+              "Pool",
+              "Room service",
+              "Wheelchair access",
+              "Meeting rooms",
+              "Internet",
+              "Wifi",
+              "Suites",
+              "Public Wifi",
+              "Paid Wifi",
+              "Paid Internet",
+              "Non-smoking rooms",
+              "Business center",
+              "Fitness center",
+              "Banquet Room",
+              "Air conditioning",
+              "Accessible rooms",
+              "Refrigerator in room",
+              "Conference Facilities",
+              "Non-smoking hotel",
+              "Safe",
+              "Flatscreen TV",
+              "Private Balcony",
+              "Parking",
+              "Facilities for Disabled Guests",
+              "English",
+              "Dry Cleaning",
+              "Laundry Service",
+              "Multilingual Staff",
+              "Housekeeping",
+              "Kids Stay Free",
+              "ATM On Site",
+              "Baggage Storage",
+              "Bathrobes",
+              "Blackout Curtains",
+              "Cable / Satellite TV",
+              "24-Hour Check-in",
+              "Express Check-in / Check-out",
+              "Desk",
+              "Complimentary Toiletries",
+              "Free Wifi in the Business Center",
+              "24-Hour Front Desk",
+              "Hair Dryer",
+              "Highchairs Available",
+              "Interconnected room(s) available",
+              "iPod Docking Station",
+              "Iron",
+              "Laptop Safe",
+              "Newspaper",
+              "On-Demand Movies",
+              "Outdoor Fireplace",
+              "Outdoor Furniture",
+              "Pool View",
+              "Private Bathrooms",
+              "Paid Private Parking On-site",
+              "Saltwater Pool",
+              "Shallow End",
+              "Spanish",
+              "Sun Loungers / Beach Chairs",
+              "Sun Terrace",
+              "Telephone",
+              "Wake Up Service / Alarm Clock",
+              "Walk-in Shower",
+              "Wardrobe / Closet",
+              "Photo Copier / Fax In Business Center",
+              "Beach Access"
+          ],
+          "parent_brand": "Hilton Worldwide",
+          "brand": "Curio Collection by Hilton",
+          "category": {
+              "name": "hotel",
+              "localized_name": "Hotel"
+          },
+          "subcategory": [
+              {
+                  "name": "hotel",
+                  "localized_name": "Hotel"
+              }
+          ],
+          "styles": [
+              "Trendy",
+              "Modern"
+          ],
+          "neighborhood_info": [],
+          "trip_types": [
+              {
+                  "name": "business",
+                  "localized_name": "Business",
+                  "value": "0"
+              },
+              {
+                  "name": "couples",
+                  "localized_name": "Couples",
+                  "value": "1"
+              },
+              {
+                  "name": "solo",
+                  "localized_name": "Solo travel",
+                  "value": "1"
+              },
+              {
+                  "name": "family",
+                  "localized_name": "Family",
+                  "value": "10"
+              },
+              {
+                  "name": "friends",
+                  "localized_name": "Friends getaway",
+                  "value": "1"
+              }
+          ],
+          "awards": [],
+          "photos": [
+              {
+                  "id": 753263532,
+                  "is_blessed": false,
+                  "caption": "Exterior",
+                  "published_date": "2024-07-19T20:44:35.056Z",
+                  "images": {
+                      "thumbnail": {
+                          "height": 50,
+                          "width": 50,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-t/2c/e5/e3/ac/exterior.jpg"
+                      },
+                      "small": {
+                          "height": 150,
+                          "width": 150,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-l/2c/e5/e3/ac/exterior.jpg"
+                      },
+                      "medium": {
+                          "height": 167,
+                          "width": 250,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-f/2c/e5/e3/ac/exterior.jpg"
+                      },
+                      "large": {
+                          "height": 366,
+                          "width": 550,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-s/2c/e5/e3/ac/exterior.jpg"
+                      },
+                      "original": {
+                          "height": 682,
+                          "width": 1024,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-w/2c/e5/e3/ac/exterior.jpg"
+                      }
+                  },
+                  "album": "Hotel & Grounds",
+                  "source": {
+                      "name": "Management",
+                      "localized_name": "Management"
+                  }
+              },
+              {
+                  "id": 314751005,
+                  "is_blessed": false,
+                  "caption": "Hotel Lobby",
+                  "published_date": "2018-04-26T19:11:31.087Z",
+                  "images": {
+                      "thumbnail": {
+                          "height": 50,
+                          "width": 50,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-t/12/c2/b8/1d/hotel-la-jolla-curio.jpg"
+                      },
+                      "small": {
+                          "height": 150,
+                          "width": 150,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-l/12/c2/b8/1d/hotel-la-jolla-curio.jpg"
+                      },
+                      "medium": {
+                          "height": 141,
+                          "width": 250,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-f/12/c2/b8/1d/hotel-la-jolla-curio.jpg"
+                      },
+                      "large": {
+                          "height": 309,
+                          "width": 550,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-s/12/c2/b8/1d/hotel-la-jolla-curio.jpg"
+                      },
+                      "original": {
+                          "height": 1125,
+                          "width": 2000,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/c2/b8/1d/hotel-la-jolla-curio.jpg"
+                      }
+                  },
+                  "album": "Hotel & Grounds",
+                  "source": {
+                      "name": "Management",
+                      "localized_name": "Management"
+                  },
+                  "user": {
+                      "username": "Management"
+                  }
+              },
+              {
+                  "id": 314751026,
+                  "is_blessed": false,
+                  "caption": "",
+                  "published_date": "2018-04-26T19:11:42.647Z",
+                  "images": {
+                      "thumbnail": {
+                          "height": 50,
+                          "width": 50,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-t/12/c2/b8/32/hotel-la-jolla-curio.jpg"
+                      },
+                      "small": {
+                          "height": 150,
+                          "width": 150,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-l/12/c2/b8/32/hotel-la-jolla-curio.jpg"
+                      },
+                      "medium": {
+                          "height": 141,
+                          "width": 250,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-f/12/c2/b8/32/hotel-la-jolla-curio.jpg"
+                      },
+                      "large": {
+                          "height": 309,
+                          "width": 550,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-s/12/c2/b8/32/hotel-la-jolla-curio.jpg"
+                      },
+                      "original": {
+                          "height": 540,
+                          "width": 960,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/c2/b8/32/hotel-la-jolla-curio.jpg"
+                      }
+                  },
+                  "album": "Hotel & Grounds",
+                  "source": {
+                      "name": "Management",
+                      "localized_name": "Management"
+                  },
+                  "user": {
+                      "username": "Management"
+                  }
+              },
+              {
+                  "id": 437965280,
+                  "is_blessed": false,
+                  "caption": "",
+                  "published_date": "2019-11-22T20:56:43.353Z",
+                  "images": {
+                      "thumbnail": {
+                          "height": 50,
+                          "width": 50,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-t/1a/1a/d1/e0/hotel-la-jolla-curio.jpg"
+                      },
+                      "small": {
+                          "height": 150,
+                          "width": 150,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-l/1a/1a/d1/e0/hotel-la-jolla-curio.jpg"
+                      },
+                      "medium": {
+                          "height": 187,
+                          "width": 250,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-f/1a/1a/d1/e0/hotel-la-jolla-curio.jpg"
+                      },
+                      "large": {
+                          "height": 412,
+                          "width": 550,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-s/1a/1a/d1/e0/hotel-la-jolla-curio.jpg"
+                      },
+                      "original": {
+                          "height": 959,
+                          "width": 1280,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1a/1a/d1/e0/hotel-la-jolla-curio.jpg"
+                      }
+                  },
+                  "album": "View from Room",
+                  "source": {
+                      "name": "Management",
+                      "localized_name": "Management"
+                  },
+                  "user": {
+                      "username": "Management"
+                  }
+              },
+              {
+                  "id": 314751023,
+                  "is_blessed": false,
+                  "caption": "",
+                  "published_date": "2018-04-26T19:11:41.697Z",
+                  "images": {
+                      "thumbnail": {
+                          "height": 50,
+                          "width": 50,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-t/12/c2/b8/2f/hotel-la-jolla-curio.jpg"
+                      },
+                      "small": {
+                          "height": 150,
+                          "width": 150,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-l/12/c2/b8/2f/hotel-la-jolla-curio.jpg"
+                      },
+                      "medium": {
+                          "height": 141,
+                          "width": 250,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-f/12/c2/b8/2f/hotel-la-jolla-curio.jpg"
+                      },
+                      "large": {
+                          "height": 309,
+                          "width": 550,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-s/12/c2/b8/2f/hotel-la-jolla-curio.jpg"
+                      },
+                      "original": {
+                          "height": 540,
+                          "width": 960,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/c2/b8/2f/hotel-la-jolla-curio.jpg"
+                      }
+                  },
+                  "album": "Hotel & Grounds",
+                  "source": {
+                      "name": "Management",
+                      "localized_name": "Management"
+                  },
+                  "user": {
+                      "username": "Management"
+                  }
+              }
+          ]
+      },
+      "location_id": "119731",
+      "name": "Hotel La Jolla, Curio Collection by Hilton",
+      "distance": "0.6454446068832245",
+      "bearing": "northeast",
+      "address_obj": {
+          "street1": "7955 La Jolla Shores Drive",
+          "street2": "",
+          "city": "La Jolla",
+          "state": "California",
+          "country": "United States",
+          "postalcode": "92037",
+          "address_string": "7955 La Jolla Shores Drive, La Jolla, San Diego, CA 92037"
+      }
+  },
+  {
+      "itemId": "6132093",
+      "details": {
+          "itemId": "6132093",
+          "location_id": "6132093",
+          "name": "La Jolla Riviera Inn",
+          "description": "Welcome to Paradise at La Jolla Riviera Inn. Located along the spectacular coastline of La Jolla, La Jolla Riviera Inn is only minutes from San Diego's famous attractions and destinations. Enjoy the La Jolla Shores beaches, world class shopping and our La Jolla hotel's easy proximity to surrounding beach towns and downtown San Diego. Whether you're looking for a weekend getaway or an extended stay hotel in La Jolla, La Jolla Riviera Inn has what you're looking for, plus all the conveniences and luxuries of an upscale La Jolla hotel in a residential setting, ideal for the perfect family vacation, weekend getaway, or extended business stay. Discover all we have to offer.",
+          "web_url": "https://www.tripadvisor.com/Hotel_Review-g32578-d6132093-Reviews-La_Jolla_Riviera_Inn-La_Jolla_San_Diego_California.html?m=66827",
+          "address_obj": {
+              "street1": "2031 Paseo Dorado",
+              "city": "La Jolla",
+              "state": "California",
+              "country": "United States",
+              "postalcode": "92037",
+              "address_string": "2031 Paseo Dorado, La Jolla, San Diego, CA 92037"
+          },
+          "ancestors": [
+              {
+                  "level": "City",
+                  "name": "La Jolla",
+                  "location_id": "32578"
+              },
+              {
+                  "level": "Municipality",
+                  "name": "San Diego",
+                  "location_id": "60750"
+              },
+              {
+                  "abbrv": "CA",
+                  "level": "State",
+                  "name": "California",
+                  "location_id": "28926"
+              },
+              {
+                  "level": "Country",
+                  "name": "United States",
+                  "location_id": "191"
+              }
+          ],
+          "latitude": "32.85241",
+          "longitude": "-117.25676",
+          "timezone": "America/Los_Angeles",
+          "write_review": "https://www.tripadvisor.com/UserReview-g32578-d6132093-La_Jolla_Riviera_Inn-La_Jolla_San_Diego_California.html?m=66827",
+          "ranking_data": {
+              "geo_location_id": "32578",
+              "ranking_string": "#1 of 5 Specialty lodging in La Jolla",
+              "geo_location_name": "La Jolla",
+              "ranking_out_of": "5",
+              "ranking": "1"
+          },
+          "rating": "4.5",
+          "rating_image_url": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.5-66827-5.svg",
+          "num_reviews": "74",
+          "review_rating_count": {
+              "1": "0",
+              "2": "2",
+              "3": "4",
+              "4": "26",
+              "5": "42"
+          },
+          "subratings": {
+              "0": {
+                  "name": "rate_location",
+                  "localized_name": "Location",
+                  "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss5.0.svg",
+                  "value": "5.0"
+              },
+              "1": {
+                  "name": "rate_sleep",
+                  "localized_name": "Sleep Quality",
+                  "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.5.svg",
+                  "value": "4.5"
+              },
+              "2": {
+                  "name": "rate_room",
+                  "localized_name": "Rooms",
+                  "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.5.svg",
+                  "value": "4.5"
+              },
+              "3": {
+                  "name": "rate_service",
+                  "localized_name": "Service",
+                  "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.5.svg",
+                  "value": "4.5"
+              },
+              "4": {
+                  "name": "rate_value",
+                  "localized_name": "Value",
+                  "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.5.svg",
+                  "value": "4.5"
+              },
+              "5": {
+                  "name": "rate_cleanliness",
+                  "localized_name": "Cleanliness",
+                  "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.5.svg",
+                  "value": "4.5"
+              }
+          },
+          "photo_count": "69",
+          "see_all_photos": "https://www.tripadvisor.com/Hotel_Review-g32578-d6132093-m66827-Reviews-La_Jolla_Riviera_Inn-La_Jolla_San_Diego_California.html#photos",
+          "price_level": "$$$",
+          "amenities": [
+              "Pool",
+              "Internet",
+              "Suites",
+              "Free Internet",
+              "Kitchenette",
+              "Wifi",
+              "Free Wifi",
+              "Microwave",
+              "Refrigerator in room",
+              "Outdoor pool",
+              "Coffee / Tea Maker",
+              "Fence Around Pool",
+              "Kitchenware",
+              "Seating Area",
+              "Kids Activities",
+              "Non-smoking rooms",
+              "Self-Serve Laundry",
+              "Non-smoking hotel",
+              "Beach Access"
+          ],
+          "category": {
+              "name": "hotel",
+              "localized_name": "Hotel"
+          },
+          "subcategory": [
+              {
+                  "name": "other",
+                  "localized_name": "Specialty Lodging"
+              }
+          ],
+          "styles": [
+              "Mid-range"
+          ],
+          "neighborhood_info": [],
+          "trip_types": [
+              {
+                  "name": "business",
+                  "localized_name": "Business",
+                  "value": "4"
+              },
+              {
+                  "name": "couples",
+                  "localized_name": "Couples",
+                  "value": "15"
+              },
+              {
+                  "name": "solo",
+                  "localized_name": "Solo travel",
+                  "value": "5"
+              },
+              {
+                  "name": "family",
+                  "localized_name": "Family",
+                  "value": "38"
+              },
+              {
+                  "name": "friends",
+                  "localized_name": "Friends getaway",
+                  "value": "3"
+              }
+          ],
+          "awards": [],
+          "photos": [
+              {
+                  "id": 99423166,
+                  "is_blessed": false,
+                  "caption": "Pool",
+                  "published_date": "2014-05-27T19:43:34.941Z",
+                  "images": {
+                      "thumbnail": {
+                          "height": 50,
+                          "width": 50,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-t/05/ed/13/be/la-jolla-riviera-inn.jpg"
+                      },
+                      "small": {
+                          "height": 150,
+                          "width": 150,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-l/05/ed/13/be/la-jolla-riviera-inn.jpg"
+                      },
+                      "medium": {
+                          "height": 166,
+                          "width": 250,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-f/05/ed/13/be/la-jolla-riviera-inn.jpg"
+                      },
+                      "large": {
+                          "height": 366,
+                          "width": 550,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-s/05/ed/13/be/la-jolla-riviera-inn.jpg"
+                      },
+                      "original": {
+                          "height": 1333,
+                          "width": 2000,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-o/05/ed/13/be/la-jolla-riviera-inn.jpg"
+                      }
+                  },
+                  "album": "Pool/Beach Area",
+                  "source": {
+                      "name": "Management",
+                      "localized_name": "Management"
+                  },
+                  "user": {
+                      "username": "Management"
+                  }
+              },
+              {
+                  "id": 99423171,
+                  "is_blessed": false,
+                  "caption": "Bedroom",
+                  "published_date": "2014-05-27T19:43:37.104Z",
+                  "images": {
+                      "thumbnail": {
+                          "height": 50,
+                          "width": 50,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-t/05/ed/13/c3/la-jolla-riviera-inn.jpg"
+                      },
+                      "small": {
+                          "height": 150,
+                          "width": 150,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-l/05/ed/13/c3/la-jolla-riviera-inn.jpg"
+                      },
+                      "medium": {
+                          "height": 110,
+                          "width": 250,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-f/05/ed/13/c3/la-jolla-riviera-inn.jpg"
+                      },
+                      "large": {
+                          "height": 244,
+                          "width": 550,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-s/05/ed/13/c3/la-jolla-riviera-inn.jpg"
+                      },
+                      "original": {
+                          "height": 426,
+                          "width": 960,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-o/05/ed/13/c3/la-jolla-riviera-inn.jpg"
+                      }
+                  },
+                  "album": "Room/Suite",
+                  "source": {
+                      "name": "Management",
+                      "localized_name": "Management"
+                  },
+                  "user": {
+                      "username": "Management"
+                  }
+              },
+              {
+                  "id": 99423169,
+                  "is_blessed": false,
+                  "caption": "View",
+                  "published_date": "2014-05-27T19:43:36.246Z",
+                  "images": {
+                      "thumbnail": {
+                          "height": 50,
+                          "width": 50,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-t/05/ed/13/c1/la-jolla-riviera-inn.jpg"
+                      },
+                      "small": {
+                          "height": 150,
+                          "width": 150,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-l/05/ed/13/c1/la-jolla-riviera-inn.jpg"
+                      },
+                      "medium": {
+                          "height": 110,
+                          "width": 250,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-f/05/ed/13/c1/la-jolla-riviera-inn.jpg"
+                      },
+                      "large": {
+                          "height": 244,
+                          "width": 550,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-s/05/ed/13/c1/la-jolla-riviera-inn.jpg"
+                      },
+                      "original": {
+                          "height": 426,
+                          "width": 960,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-o/05/ed/13/c1/la-jolla-riviera-inn.jpg"
+                      }
+                  },
+                  "album": "View from Room",
+                  "source": {
+                      "name": "Management",
+                      "localized_name": "Management"
+                  },
+                  "user": {
+                      "username": "Management"
+                  }
+              },
+              {
+                  "id": 99423196,
+                  "is_blessed": false,
+                  "caption": "Living Room",
+                  "published_date": "2014-05-27T19:43:47.434Z",
+                  "images": {
+                      "thumbnail": {
+                          "height": 50,
+                          "width": 50,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-t/05/ed/13/dc/la-jolla-riviera-inn.jpg"
+                      },
+                      "small": {
+                          "height": 150,
+                          "width": 150,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-l/05/ed/13/dc/la-jolla-riviera-inn.jpg"
+                      },
+                      "medium": {
+                          "height": 110,
+                          "width": 250,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-f/05/ed/13/dc/la-jolla-riviera-inn.jpg"
+                      },
+                      "large": {
+                          "height": 244,
+                          "width": 550,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-s/05/ed/13/dc/la-jolla-riviera-inn.jpg"
+                      },
+                      "original": {
+                          "height": 426,
+                          "width": 960,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-o/05/ed/13/dc/la-jolla-riviera-inn.jpg"
+                      }
+                  },
+                  "album": "Room/Suite",
+                  "source": {
+                      "name": "Management",
+                      "localized_name": "Management"
+                  },
+                  "user": {
+                      "username": "Management"
+                  }
+              },
+              {
+                  "id": 99423193,
+                  "is_blessed": false,
+                  "caption": "Lounge Chairs",
+                  "published_date": "2014-05-27T19:43:46.405Z",
+                  "images": {
+                      "thumbnail": {
+                          "height": 50,
+                          "width": 50,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-t/05/ed/13/d9/la-jolla-riviera-inn.jpg"
+                      },
+                      "small": {
+                          "height": 150,
+                          "width": 150,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-l/05/ed/13/d9/la-jolla-riviera-inn.jpg"
+                      },
+                      "medium": {
+                          "height": 110,
+                          "width": 250,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-f/05/ed/13/d9/la-jolla-riviera-inn.jpg"
+                      },
+                      "large": {
+                          "height": 244,
+                          "width": 550,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-s/05/ed/13/d9/la-jolla-riviera-inn.jpg"
+                      },
+                      "original": {
+                          "height": 426,
+                          "width": 960,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-o/05/ed/13/d9/la-jolla-riviera-inn.jpg"
+                      }
+                  },
+                  "album": "Pool/Beach Area",
+                  "source": {
+                      "name": "Management",
+                      "localized_name": "Management"
+                  },
+                  "user": {
+                      "username": "Management"
+                  }
+              }
+          ]
+      },
+      "location_id": "6132093",
+      "name": "La Jolla Riviera Inn",
+      "distance": "0.6759188040403498",
+      "bearing": "north",
+      "address_obj": {
+          "street1": "2031 Paseo Dorado",
+          "city": "La Jolla",
+          "state": "California",
+          "country": "United States",
+          "postalcode": "92037",
+          "address_string": "2031 Paseo Dorado, La Jolla, San Diego, CA 92037"
+      }
+  },
+  {
+      "itemId": "25081713",
+      "details": {
+          "itemId": "25081713",
+          "location_id": "25081713",
+          "name": "Orli La Jolla",
+          "description": "A reimagined 1910’s-era landmark building in the seaside village of La Jolla, Orli pairs the finesse of a boutique hotel with the spirit of a homestay, delivering unfettered independence and profound experiences through elevated design and tap-away convenience. Guests can customize their stay from their phone, arrive and depart on their own terms, fully embrace the experience of a local, and come home to inspired spaces and interior design. While no two rooms are alike, each blends clean, high-contrast interiors with warm design elements that embrace La Jolla’s rich history and coastal landscape. Amenities include a lush courtyard, cozy lounge and library, beach cruisers, and brew bar with cold brew and kombucha on tap. Surrounded by ocean bluffs and beaches, La Jolla is known as the “jewel” of San Diego. The village is dotted with waterfront restaurants, niche cafes, boutiques, museums, and more, while natural wonders – from swimmable sea caves to sandstone canyons – invite adventure.",
+          "web_url": "https://www.tripadvisor.com/Hotel_Review-g32578-d25081713-Reviews-Orli_La_Jolla-La_Jolla_San_Diego_California.html?m=66827",
+          "address_obj": {
+              "street1": "7753 Draper Ave",
+              "city": "La Jolla",
+              "state": "California",
+              "country": "United States",
+              "postalcode": "92037-4301",
+              "address_string": "7753 Draper Ave, La Jolla, San Diego, CA 92037-4301"
+          },
+          "ancestors": [
+              {
+                  "level": "City",
+                  "name": "La Jolla",
+                  "location_id": "32578"
+              },
+              {
+                  "level": "Municipality",
+                  "name": "San Diego",
+                  "location_id": "60750"
+              },
+              {
+                  "abbrv": "CA",
+                  "level": "State",
+                  "name": "California",
+                  "location_id": "28926"
+              },
+              {
+                  "level": "Country",
+                  "name": "United States",
+                  "location_id": "191"
+              }
+          ],
+          "latitude": "32.843765",
+          "longitude": "-117.27714",
+          "timezone": "America/Los_Angeles",
+          "write_review": "https://www.tripadvisor.com/UserReview-g32578-d25081713-Orli_La_Jolla-La_Jolla_San_Diego_California.html?m=66827",
+          "ranking_data": {
+              "geo_location_id": "32578",
+              "ranking_string": "#2 of 6 B&Bs / Inns in La Jolla",
+              "geo_location_name": "La Jolla",
+              "ranking_out_of": "6",
+              "ranking": "2"
+          },
+          "rating": "5.0",
+          "rating_image_url": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/5.0-66827-5.svg",
+          "num_reviews": "31",
+          "review_rating_count": {
+              "1": "0",
+              "2": "1",
+              "3": "0",
+              "4": "4",
+              "5": "26"
+          },
+          "subratings": {
+              "0": {
+                  "name": "rate_location",
+                  "localized_name": "Location",
+                  "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss5.0.svg",
+                  "value": "5.0"
+              },
+              "1": {
+                  "name": "rate_sleep",
+                  "localized_name": "Sleep Quality",
+                  "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.0.svg",
+                  "value": "4.0"
+              },
+              "2": {
+                  "name": "rate_room",
+                  "localized_name": "Rooms",
+                  "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss5.0.svg",
+                  "value": "5.0"
+              },
+              "3": {
+                  "name": "rate_service",
+                  "localized_name": "Service",
+                  "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss5.0.svg",
+                  "value": "5.0"
+              },
+              "4": {
+                  "name": "rate_value",
+                  "localized_name": "Value",
+                  "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.5.svg",
+                  "value": "4.5"
+              },
+              "5": {
+                  "name": "rate_cleanliness",
+                  "localized_name": "Cleanliness",
+                  "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss5.0.svg",
+                  "value": "5.0"
+              }
+          },
+          "photo_count": "48",
+          "see_all_photos": "https://www.tripadvisor.com/Hotel_Review-g32578-d25081713-m66827-Reviews-Orli_La_Jolla-La_Jolla_San_Diego_California.html#photos",
+          "price_level": "$$$$",
+          "amenities": [
+              "Pets Allowed",
+              "Free Wifi",
+              "Air conditioning",
+              "Private Balcony",
+              "Beachfront",
+              "Suites",
+              "Wheelchair access",
+              "Kitchenette",
+              "Airport transportation",
+              "Wifi",
+              "Non-smoking rooms",
+              "Concierge",
+              "Family Rooms",
+              "Accessible rooms",
+              "Refrigerator in room",
+              "Non-smoking hotel",
+              "Safe",
+              "Flatscreen TV",
+              "Housekeeping",
+              "Baggage Storage",
+              "Bath / Shower",
+              "Bathrobes",
+              "Bicycles Available",
+              "Blackout Curtains",
+              "Bottled Water",
+              "Car Hire",
+              "Express Check-in / Check-out",
+              "Coffee / Tea Maker",
+              "Desk",
+              "First Aid Kit",
+              "Free Public Parking Nearby",
+              "Complimentary Toiletries",
+              "Hair Dryer",
+              "Newspaper",
+              "Outdoor Furniture",
+              "Private Bathrooms",
+              "Paid Public Parking Nearby",
+              "Seating Area",
+              "Shared Lounge / TV Area",
+              "Sofa",
+              "Soundproof Rooms",
+              "Street Parking",
+              "Tile / Marble Floor",
+              "Beach Access"
+          ],
+          "category": {
+              "name": "hotel",
+              "localized_name": "Hotel"
+          },
+          "subcategory": [
+              {
+                  "name": "bb",
+                  "localized_name": "Bed and Breakfast"
+              }
+          ],
+          "styles": [
+              "Luxury",
+              "Charming"
+          ],
+          "neighborhood_info": [],
+          "trip_types": [
+              {
+                  "name": "business",
+                  "localized_name": "Business",
+                  "value": "1"
+              },
+              {
+                  "name": "couples",
+                  "localized_name": "Couples",
+                  "value": "9"
+              },
+              {
+                  "name": "solo",
+                  "localized_name": "Solo travel",
+                  "value": "5"
+              },
+              {
+                  "name": "family",
+                  "localized_name": "Family",
+                  "value": "5"
+              },
+              {
+                  "name": "friends",
+                  "localized_name": "Friends getaway",
+                  "value": "5"
+              }
+          ],
+          "awards": [],
+          "photos": [
+              {
+                  "id": 648104313,
+                  "is_blessed": false,
+                  "caption": "",
+                  "published_date": "2022-10-21T20:35:52.575Z",
+                  "images": {
+                      "thumbnail": {
+                          "height": 50,
+                          "width": 50,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-t/26/a1/49/79/orli-la-jolla.jpg"
+                      },
+                      "small": {
+                          "height": 150,
+                          "width": 150,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-l/26/a1/49/79/orli-la-jolla.jpg"
+                      },
+                      "medium": {
+                          "height": 200,
+                          "width": 250,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-f/26/a1/49/79/orli-la-jolla.jpg"
+                      },
+                      "large": {
+                          "height": 440,
+                          "width": 550,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-s/26/a1/49/79/orli-la-jolla.jpg"
+                      },
+                      "original": {
+                          "height": 960,
+                          "width": 1200,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-o/26/a1/49/79/orli-la-jolla.jpg"
+                      }
+                  },
+                  "album": "Hotel & Grounds",
+                  "source": {
+                      "name": "Management",
+                      "localized_name": "Management"
+                  },
+                  "user": {
+                      "username": "Management"
+                  }
+              },
+              {
+                  "id": 650583408,
+                  "is_blessed": false,
+                  "caption": "Lobby",
+                  "published_date": "2022-11-03T16:59:07.195Z",
+                  "images": {
+                      "thumbnail": {
+                          "height": 50,
+                          "width": 50,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-t/26/c7/1d/70/lobby.jpg"
+                      },
+                      "small": {
+                          "height": 150,
+                          "width": 150,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-l/26/c7/1d/70/lobby.jpg"
+                      },
+                      "medium": {
+                          "height": 168,
+                          "width": 250,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-f/26/c7/1d/70/lobby.jpg"
+                      },
+                      "large": {
+                          "height": 369,
+                          "width": 550,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-s/26/c7/1d/70/lobby.jpg"
+                      },
+                      "original": {
+                          "height": 858,
+                          "width": 1280,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/26/c7/1d/70/lobby.jpg"
+                      }
+                  },
+                  "album": "Hotel & Grounds",
+                  "source": {
+                      "name": "Management",
+                      "localized_name": "Management"
+                  },
+                  "user": {
+                      "username": "Management"
+                  }
+              },
+              {
+                  "id": 650583340,
+                  "is_blessed": false,
+                  "caption": "Entryway",
+                  "published_date": "2022-11-03T16:58:59.095Z",
+                  "images": {
+                      "thumbnail": {
+                          "height": 50,
+                          "width": 50,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-t/26/c7/1d/2c/entryway.jpg"
+                      },
+                      "small": {
+                          "height": 150,
+                          "width": 150,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-l/26/c7/1d/2c/entryway.jpg"
+                      },
+                      "medium": {
+                          "height": 166,
+                          "width": 250,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-f/26/c7/1d/2c/entryway.jpg"
+                      },
+                      "large": {
+                          "height": 366,
+                          "width": 550,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-s/26/c7/1d/2c/entryway.jpg"
+                      },
+                      "original": {
+                          "height": 851,
+                          "width": 1280,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/26/c7/1d/2c/entryway.jpg"
+                      }
+                  },
+                  "album": "Hotel & Grounds",
+                  "source": {
+                      "name": "Management",
+                      "localized_name": "Management"
+                  },
+                  "user": {
+                      "username": "Management"
+                  }
+              },
+              {
+                  "id": 648104317,
+                  "is_blessed": false,
+                  "caption": "",
+                  "published_date": "2022-10-21T20:35:54.659Z",
+                  "images": {
+                      "thumbnail": {
+                          "height": 50,
+                          "width": 50,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-t/26/a1/49/7d/orli-la-jolla.jpg"
+                      },
+                      "small": {
+                          "height": 150,
+                          "width": 150,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-l/26/a1/49/7d/orli-la-jolla.jpg"
+                      },
+                      "medium": {
+                          "height": 161,
+                          "width": 250,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-f/26/a1/49/7d/orli-la-jolla.jpg"
+                      },
+                      "large": {
+                          "height": 354,
+                          "width": 550,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-s/26/a1/49/7d/orli-la-jolla.jpg"
+                      },
+                      "original": {
+                          "height": 823,
+                          "width": 1280,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/26/a1/49/7d/orli-la-jolla.jpg"
+                      }
+                  },
+                  "album": "Hotel & Grounds",
+                  "source": {
+                      "name": "Management",
+                      "localized_name": "Management"
+                  },
+                  "user": {
+                      "username": "Management"
+                  }
+              },
+              {
+                  "id": 731755965,
+                  "is_blessed": false,
+                  "caption": "",
+                  "published_date": "2024-03-13T00:00:59.168Z",
+                  "images": {
+                      "thumbnail": {
+                          "height": 50,
+                          "width": 50,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-t/2b/9d/b5/bd/caption.jpg"
+                      },
+                      "small": {
+                          "height": 150,
+                          "width": 150,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-l/2b/9d/b5/bd/caption.jpg"
+                      },
+                      "medium": {
+                          "height": 200,
+                          "width": 180,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-i/2b/9d/b5/bd/caption.jpg"
+                      },
+                      "large": {
+                          "height": 450,
+                          "width": 338,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-s/2b/9d/b5/bd/caption.jpg"
+                      },
+                      "original": {
+                          "height": 1365,
+                          "width": 1024,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-w/2b/9d/b5/bd/caption.jpg"
+                      }
+                  },
+                  "album": "Other",
+                  "source": {
+                      "name": "Traveler",
+                      "localized_name": "Traveler"
+                  },
+                  "user": {
+                      "username": "jonathangottii"
+                  }
+              }
+          ]
+      },
+      "location_id": "25081713",
+      "name": "Orli La Jolla",
+      "distance": "1.1282544853478136",
+      "bearing": "west",
+      "address_obj": {
+          "street1": "7753 Draper Ave",
+          "city": "La Jolla",
+          "state": "California",
+          "country": "United States",
+          "postalcode": "92037-4301",
+          "address_string": "7753 Draper Ave, La Jolla, San Diego, CA 92037-4301"
+      }
+  },
+  {
+      "itemId": "77420",
+      "details": {
+          "itemId": "77420",
+          "location_id": "77420",
+          "name": "Cormorant Boutique Hotel, La Jolla",
+          "web_url": "https://www.tripadvisor.com/Hotel_Review-g32578-d77420-Reviews-Cormorant_Boutique_Hotel_La_Jolla-La_Jolla_San_Diego_California.html?m=66827",
+          "address_obj": {
+              "street1": "1110 Prospect St",
+              "street2": "",
+              "city": "La Jolla",
+              "state": "California",
+              "country": "United States",
+              "postalcode": "92037",
+              "address_string": "1110 Prospect St, La Jolla, San Diego, CA 92037"
+          },
+          "ancestors": [
+              {
+                  "level": "City",
+                  "name": "La Jolla",
+                  "location_id": "32578"
+              },
+              {
+                  "level": "Municipality",
+                  "name": "San Diego",
+                  "location_id": "60750"
+              },
+              {
+                  "abbrv": "CA",
+                  "level": "State",
+                  "name": "California",
+                  "location_id": "28926"
+              },
+              {
+                  "level": "Country",
+                  "name": "United States",
+                  "location_id": "191"
+              }
+          ],
+          "latitude": "32.84826",
+          "longitude": "-117.27402",
+          "timezone": "America/Los_Angeles",
+          "write_review": "https://www.tripadvisor.com/UserReview-g32578-d77420-Cormorant_Boutique_Hotel_La_Jolla-La_Jolla_San_Diego_California.html?m=66827",
+          "ranking_data": {
+              "geo_location_id": "32578",
+              "ranking_string": "#15 of 23 hotels in La Jolla",
+              "geo_location_name": "La Jolla",
+              "ranking_out_of": "23",
+              "ranking": "15"
+          },
+          "rating": "4.0",
+          "rating_image_url": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.0-66827-5.svg",
+          "num_reviews": "119",
+          "review_rating_count": {
+              "1": "5",
+              "2": "12",
+              "3": "13",
+              "4": "20",
+              "5": "69"
+          },
+          "subratings": {
+              "0": {
+                  "name": "rate_location",
+                  "localized_name": "Location",
+                  "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss5.0.svg",
+                  "value": "5.0"
+              },
+              "1": {
+                  "name": "rate_sleep",
+                  "localized_name": "Sleep Quality",
+                  "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.0.svg",
+                  "value": "4.0"
+              },
+              "2": {
+                  "name": "rate_room",
+                  "localized_name": "Rooms",
+                  "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.0.svg",
+                  "value": "4.0"
+              },
+              "3": {
+                  "name": "rate_service",
+                  "localized_name": "Service",
+                  "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.5.svg",
+                  "value": "4.5"
+              },
+              "4": {
+                  "name": "rate_value",
+                  "localized_name": "Value",
+                  "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.0.svg",
+                  "value": "4.0"
+              },
+              "5": {
+                  "name": "rate_cleanliness",
+                  "localized_name": "Cleanliness",
+                  "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.5.svg",
+                  "value": "4.5"
+              }
+          },
+          "photo_count": "99",
+          "see_all_photos": "https://www.tripadvisor.com/Hotel_Review-g32578-d77420-m66827-Reviews-Cormorant_Boutique_Hotel_La_Jolla-La_Jolla_San_Diego_California.html#photos",
+          "price_level": "$$$$",
+          "hours": {
+              "periods": [
+                  {
+                      "open": {
+                          "day": 1,
+                          "time": "0000"
+                      },
+                      "close": {
+                          "day": 1,
+                          "time": "0000"
+                      }
+                  },
+                  {
+                      "open": {
+                          "day": 2,
+                          "time": "0000"
+                      },
+                      "close": {
+                          "day": 2,
+                          "time": "0000"
+                      }
+                  },
+                  {
+                      "open": {
+                          "day": 3,
+                          "time": "0000"
+                      },
+                      "close": {
+                          "day": 3,
+                          "time": "0000"
+                      }
+                  },
+                  {
+                      "open": {
+                          "day": 4,
+                          "time": "0000"
+                      },
+                      "close": {
+                          "day": 4,
+                          "time": "0000"
+                      }
+                  },
+                  {
+                      "open": {
+                          "day": 5,
+                          "time": "0000"
+                      },
+                      "close": {
+                          "day": 5,
+                          "time": "0000"
+                      }
+                  },
+                  {
+                      "open": {
+                          "day": 6,
+                          "time": "0000"
+                      },
+                      "close": {
+                          "day": 6,
+                          "time": "0000"
+                      }
+                  },
+                  {
+                      "open": {
+                          "day": 7,
+                          "time": "0000"
+                      },
+                      "close": {
+                          "day": 7,
+                          "time": "0000"
+                      }
+                  }
+              ],
+              "weekday_text": [
+                  "Monday: 00:00 - 00:00",
+                  "Tuesday: 00:00 - 00:00",
+                  "Wednesday: 00:00 - 00:00",
+                  "Thursday: 00:00 - 00:00",
+                  "Friday: 00:00 - 00:00",
+                  "Saturday: 00:00 - 00:00",
+                  "Sunday: 00:00 - 00:00"
+              ]
+          },
+          "amenities": [
+              "Internet",
+              "Bar/Lounge",
+              "Free Wifi",
+              "Non-smoking rooms",
+              "Air conditioning",
+              "Multilingual Staff",
+              "Refrigerator in room",
+              "Rooftop Bar",
+              "Complimentary Instant Coffee",
+              "Complimentary Toiletries",
+              "24-Hour Front Desk",
+              "Wake Up Service / Alarm Clock",
+              "Suites",
+              "Free Internet",
+              "Wifi",
+              "Family Rooms",
+              "Non-smoking hotel",
+              "Safe",
+              "Private Balcony",
+              "Electric vehicle charging station",
+              "Express Check-in / Check-out",
+              "Convenience Store",
+              "English",
+              "Parking Garage",
+              "Paid Public Parking Nearby",
+              "Spanish",
+              "Sun Terrace",
+              "Valet Parking",
+              "Beach Access"
+          ],
+          "category": {
+              "name": "hotel",
+              "localized_name": "Hotel"
+          },
+          "subcategory": [
+              {
+                  "name": "hotel",
+                  "localized_name": "Hotel"
+              }
+          ],
+          "styles": [
+              "Boutique",
+              "Centrally Located"
+          ],
+          "neighborhood_info": [],
+          "trip_types": [
+              {
+                  "name": "business",
+                  "localized_name": "Business",
+                  "value": "15"
+              },
+              {
+                  "name": "couples",
+                  "localized_name": "Couples",
+                  "value": "13"
+              },
+              {
+                  "name": "solo",
+                  "localized_name": "Solo travel",
+                  "value": "5"
+              },
+              {
+                  "name": "family",
+                  "localized_name": "Family",
+                  "value": "6"
+              },
+              {
+                  "name": "friends",
+                  "localized_name": "Friends getaway",
+                  "value": "2"
+              }
+          ],
+          "awards": [
+              {
+                  "award_type": "Travelers Choice",
+                  "year": "2024",
+                  "images": {
+                      "tiny": "https://static.tacdn.com/img2/travelers_choice/widgets/tchotel_2024_L.png",
+                      "small": "https://static.tacdn.com/img2/travelers_choice/widgets/tchotel_2024_L.png",
+                      "large": "https://static.tacdn.com/img2/travelers_choice/widgets/tchotel_2024_L.png"
+                  },
+                  "categories": [],
+                  "display_name": "Travelers Choice"
+              },
+              {
+                  "award_type": "Travelers Choice",
+                  "year": "2023",
+                  "images": {
+                      "tiny": "https://static.tacdn.com/img2/travelers_choice/widgets/tchotel_2023_L.png",
+                      "small": "https://static.tacdn.com/img2/travelers_choice/widgets/tchotel_2023_L.png",
+                      "large": "https://static.tacdn.com/img2/travelers_choice/widgets/tchotel_2023_L.png"
+                  },
+                  "categories": [],
+                  "display_name": "Travelers Choice"
+              }
+          ],
+          "photos": [
+              {
+                  "id": 578864329,
+                  "is_blessed": false,
+                  "caption": "Cormorant Boutique Hotel",
+                  "published_date": "2022-03-15T23:15:52.214Z",
+                  "images": {
+                      "thumbnail": {
+                          "height": 50,
+                          "width": 50,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-t/22/80/c4/c9/cormorant-boutique-hotel.jpg"
+                      },
+                      "small": {
+                          "height": 150,
+                          "width": 150,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-l/22/80/c4/c9/cormorant-boutique-hotel.jpg"
+                      },
+                      "medium": {
+                          "height": 160,
+                          "width": 250,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-f/22/80/c4/c9/cormorant-boutique-hotel.jpg"
+                      },
+                      "large": {
+                          "height": 351,
+                          "width": 550,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-s/22/80/c4/c9/cormorant-boutique-hotel.jpg"
+                      },
+                      "original": {
+                          "height": 818,
+                          "width": 1280,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/22/80/c4/c9/cormorant-boutique-hotel.jpg"
+                      }
+                  },
+                  "album": "Other",
+                  "source": {
+                      "name": "Management",
+                      "localized_name": "Management"
+                  },
+                  "user": {
+                      "username": "Management"
+                  }
+              },
+              {
+                  "id": 612243121,
+                  "is_blessed": false,
+                  "caption": "",
+                  "published_date": "2022-07-06T19:45:39.798Z",
+                  "images": {
+                      "thumbnail": {
+                          "height": 50,
+                          "width": 50,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-t/24/7e/16/b1/cormorant-boutique-hotel.jpg"
+                      },
+                      "small": {
+                          "height": 150,
+                          "width": 150,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-l/24/7e/16/b1/cormorant-boutique-hotel.jpg"
+                      },
+                      "medium": {
+                          "height": 167,
+                          "width": 250,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-f/24/7e/16/b1/cormorant-boutique-hotel.jpg"
+                      },
+                      "large": {
+                          "height": 367,
+                          "width": 550,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-s/24/7e/16/b1/cormorant-boutique-hotel.jpg"
+                      },
+                      "original": {
+                          "height": 853,
+                          "width": 1280,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/24/7e/16/b1/cormorant-boutique-hotel.jpg"
+                      }
+                  },
+                  "album": "Room/Suite",
+                  "source": {
+                      "name": "Management",
+                      "localized_name": "Management"
+                  },
+                  "user": {
+                      "username": "Management"
+                  }
+              },
+              {
+                  "id": 612243118,
+                  "is_blessed": false,
+                  "caption": "",
+                  "published_date": "2022-07-06T19:45:32.502Z",
+                  "images": {
+                      "thumbnail": {
+                          "height": 50,
+                          "width": 50,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-t/24/7e/16/ae/cormorant-boutique-hotel.jpg"
+                      },
+                      "small": {
+                          "height": 150,
+                          "width": 150,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-l/24/7e/16/ae/cormorant-boutique-hotel.jpg"
+                      },
+                      "medium": {
+                          "height": 167,
+                          "width": 250,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-f/24/7e/16/ae/cormorant-boutique-hotel.jpg"
+                      },
+                      "large": {
+                          "height": 367,
+                          "width": 550,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-s/24/7e/16/ae/cormorant-boutique-hotel.jpg"
+                      },
+                      "original": {
+                          "height": 853,
+                          "width": 1280,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/24/7e/16/ae/cormorant-boutique-hotel.jpg"
+                      }
+                  },
+                  "album": "Room/Suite",
+                  "source": {
+                      "name": "Management",
+                      "localized_name": "Management"
+                  },
+                  "user": {
+                      "username": "Management"
+                  }
+              },
+              {
+                  "id": 612243098,
+                  "is_blessed": false,
+                  "caption": "",
+                  "published_date": "2022-07-06T19:45:25.725Z",
+                  "images": {
+                      "thumbnail": {
+                          "height": 50,
+                          "width": 50,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-t/24/7e/16/9a/cormorant-boutique-hotel.jpg"
+                      },
+                      "small": {
+                          "height": 150,
+                          "width": 150,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-l/24/7e/16/9a/cormorant-boutique-hotel.jpg"
+                      },
+                      "medium": {
+                          "height": 167,
+                          "width": 250,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-f/24/7e/16/9a/cormorant-boutique-hotel.jpg"
+                      },
+                      "large": {
+                          "height": 367,
+                          "width": 550,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-s/24/7e/16/9a/cormorant-boutique-hotel.jpg"
+                      },
+                      "original": {
+                          "height": 853,
+                          "width": 1280,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/24/7e/16/9a/cormorant-boutique-hotel.jpg"
+                      }
+                  },
+                  "album": "Room/Suite",
+                  "source": {
+                      "name": "Management",
+                      "localized_name": "Management"
+                  },
+                  "user": {
+                      "username": "Management"
+                  }
+              },
+              {
+                  "id": 612243015,
+                  "is_blessed": false,
+                  "caption": "",
+                  "published_date": "2022-07-06T19:44:48.631Z",
+                  "images": {
+                      "thumbnail": {
+                          "height": 50,
+                          "width": 50,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-t/24/7e/16/47/cormorant-boutique-hotel.jpg"
+                      },
+                      "small": {
+                          "height": 150,
+                          "width": 150,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-l/24/7e/16/47/cormorant-boutique-hotel.jpg"
+                      },
+                      "medium": {
+                          "height": 167,
+                          "width": 250,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-f/24/7e/16/47/cormorant-boutique-hotel.jpg"
+                      },
+                      "large": {
+                          "height": 367,
+                          "width": 550,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-s/24/7e/16/47/cormorant-boutique-hotel.jpg"
+                      },
+                      "original": {
+                          "height": 853,
+                          "width": 1280,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/24/7e/16/47/cormorant-boutique-hotel.jpg"
+                      }
+                  },
+                  "album": "Room/Suite",
+                  "source": {
+                      "name": "Management",
+                      "localized_name": "Management"
+                  },
+                  "user": {
+                      "username": "Management"
+                  }
+              }
+          ]
+      },
+      "location_id": "77420",
+      "name": "Cormorant Boutique Hotel, La Jolla",
+      "distance": "1.020317628271441",
+      "bearing": "west",
+      "address_obj": {
+          "street1": "1110 Prospect St",
+          "street2": "",
+          "city": "La Jolla",
+          "state": "California",
+          "country": "United States",
+          "postalcode": "92037",
+          "address_string": "1110 Prospect St, La Jolla, San Diego, CA 92037"
+      }
+  },
+  {
+      "itemId": "115605",
+      "details": {
+          "itemId": "115605",
+          "location_id": "115605",
+          "name": "La Valencia Hotel",
+          "description": "Discover the luxury of La Valencia Hotel, an unforgettable destination that has welcomed guests, including the Hollywood elite, for more than 90 years. With her signature pink exterior and iconic tower, the elegant \"Pink Lady\" remains a renowned landmark on La Jolla's distinctive Prospect Street commanding the village bluffs with panoramic views of the Pacific coastline and beautiful La Jolla Cove. 114 rooms, suites and villas offer a cast of options from cozy boudoirs to a captivating penthouse or exclusive villas. Culinary indulgence takes center stage at The Med, the hotel’s ocean facing restaurant and terrace featuring seasonal California coastal cuisine. The supporting cast features La Sala, a sumptuous and dazzling Spanish-Mediterranean style lounge cast in the tradition of grand hotel bars.",
+          "web_url": "https://www.tripadvisor.com/Hotel_Review-g32578-d115605-Reviews-La_Valencia_Hotel-La_Jolla_San_Diego_California.html?m=66827",
+          "address_obj": {
+              "street1": "1132 Prospect St",
+              "street2": "",
+              "city": "La Jolla",
+              "state": "California",
+              "country": "United States",
+              "postalcode": "92037",
+              "address_string": "1132 Prospect St, La Jolla, San Diego, CA 92037"
+          },
+          "ancestors": [
+              {
+                  "level": "City",
+                  "name": "La Jolla",
+                  "location_id": "32578"
+              },
+              {
+                  "level": "Municipality",
+                  "name": "San Diego",
+                  "location_id": "60750"
+              },
+              {
+                  "abbrv": "CA",
+                  "level": "State",
+                  "name": "California",
+                  "location_id": "28926"
+              },
+              {
+                  "level": "Country",
+                  "name": "United States",
+                  "location_id": "191"
+              }
+          ],
+          "latitude": "32.84864",
+          "longitude": "-117.2737",
+          "timezone": "America/Los_Angeles",
+          "phone": "18774100915",
+          "write_review": "https://www.tripadvisor.com/UserReview-g32578-d115605-La_Valencia_Hotel-La_Jolla_San_Diego_California.html?m=66827",
+          "ranking_data": {
+              "geo_location_id": "32578",
+              "ranking_string": "#8 of 23 hotels in La Jolla",
+              "geo_location_name": "La Jolla",
+              "ranking_out_of": "23",
+              "ranking": "8"
+          },
+          "rating": "4.5",
+          "rating_image_url": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.5-66827-5.svg",
+          "num_reviews": "2190",
+          "review_rating_count": {
+              "1": "79",
+              "2": "116",
+              "3": "183",
+              "4": "360",
+              "5": "1452"
+          },
+          "subratings": {
+              "0": {
+                  "name": "rate_location",
+                  "localized_name": "Location",
+                  "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss5.0.svg",
+                  "value": "5.0"
+              },
+              "1": {
+                  "name": "rate_sleep",
+                  "localized_name": "Sleep Quality",
+                  "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.5.svg",
+                  "value": "4.5"
+              },
+              "2": {
+                  "name": "rate_room",
+                  "localized_name": "Rooms",
+                  "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.0.svg",
+                  "value": "4.0"
+              },
+              "3": {
+                  "name": "rate_service",
+                  "localized_name": "Service",
+                  "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.5.svg",
+                  "value": "4.5"
+              },
+              "4": {
+                  "name": "rate_value",
+                  "localized_name": "Value",
+                  "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.0.svg",
+                  "value": "4.0"
+              },
+              "5": {
+                  "name": "rate_cleanliness",
+                  "localized_name": "Cleanliness",
+                  "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.5.svg",
+                  "value": "4.5"
+              }
+          },
+          "photo_count": "1285",
+          "see_all_photos": "https://www.tripadvisor.com/Hotel_Review-g32578-d115605-m66827-Reviews-La_Valencia_Hotel-La_Jolla_San_Diego_California.html#photos",
+          "price_level": "$$$$",
+          "amenities": [
+              "Room service",
+              "Restaurant",
+              "Pets Allowed",
+              "Free Internet",
+              "Wifi",
+              "Free Wifi",
+              "Wheelchair access",
+              "Pool",
+              "Internet",
+              "Beachfront",
+              "Suites",
+              "Bar/Lounge",
+              "Airport transportation",
+              "Public Wifi",
+              "Dry Cleaning",
+              "Meeting rooms",
+              "Hot Tub",
+              "Non-smoking rooms",
+              "Business center",
+              "Fitness center",
+              "Laundry Service",
+              "Concierge",
+              "Banquet Room",
+              "Air conditioning",
+              "Family Rooms",
+              "Multilingual Staff",
+              "Accessible rooms",
+              "Minibar",
+              "Conference Facilities",
+              "Non-smoking hotel",
+              "Safe",
+              "Heated pool",
+              "Flatscreen TV",
+              "Poolside Bar",
+              "Private Balcony",
+              "Outdoor pool",
+              "Parking",
+              "Facilities for Disabled Guests",
+              "Housekeeping",
+              "ATM On Site",
+              "Baggage Storage",
+              "Bath / Shower",
+              "Bottled Water",
+              "Breakfast in the Room",
+              "Bridal Suite",
+              "24-Hour Check-in",
+              "Coffee / Tea Maker",
+              "Complimentary Tea",
+              "Doorperson",
+              "English",
+              "Evening Entertainment",
+              "Fence Around Pool",
+              "Complimentary Instant Coffee",
+              "Complimentary Toiletries",
+              "24-Hour Front Desk",
+              "Hair Dryer",
+              "Iron",
+              "Ironing Service",
+              "Newspaper",
+              "Outdoor Furniture",
+              "Pool / Beach Towels",
+              "Pool with View",
+              "24-Hour Security",
+              "Spanish",
+              "Sun Loungers / Beach Chairs",
+              "Sun Terrace",
+              "Sun Umbrellas",
+              "Telephone",
+              "Wake Up Service / Alarm Clock",
+              "Breakfast Available",
+              "Bathrobes",
+              "Boating",
+              "Cable / Satellite TV",
+              "Car Hire",
+              "Express Check-in / Check-out",
+              "Desk",
+              "First Aid Kit",
+              "Free Wifi in the Business Center",
+              "Gift Shop",
+              "Happy Hour",
+              "Highchairs Available",
+              "Interconnected room(s) available",
+              "Kids' Meals",
+              "Laptop Safe",
+              "Outdoor Dining Area",
+              "Outdoor Fireplace",
+              "Patio",
+              "Pool View",
+              "Paid Private Parking On-site",
+              "Paid Private Parking Nearby",
+              "Paid Public Parking Nearby",
+              "Saltwater Pool",
+              "Shallow End",
+              "Shops",
+              "Snorkeling",
+              "Special Diet Menus",
+              "Umbrella",
+              "VIP Room Facilities",
+              "Walking Tours",
+              "Wardrobe / Closet",
+              "Photo Copier / Fax In Business Center",
+              "Beach Access"
+          ],
+          "parent_brand": "Preferred Hotel Group",
+          "brand": "Preferred Hotels & Resorts",
+          "category": {
+              "name": "hotel",
+              "localized_name": "Hotel"
+          },
+          "subcategory": [
+              {
+                  "name": "hotel",
+                  "localized_name": "Hotel"
+              }
+          ],
+          "styles": [
+              "Bay View",
+              "City View"
+          ],
+          "neighborhood_info": [],
+          "trip_types": [
+              {
+                  "name": "business",
+                  "localized_name": "Business",
+                  "value": "217"
+              },
+              {
+                  "name": "couples",
+                  "localized_name": "Couples",
+                  "value": "822"
+              },
+              {
+                  "name": "solo",
+                  "localized_name": "Solo travel",
+                  "value": "68"
+              },
+              {
+                  "name": "family",
+                  "localized_name": "Family",
+                  "value": "394"
+              },
+              {
+                  "name": "friends",
+                  "localized_name": "Friends getaway",
+                  "value": "156"
+              }
+          ],
+          "awards": [
+              {
+                  "award_type": "Travelers Choice",
+                  "year": "2024",
+                  "images": {
+                      "tiny": "https://static.tacdn.com/img2/travelers_choice/widgets/tchotel_2024_L.png",
+                      "small": "https://static.tacdn.com/img2/travelers_choice/widgets/tchotel_2024_L.png",
+                      "large": "https://static.tacdn.com/img2/travelers_choice/widgets/tchotel_2024_L.png"
+                  },
+                  "categories": [],
+                  "display_name": "Travelers Choice"
+              },
+              {
+                  "award_type": "Travelers Choice",
+                  "year": "2023",
+                  "images": {
+                      "tiny": "https://static.tacdn.com/img2/travelers_choice/widgets/tchotel_2023_L.png",
+                      "small": "https://static.tacdn.com/img2/travelers_choice/widgets/tchotel_2023_L.png",
+                      "large": "https://static.tacdn.com/img2/travelers_choice/widgets/tchotel_2023_L.png"
+                  },
+                  "categories": [],
+                  "display_name": "Travelers Choice"
+              }
+          ],
+          "photos": [
+              {
+                  "id": 478198415,
+                  "is_blessed": false,
+                  "caption": "La Valencia in the heart of La Jolla",
+                  "published_date": "2021-01-07T23:34:04.212Z",
+                  "images": {
+                      "thumbnail": {
+                          "height": 50,
+                          "width": 50,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-t/1c/80/ba/8f/la-valencia-in-the-heart.jpg"
+                      },
+                      "small": {
+                          "height": 150,
+                          "width": 150,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-l/1c/80/ba/8f/la-valencia-in-the-heart.jpg"
+                      },
+                      "medium": {
+                          "height": 167,
+                          "width": 250,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-f/1c/80/ba/8f/la-valencia-in-the-heart.jpg"
+                      },
+                      "large": {
+                          "height": 366,
+                          "width": 550,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-s/1c/80/ba/8f/la-valencia-in-the-heart.jpg"
+                      },
+                      "original": {
+                          "height": 853,
+                          "width": 1280,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1c/80/ba/8f/la-valencia-in-the-heart.jpg"
+                      }
+                  },
+                  "album": "Hotel & Grounds",
+                  "source": {
+                      "name": "Management",
+                      "localized_name": "Management"
+                  },
+                  "user": {
+                      "username": "Management"
+                  }
+              },
+              {
+                  "id": 264812174,
+                  "is_blessed": false,
+                  "caption": "La V Pool",
+                  "published_date": "2017-07-05T20:45:11.787Z",
+                  "images": {
+                      "thumbnail": {
+                          "height": 50,
+                          "width": 50,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-t/0f/c8/b6/8e/la-v-pool.jpg"
+                      },
+                      "small": {
+                          "height": 150,
+                          "width": 150,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-l/0f/c8/b6/8e/la-v-pool.jpg"
+                      },
+                      "medium": {
+                          "height": 167,
+                          "width": 250,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-f/0f/c8/b6/8e/la-v-pool.jpg"
+                      },
+                      "large": {
+                          "height": 367,
+                          "width": 550,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-s/0f/c8/b6/8e/la-v-pool.jpg"
+                      },
+                      "original": {
+                          "height": 1333,
+                          "width": 2000,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-o/0f/c8/b6/8e/la-v-pool.jpg"
+                      }
+                  },
+                  "album": "Pool/Beach Area",
+                  "source": {
+                      "name": "Management",
+                      "localized_name": "Management"
+                  },
+                  "user": {
+                      "username": "Management"
+                  }
+              },
+              {
+                  "id": 447582503,
+                  "is_blessed": false,
+                  "caption": "",
+                  "published_date": "2020-01-22T19:05:36.484Z",
+                  "images": {
+                      "thumbnail": {
+                          "height": 50,
+                          "width": 50,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-t/1a/ad/91/27/la-valencia-hotel.jpg"
+                      },
+                      "small": {
+                          "height": 150,
+                          "width": 150,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-l/1a/ad/91/27/la-valencia-hotel.jpg"
+                      },
+                      "medium": {
+                          "height": 153,
+                          "width": 250,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-f/1a/ad/91/27/la-valencia-hotel.jpg"
+                      },
+                      "large": {
+                          "height": 336,
+                          "width": 550,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-s/1a/ad/91/27/la-valencia-hotel.jpg"
+                      },
+                      "original": {
+                          "height": 783,
+                          "width": 1280,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1a/ad/91/27/la-valencia-hotel.jpg"
+                      }
+                  },
+                  "album": "Hotel & Grounds",
+                  "source": {
+                      "name": "Management",
+                      "localized_name": "Management"
+                  },
+                  "user": {
+                      "username": "Management"
+                  }
+              },
+              {
+                  "id": 459940318,
+                  "is_blessed": false,
+                  "caption": "",
+                  "published_date": "2020-06-15T16:27:52.604Z",
+                  "images": {
+                      "thumbnail": {
+                          "height": 50,
+                          "width": 50,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-t/1b/6a/21/de/la-valencia-hotel.jpg"
+                      },
+                      "small": {
+                          "height": 150,
+                          "width": 150,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-l/1b/6a/21/de/la-valencia-hotel.jpg"
+                      },
+                      "medium": {
+                          "height": 167,
+                          "width": 250,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-f/1b/6a/21/de/la-valencia-hotel.jpg"
+                      },
+                      "large": {
+                          "height": 367,
+                          "width": 550,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-s/1b/6a/21/de/la-valencia-hotel.jpg"
+                      },
+                      "original": {
+                          "height": 853,
+                          "width": 1280,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1b/6a/21/de/la-valencia-hotel.jpg"
+                      }
+                  },
+                  "album": "Room/Suite",
+                  "source": {
+                      "name": "Management",
+                      "localized_name": "Management"
+                  },
+                  "user": {
+                      "username": "Management"
+                  }
+              },
+              {
+                  "id": 264812148,
+                  "is_blessed": false,
+                  "caption": "Rainbows and sunsets abound at La V",
+                  "published_date": "2017-07-05T20:45:01.979Z",
+                  "images": {
+                      "thumbnail": {
+                          "height": 50,
+                          "width": 50,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-t/0f/c8/b6/74/rainbows-and-sunsets.jpg"
+                      },
+                      "small": {
+                          "height": 150,
+                          "width": 150,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-l/0f/c8/b6/74/rainbows-and-sunsets.jpg"
+                      },
+                      "medium": {
+                          "height": 167,
+                          "width": 250,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-f/0f/c8/b6/74/rainbows-and-sunsets.jpg"
+                      },
+                      "large": {
+                          "height": 367,
+                          "width": 550,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-s/0f/c8/b6/74/rainbows-and-sunsets.jpg"
+                      },
+                      "original": {
+                          "height": 1333,
+                          "width": 2000,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-o/0f/c8/b6/74/rainbows-and-sunsets.jpg"
+                      }
+                  },
+                  "album": "Hotel & Grounds",
+                  "source": {
+                      "name": "Management",
+                      "localized_name": "Management"
+                  },
+                  "user": {
+                      "username": "Management"
+                  }
+              }
+          ]
+      },
+      "location_id": "115605",
+      "name": "La Valencia Hotel",
+      "distance": "1.013559487028648",
+      "bearing": "northwest",
+      "address_obj": {
+          "street1": "1132 Prospect St",
+          "street2": "",
+          "city": "La Jolla",
+          "state": "California",
+          "country": "United States",
+          "postalcode": "92037",
+          "address_string": "1132 Prospect St, La Jolla, San Diego, CA 92037"
+      }
+  },
+  {
+      "itemId": "77401",
+      "details": {
+          "itemId": "77401",
+          "location_id": "77401",
+          "name": "Inn by the Sea La Jolla, CA.",
+          "description": "Welcome to Our Ocean View Hotel in Downtown La Jolla, CA Experience the sand-swept landscapes and inspired Pacific Ocean views of the Inn by the Sea in beautiful La Jolla, CA. Just a few miles north of San Diego, California. Here at our boutique hotel in downtown La Jolla, you'll find lovely guest accommodations, complete with balconies/patios offering coastal breezes and inspired views. Surrounded by beaches, dining options, local culture, and chic boutiques, this Southern California mecca is the premier destination for travelers to the La Jolla and San Diego areas. Take advantage of comfortable, spacious guest accommodations from the hotel that boasts a location in \"The Heart of the Village.\"",
+          "web_url": "https://www.tripadvisor.com/Hotel_Review-g32578-d77401-Reviews-Inn_by_the_Sea_La_Jolla_CA-La_Jolla_San_Diego_California.html?m=66827",
+          "address_obj": {
+              "street1": "7830 Fay Avenue",
+              "street2": "",
+              "city": "La Jolla",
+              "state": "California",
+              "country": "United States",
+              "postalcode": "92037",
+              "address_string": "7830 Fay Avenue, La Jolla, San Diego, CA 92037"
+          },
+          "ancestors": [
+              {
+                  "level": "City",
+                  "name": "La Jolla",
+                  "location_id": "32578"
+              },
+              {
+                  "level": "Municipality",
+                  "name": "San Diego",
+                  "location_id": "60750"
+              },
+              {
+                  "abbrv": "CA",
+                  "level": "State",
+                  "name": "California",
+                  "location_id": "28926"
+              },
+              {
+                  "level": "Country",
+                  "name": "United States",
+                  "location_id": "191"
+              }
+          ],
+          "latitude": "32.84549",
+          "longitude": "-117.27563",
+          "timezone": "America/Los_Angeles",
+          "phone": "8584594461",
+          "write_review": "https://www.tripadvisor.com/UserReview-g32578-d77401-Inn_by_the_Sea_La_Jolla_CA-La_Jolla_San_Diego_California.html?m=66827",
+          "ranking_data": {
+              "geo_location_id": "32578",
+              "ranking_string": "#10 of 23 hotels in La Jolla",
+              "geo_location_name": "La Jolla",
+              "ranking_out_of": "23",
+              "ranking": "10"
+          },
+          "rating": "4.0",
+          "rating_image_url": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.0-66827-5.svg",
+          "num_reviews": "1019",
+          "review_rating_count": {
+              "1": "45",
+              "2": "50",
+              "3": "175",
+              "4": "381",
+              "5": "368"
+          },
+          "subratings": {
+              "0": {
+                  "name": "rate_location",
+                  "localized_name": "Location",
+                  "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.5.svg",
+                  "value": "4.5"
+              },
+              "1": {
+                  "name": "rate_sleep",
+                  "localized_name": "Sleep Quality",
+                  "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.0.svg",
+                  "value": "4.0"
+              },
+              "2": {
+                  "name": "rate_room",
+                  "localized_name": "Rooms",
+                  "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.0.svg",
+                  "value": "4.0"
+              },
+              "3": {
+                  "name": "rate_service",
+                  "localized_name": "Service",
+                  "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.0.svg",
+                  "value": "4.0"
+              },
+              "4": {
+                  "name": "rate_value",
+                  "localized_name": "Value",
+                  "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.0.svg",
+                  "value": "4.0"
+              },
+              "5": {
+                  "name": "rate_cleanliness",
+                  "localized_name": "Cleanliness",
+                  "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.0.svg",
+                  "value": "4.0"
+              }
+          },
+          "photo_count": "236",
+          "see_all_photos": "https://www.tripadvisor.com/Hotel_Review-g32578-d77401-m66827-Reviews-Inn_by_the_Sea_La_Jolla_CA-La_Jolla_San_Diego_California.html#photos",
+          "price_level": "$$$",
+          "hours": {
+              "periods": [
+                  {
+                      "open": {
+                          "day": 1,
+                          "time": "0000"
+                      },
+                      "close": {
+                          "day": 1,
+                          "time": "0000"
+                      }
+                  },
+                  {
+                      "open": {
+                          "day": 2,
+                          "time": "0000"
+                      },
+                      "close": {
+                          "day": 2,
+                          "time": "0000"
+                      }
+                  },
+                  {
+                      "open": {
+                          "day": 3,
+                          "time": "0000"
+                      },
+                      "close": {
+                          "day": 3,
+                          "time": "0000"
+                      }
+                  },
+                  {
+                      "open": {
+                          "day": 4,
+                          "time": "0000"
+                      },
+                      "close": {
+                          "day": 4,
+                          "time": "0000"
+                      }
+                  },
+                  {
+                      "open": {
+                          "day": 5,
+                          "time": "0000"
+                      },
+                      "close": {
+                          "day": 5,
+                          "time": "0000"
+                      }
+                  },
+                  {
+                      "open": {
+                          "day": 6,
+                          "time": "0000"
+                      },
+                      "close": {
+                          "day": 6,
+                          "time": "0000"
+                      }
+                  },
+                  {
+                      "open": {
+                          "day": 7,
+                          "time": "0000"
+                      },
+                      "close": {
+                          "day": 7,
+                          "time": "0000"
+                      }
+                  }
+              ],
+              "weekday_text": [
+                  "Monday: 00:00 - 00:00",
+                  "Tuesday: 00:00 - 00:00",
+                  "Wednesday: 00:00 - 00:00",
+                  "Thursday: 00:00 - 00:00",
+                  "Friday: 00:00 - 00:00",
+                  "Saturday: 00:00 - 00:00",
+                  "Sunday: 00:00 - 00:00"
+              ]
+          },
+          "amenities": [
+              "Pool",
+              "Internet",
+              "Free Internet",
+              "Free Wifi",
+              "Wheelchair access",
+              "Public Wifi",
+              "Dry Cleaning",
+              "Non-smoking rooms",
+              "Laundry Service",
+              "Air conditioning",
+              "Multilingual Staff",
+              "Self-Serve Laundry",
+              "Accessible rooms",
+              "Refrigerator in room",
+              "Non-smoking hotel",
+              "Heated pool",
+              "Flatscreen TV",
+              "Private Balcony",
+              "Outdoor pool",
+              "Parking",
+              "Facilities for Disabled Guests",
+              "Housekeeping",
+              "Baggage Storage",
+              "Blackout Curtains",
+              "Coffee / Tea Maker",
+              "Complimentary Tea",
+              "English",
+              "Fence Around Pool",
+              "24-Hour Front Desk",
+              "Pool / Beach Towels",
+              "Spanish",
+              "Wake Up Service / Alarm Clock",
+              "Kids Activities",
+              "Suites",
+              "Wifi",
+              "Safe",
+              "Kids Stay Free",
+              "Cable / Satellite TV",
+              "Children's Television Networks",
+              "Complimentary Instant Coffee",
+              "Outdoor Furniture",
+              "Pool View",
+              "Paid Private Parking On-site",
+              "Sun Deck",
+              "Sun Loungers / Beach Chairs",
+              "Taxi Service",
+              "Telephone",
+              "Vending Machine",
+              "Beach Access"
+          ],
+          "category": {
+              "name": "hotel",
+              "localized_name": "Hotel"
+          },
+          "subcategory": [
+              {
+                  "name": "hotel",
+                  "localized_name": "Hotel"
+              }
+          ],
+          "styles": [
+              "City View",
+              "Mid-range"
+          ],
+          "neighborhood_info": [],
+          "trip_types": [
+              {
+                  "name": "business",
+                  "localized_name": "Business",
+                  "value": "93"
+              },
+              {
+                  "name": "couples",
+                  "localized_name": "Couples",
+                  "value": "315"
+              },
+              {
+                  "name": "solo",
+                  "localized_name": "Solo travel",
+                  "value": "56"
+              },
+              {
+                  "name": "family",
+                  "localized_name": "Family",
+                  "value": "366"
+              },
+              {
+                  "name": "friends",
+                  "localized_name": "Friends getaway",
+                  "value": "84"
+              }
+          ],
+          "awards": [
+              {
+                  "award_type": "Travelers Choice",
+                  "year": "2024",
+                  "images": {
+                      "tiny": "https://static.tacdn.com/img2/travelers_choice/widgets/tchotel_2024_L.png",
+                      "small": "https://static.tacdn.com/img2/travelers_choice/widgets/tchotel_2024_L.png",
+                      "large": "https://static.tacdn.com/img2/travelers_choice/widgets/tchotel_2024_L.png"
+                  },
+                  "categories": [],
+                  "display_name": "Travelers Choice"
+              },
+              {
+                  "award_type": "Travelers Choice",
+                  "year": "2023",
+                  "images": {
+                      "tiny": "https://static.tacdn.com/img2/travelers_choice/widgets/tchotel_2023_L.png",
+                      "small": "https://static.tacdn.com/img2/travelers_choice/widgets/tchotel_2023_L.png",
+                      "large": "https://static.tacdn.com/img2/travelers_choice/widgets/tchotel_2023_L.png"
+                  },
+                  "categories": [],
+                  "display_name": "Travelers Choice"
+              }
+          ],
+          "photos": [
+              {
+                  "id": 245190671,
+                  "is_blessed": false,
+                  "caption": "",
+                  "published_date": "2017-03-08T18:40:33.564Z",
+                  "images": {
+                      "thumbnail": {
+                          "height": 50,
+                          "width": 50,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-t/0e/9d/50/0f/inn-by-the-sea.jpg"
+                      },
+                      "small": {
+                          "height": 150,
+                          "width": 150,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-l/0e/9d/50/0f/inn-by-the-sea.jpg"
+                      },
+                      "medium": {
+                          "height": 141,
+                          "width": 250,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-f/0e/9d/50/0f/inn-by-the-sea.jpg"
+                      },
+                      "large": {
+                          "height": 309,
+                          "width": 550,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-s/0e/9d/50/0f/inn-by-the-sea.jpg"
+                      },
+                      "original": {
+                          "height": 1125,
+                          "width": 2000,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-o/0e/9d/50/0f/inn-by-the-sea.jpg"
+                      }
+                  },
+                  "album": "Pool/Beach Area",
+                  "source": {
+                      "name": "Management",
+                      "localized_name": "Management"
+                  },
+                  "user": {
+                      "username": "Management"
+                  }
+              },
+              {
+                  "id": 226449513,
+                  "is_blessed": false,
+                  "caption": "View from our balcony",
+                  "published_date": "2016-11-02T16:34:27.971Z",
+                  "images": {
+                      "thumbnail": {
+                          "height": 50,
+                          "width": 50,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-t/0d/7f/58/69/view-from-our-balcony.jpg"
+                      },
+                      "small": {
+                          "height": 150,
+                          "width": 150,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-l/0d/7f/58/69/view-from-our-balcony.jpg"
+                      },
+                      "medium": {
+                          "height": 188,
+                          "width": 250,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-f/0d/7f/58/69/view-from-our-balcony.jpg"
+                      },
+                      "large": {
+                          "height": 413,
+                          "width": 550,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-s/0d/7f/58/69/view-from-our-balcony.jpg"
+                      },
+                      "original": {
+                          "height": 1500,
+                          "width": 2000,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-o/0d/7f/58/69/view-from-our-balcony.jpg"
+                      }
+                  },
+                  "album": "View from Room",
+                  "source": {
+                      "name": "Traveler",
+                      "localized_name": "Traveler"
+                  },
+                  "user": {
+                      "username": "CheleTea"
+                  }
+              },
+              {
+                  "id": 211372867,
+                  "is_blessed": false,
+                  "caption": "The Standard King Room at the Inn by the Sea",
+                  "published_date": "2016-08-19T14:57:42.118Z",
+                  "images": {
+                      "thumbnail": {
+                          "height": 50,
+                          "width": 50,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-t/0c/99/4b/43/standard-king-room--v13470730.jpg"
+                      },
+                      "small": {
+                          "height": 150,
+                          "width": 150,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-l/0c/99/4b/43/standard-king-room--v13470730.jpg"
+                      },
+                      "medium": {
+                          "height": 205,
+                          "width": 250,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-f/0c/99/4b/43/standard-king-room--v13470730.jpg"
+                      },
+                      "large": {
+                          "height": 367,
+                          "width": 550,
+                          "url": "https://media-cdn.tripadvisor.com/media/oyster/550/0c/99/4b/43/standard-king-room--v13470730.jpg"
+                      },
+                      "original": {
+                          "height": 1733,
+                          "width": 2600,
+                          "url": "https://media-cdn.tripadvisor.com/media/oyster/2600/0c/99/4b/43/standard-king-room--v13470730.jpg"
+                      }
+                  },
+                  "album": "Standard King Room",
+                  "source": {
+                      "name": "Expert",
+                      "localized_name": "Expert"
+                  }
+              },
+              {
+                  "id": 211372832,
+                  "is_blessed": false,
+                  "caption": "The Standard King Room at the Inn by the Sea",
+                  "published_date": "2016-08-19T14:57:35.191Z",
+                  "images": {
+                      "thumbnail": {
+                          "height": 50,
+                          "width": 50,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-t/0c/99/4b/20/standard-king-room--v13470828.jpg"
+                      },
+                      "small": {
+                          "height": 150,
+                          "width": 150,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-l/0c/99/4b/20/standard-king-room--v13470828.jpg"
+                      },
+                      "medium": {
+                          "height": 205,
+                          "width": 250,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-f/0c/99/4b/20/standard-king-room--v13470828.jpg"
+                      },
+                      "large": {
+                          "height": 367,
+                          "width": 550,
+                          "url": "https://media-cdn.tripadvisor.com/media/oyster/550/0c/99/4b/20/standard-king-room--v13470828.jpg"
+                      },
+                      "original": {
+                          "height": 1733,
+                          "width": 2600,
+                          "url": "https://media-cdn.tripadvisor.com/media/oyster/2600/0c/99/4b/20/standard-king-room--v13470828.jpg"
+                      }
+                  },
+                  "album": "Standard King Room",
+                  "source": {
+                      "name": "Expert",
+                      "localized_name": "Expert"
+                  }
+              },
+              {
+                  "id": 211372830,
+                  "is_blessed": false,
+                  "caption": "The Standard King Room at the Inn by the Sea",
+                  "published_date": "2016-08-19T14:57:34.903Z",
+                  "images": {
+                      "thumbnail": {
+                          "height": 50,
+                          "width": 50,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-t/0c/99/4b/1e/standard-king-room--v13470719.jpg"
+                      },
+                      "small": {
+                          "height": 150,
+                          "width": 150,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-l/0c/99/4b/1e/standard-king-room--v13470719.jpg"
+                      },
+                      "medium": {
+                          "height": 205,
+                          "width": 250,
+                          "url": "https://media-cdn.tripadvisor.com/media/photo-f/0c/99/4b/1e/standard-king-room--v13470719.jpg"
+                      },
+                      "large": {
+                          "height": 367,
+                          "width": 550,
+                          "url": "https://media-cdn.tripadvisor.com/media/oyster/550/0c/99/4b/1e/standard-king-room--v13470719.jpg"
+                      },
+                      "original": {
+                          "height": 1733,
+                          "width": 2600,
+                          "url": "https://media-cdn.tripadvisor.com/media/oyster/2600/0c/99/4b/1e/standard-king-room--v13470719.jpg"
+                      }
+                  },
+                  "album": "Standard King Room",
+                  "source": {
+                      "name": "Expert",
+                      "localized_name": "Expert"
+                  }
+              }
+          ]
+      },
+      "location_id": "77401",
+      "name": "Inn by the Sea La Jolla, CA.",
+      "distance": "1.056038952247395",
+      "bearing": "west",
+      "address_obj": {
+          "street1": "7830 Fay Avenue",
+          "street2": "",
+          "city": "La Jolla",
+          "state": "California",
+          "country": "United States",
+          "postalcode": "92037",
+          "address_string": "7830 Fay Avenue, La Jolla, San Diego, CA 92037"
+      }
+  }
+]

@@ -1,0 +1,202 @@
+# Item Views
+
+Item views define how individual items are rendered within overview components. Meridian provides several built-in item view types.
+
+## ItemViewConfig Interface
+
+```typescript
+interface ItemViewConfig {
+  type: string;
+}
+```
+
+## Built-in Item Views
+
+### Profile
+
+Card-style layout with prominent image and stacked content.
+
+```typescript
+{
+  type: "profile"
+}
+```
+
+**Layout:**
+- Top: Thumbnail image (full width)
+- Middle: Title, subtitle, badges
+- Bottom: Key attributes, descriptions
+
+**Best for:** Product cards, user profiles, media items
+
+**Example:**
+```typescript
+{
+  type: "grid",
+  itemView: { type: "profile" },
+  shownAttributes: ["thumbnail", "title", "subtitle", "key-attribute", "badge"]
+}
+```
+
+### Pin
+
+Compact pin-style layout for map markers.
+
+```typescript
+{
+  type: "pin"
+}
+```
+
+**Layout:**
+- Small marker icon
+- Condensed information
+- Optimized for maps
+
+**Best for:** Map locations, geographic markers
+
+**Example:**
+```typescript
+{
+  type: "map",
+  itemView: { type: "pin" },
+  shownAttributes: ["title", "key-attribute"]
+}
+```
+
+### Compact
+
+Minimal single-line layout.
+
+```typescript
+{
+  type: "compact"
+}
+```
+
+**Layout:**
+- Horizontal single line
+- Small thumbnail (if any)
+- Minimal text
+
+**Best for:** Dense lists, dropdowns, autocomplete
+
+### Vertical
+
+Vertical stacked layout with all content visible.
+
+```typescript
+{
+  type: "vertical"
+}
+```
+
+**Layout:**
+- Vertical stacking of all attributes
+- Full-width utilization
+- Good for detailed information
+
+**Best for:** List views, detailed items, search results
+
+**Example:**
+```typescript
+{
+  type: "list",
+  itemView: { type: "vertical" },
+  shownAttributes: "all"
+}
+```
+
+## Custom Item Views
+
+Create custom item renderers:
+
+```typescript
+import { CustomItemViewType } from 'meridian';
+
+const CustomItem: CustomItemViewType = {
+  type: "my-custom-item",
+  view: ({ attributes, item, options }) => (
+    <div className="custom-item">
+      {/* Custom rendering logic */}
+      <h3>{attributes.find(a => a.roles?.includes("title"))?.value}</h3>
+      {/* ... more custom rendering */}
+    </div>
+  )
+};
+
+// Register it
+import { itemViewTypesMap } from 'meridian';
+itemViewTypesMap["my-custom-item"] = CustomItem;
+
+// Use it
+{
+  type: "grid",
+  itemView: { type: "my-custom-item" }
+}
+```
+
+## Attribute Display
+
+Item views respect attribute roles for positioning:
+
+- **title**: Primary heading
+- **subtitle**: Secondary text
+- **thumbnail**: Images
+- **key-attribute**: Emphasized info
+- **badge**: Status indicators
+- **tag**: Category labels
+- **description**: Body text
+- **spec**: Detailed info
+- **action**: Buttons/links
+
+## Styling Item Views
+
+Apply custom styles via overview configuration:
+
+```typescript
+{
+  type: "grid",
+  itemView: { type: "profile" },
+  itemClassName: "rounded-lg shadow-md p-4 bg-white hover:shadow-xl transition",
+  itemStyle: {
+    minHeight: "300px",
+    maxWidth: "400px"
+  }
+}
+```
+
+## Best Practices
+
+### Match View to Overview
+
+```typescript
+// Grid → Profile (cards)
+{ type: "grid", itemView: { type: "profile" } }
+
+// List → Vertical (detailed)
+{ type: "list", itemView: { type: "vertical" } }
+
+// Map → Pin (markers)
+{ type: "map", itemView: { type: "pin" } }
+```
+
+### Optimize Attribute Selection
+
+Show only what fits in the item view:
+
+```typescript
+// Profile view - limited space
+{
+  type: "grid",
+  itemView: { type: "profile" },
+  shownAttributes: ["thumbnail", "title", "key-attribute", "badge"]
+}
+
+// Vertical view - more space
+{
+  type: "list",
+  itemView: { type: "vertical" },
+  shownAttributes: "all"
+}
+```

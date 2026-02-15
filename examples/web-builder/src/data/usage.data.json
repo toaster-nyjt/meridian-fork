@@ -1,0 +1,39 @@
+{
+  "id": "usage-data-2025-04-11",
+  "rolesUsage": {
+    "title": 0.15,
+    "thumbnail": 0.35,
+    "description": 0.1,
+    "tag": 0.6,
+    "action": 0.3
+  },
+  "overviewUsage": {
+    "type": {
+      "grid": 0.65,
+      "list": 0.25,
+      "table": 0.1
+    },
+    "itemView": {
+      "title": 0.35,
+      "thumbnail": 0.3,
+      "tag": 0.25,
+      "description": 0.1
+    },
+    "openIn": {
+      "new-page": 0.35,
+      "side-by-side": 0.25,
+      "replace": 0.1,
+      "pop-up": 0.15,
+      "tooltip": 0.15
+    },
+    "numberOfViews": 12500
+  },
+  "detailViewUsage": {
+    "type": {
+      "expanded": 0.6,
+      "compact": 0.3,
+      "minimal": 0.1
+    },
+    "numberOfViews": 8750
+  }
+}

@@ -1,0 +1,513 @@
+# Transformations
+
+Transformations allow you to manipulate data before it's displayed. They enable powerful data processing directly in your ODI specification.
+
+## AttributeTransformType
+
+```typescript
+interface AttributeTransformType {
+  value?: string;
+  map?: string | { itemId?: string; attributes: AttributeType[] };
+  filter?: string | AttributeConditionType;
+  slice?: {
+    start?: number;
+    end?: number;
+  };
+}
+```
+
+Transformations are applied in order within the `transform` array.
+
+## Map Transform
+
+The `map` transformation iterates over arrays and applies attributes to each element.
+
+### Simple Map
+
+Map each array element to an attribute:
+
+```typescript
+const data = {
+  id: "1",
+  tags: ["React", "TypeScript", "Meridian"]
+};
+
+{
+  value: ".tags",
+  transform: [{ map: "." }],  // "." means use the value itself
+  roles: ["tag"]
+}
+
+// Result: Each tag rendered separately
+```
+
+### Map with Attributes
+
+Map array elements to structured attributes:
+
+```typescript
+const data = {
+  id: "1",
+  features: [
+    { name: "Fast", description: "Lightning quick" },
+    { name: "Easy", description: "Simple to use" },
+    { name: "Flexible", description: "Highly customizable" }
+  ]
+};
+
+{
+  value: ".features",
+  transform: [{
+    map: {
+      attributes: [
+        { value: ".name", roles: ["title"] },
+        { value: ".description", roles: ["description"] }
+      ]
+    }
+  }],
+  roles: ["spec"]
+}
+
+// Result: Each feature displayed with name and description
+```
+
+### Nested Map
+
+Map nested arrays:
+
+```typescript
+const data = {
+  id: "1",
+  categories: [
+    {
+      name: "Electronics",
+      items: ["Phone", "Laptop", "Tablet"]
+    },
+    {
+      name: "Clothing",
+      items: ["Shirt", "Pants", "Shoes"]
+    }
+  ]
+};
+
+{
+  value: ".categories",
+  transform: [{
+    map: {
+      attributes: [
+        { value: ".name", roles: ["title"] },
+        {
+          value: ".items",
+          transform: [{ map: "." }],
+          roles: ["spec"]
+        }
+      ]
+    }
+  }]
+}
+```
+
+## Filter Transform
+
+Filter array elements based on conditions.
+
+### Filter with Condition Object
+
+```typescript
+const data = {
+  id: "1",
+  products: [
+    { name: "Phone", inStock: true, price: 999 },
+    { name: "Laptop", inStock: false, price: 1299 },
+    { name: "Tablet", inStock: true, price: 499 }
+  ]
+};
+
+{
+  value: ".products",
+  transform: [
+    {
+      filter: {
+        comparison: {
+          field: ".inStock",
+          operator: "==",
+          value: true
+        }
+      }
+    },
+    {
+      map: {
+        attributes: [
+          { value: ".name", roles: ["title"] },
+          { value: ".price", type: "price", roles: ["key-attribute"] }
+        ]
+      }
+    }
+  ]
+}
+
+// Result: Only in-stock products shown
+```
+
+### Filter with String Expression
+
+```typescript
+{
+  value: ".items",
+  transform: [
+    { filter: ".featured == true" },
+    { map: "." }
+  ],
+  roles: ["spec"]
+}
+```
+
+### Multiple Filters
+
+Chain multiple filters:
+
+```typescript
+{
+  value: ".products",
+  transform: [
+    { filter: { comparison: { field: ".inStock", operator: "==", value: true } } },
+    { filter: { comparison: { field: ".price", operator: "<", value: 1000 } } },
+    { map: "." }
+  ]
+}
+
+// Result: Products that are in stock AND price < 1000
+```
+
+## Slice Transform
+
+Extract a portion of an array.
+
+### Basic Slice
+
+```typescript
+const data = {
+  id: "1",
+  reviews: ["Great!", "Loved it", "Best purchase", "Amazing", "Perfect"]
+};
+
+// Show first 3 reviews
+{
+  value: ".reviews",
+  transform: [
+    { slice: { start: 0, end: 3 } },
+    { map: "." }
+  ],
+  roles: ["spec"]
+}
+```
+
+### Skip First Elements
+
+```typescript
+// Show all but first element
+{
+  value: ".offers",
+  transform: [
+    { slice: { start: 1 } },
+    { map: "." }
+  ]
+}
+```
+
+### Last N Elements
+
+```typescript
+// Show last 5 items
+{
+  value: ".recentActivity",
+  transform: [
+    { slice: { start: -5 } },
+    { map: "." }
+  ]
+}
+```
+
+## Value Transform
+
+Set or override the value:
+
+```typescript
+{
+  value: ".data",
+  transform: [
+    { value: ".nested.deepValue" }  // Override path
+  ]
+}
+```
+
+## Combining Transformations
+
+Transformations are applied in order, enabling complex data processing:
+
+### Example: Featured Items with Limit
+
+```typescript
+{
+  value: ".products",
+  transform: [
+    // 1. Filter featured items
+    { filter: { comparison: { field: ".featured", operator: "==", value: true } } },
+    // 2. Take first 3
+    { slice: { end: 3 } },
+    // 3. Map to attributes
+    {
+      map: {
+        attributes: [
+          { value: ".name", roles: ["title"] },
+          { value: ".image", type: "image", roles: ["thumbnail"] },
+          { value: ".price", type: "price", roles: ["key-attribute"] }
+        ]
+      }
+    }
+  ]
+}
+```
+
+### Example: Sorted and Filtered List
+
+```typescript
+{
+  value: ".employees",
+  transform: [
+    // Filter by department
+    { filter: { comparison: { field: ".department", operator: "==", value: "Engineering" } } },
+    // Filter by status
+    { filter: { comparison: { field: ".status", operator: "==", value: "active" } } },
+    // Map to display
+    {
+      map: {
+        attributes: [
+          { value: ".name", roles: ["title"] },
+          { value: ".position", roles: ["subtitle"] },
+          { value: ".email", type: "link", roles: ["link"] }
+        ]
+      }
+    }
+  ]
+}
+```
+
+## Real-World Examples
+
+### E-commerce: Price-based Filtering
+
+```typescript
+const product = {
+  id: "phone",
+  name: "Smartphone",
+  storage: [
+    { capacity: "128GB", price: 799, dealPrice: 699 },
+    { capacity: "256GB", price: 899, dealPrice: 799 },
+    { capacity: "512GB", price: 1099, dealPrice: 999 },
+    { capacity: "1TB", price: 1399, dealPrice: 1299 }
+  ]
+};
+
+{
+  label: "Affordable Options",
+  value: ".storage",
+  transform: [
+    // Filter by deal price
+    {
+      filter: {
+        comparison: {
+          field: ".dealPrice",
+          operator: "<=",
+          value: 1000
+        }
+      }
+    },
+    // Map to display
+    {
+      map: {
+        attributes: [
+          { value: ".capacity", roles: ["title"] },
+          { value: ".price", type: "price", label: "Regular" },
+          { value: ".dealPrice", type: "price", label: "Sale", roles: ["key-attribute"] }
+        ]
+      }
+    }
+  ],
+  roles: ["spec"]
+}
+```
+
+### Social Media: Recent Posts
+
+```typescript
+const profile = {
+  id: "user123",
+  posts: [
+    { id: "1", content: "...", timestamp: "2025-11-07", likes: 42 },
+    { id: "2", content: "...", timestamp: "2025-11-06", likes: 15 },
+    // ... more posts
+  ]
+};
+
+{
+  label: "Recent Activity",
+  value: ".posts",
+  transform: [
+    // Get latest 5 posts
+    { slice: { end: 5 } },
+    // Map to display
+    {
+      map: {
+        attributes: [
+          { value: ".content", roles: ["description"] },
+          { value: ".timestamp", roles: ["subtitle"] },
+          { value: ".likes", roles: ["key-attribute"] }
+        ]
+      }
+    }
+  ]
+}
+```
+
+### Real Estate: Featured Listings
+
+```typescript
+const listings = {
+  properties: [
+    { id: "1", address: "...", price: 450000, featured: true, bedrooms: 3 },
+    { id: "2", address: "...", price: 650000, featured: false, bedrooms: 4 },
+    { id: "3", address: "...", price: 550000, featured: true, bedrooms: 3 },
+    // ... more listings
+  ]
+};
+
+{
+  label: "Featured Homes",
+  value: ".properties",
+  transform: [
+    // Only featured
+    { filter: { comparison: { field: ".featured", operator: "==", value: true } } },
+    // Limit to 6
+    { slice: { end: 6 } },
+    // Display
+    {
+      map: {
+        attributes: [
+          { value: ".address", roles: ["title"] },
+          { value: ".price", type: "price", roles: ["key-attribute"] },
+          { value: ".bedrooms", label: "Beds", roles: ["spec"] }
+        ]
+      }
+    }
+  ]
+}
+```
+
+## Performance Considerations
+
+### 1. Filter Early
+
+Apply filters before maps to reduce processing:
+
+```typescript
+// Good
+transform: [
+  { filter: {...} },  // Reduce dataset first
+  { map: {...} }      // Then process
+]
+
+// Less efficient
+transform: [
+  { map: {...} },     // Process all items
+  { filter: {...} }   // Then filter
+]
+```
+
+### 2. Limit Data Size
+
+Use slice to limit displayed items:
+
+```typescript
+transform: [
+  { slice: { end: 100 } },  // Cap at 100 items
+  { map: {...} }
+]
+```
+
+### 3. Avoid Deep Nesting
+
+Keep transformations simple when possible:
+
+```typescript
+// Simpler
+{ value: ".items", transform: [{ map: "." }] }
+
+// Complex (use only when needed)
+{
+  value: ".items",
+  transform: [{
+    map: {
+      attributes: [{
+        value: ".nested",
+        transform: [{
+          map: { attributes: [...] }
+        }]
+      }]
+    }
+  }]
+}
+```
+
+## Best Practices
+
+### 1. Order Matters
+
+```typescript
+// Correct order
+transform: [
+  { filter: {...} },   // Filter first
+  { slice: {...} },    // Then limit
+  { map: {...} }       // Finally transform
+]
+```
+
+### 2. Be Explicit
+
+```typescript
+// Clear and explicit
+{
+  value: ".products",
+  transform: [
+    { filter: { comparison: { field: ".inStock", operator: "==", value: true } } }
+  ]
+}
+
+// Avoid shorthand when clarity matters
+{
+  value: ".products",
+  transform: [{ filter: ".inStock" }]  // Less clear
+}
+```
+
+### 3. Document Complex Transforms
+
+```typescript
+{
+  // Show top 3 high-rated available products under $100
+  value: ".products",
+  transform: [
+    { filter: { comparison: { field: ".available", operator: "==", value: true } } },
+    { filter: { comparison: { field: ".price", operator: "<", value: 100 } } },
+    { filter: { comparison: { field: ".rating", operator: ">=", value: 4 } } },
+    { slice: { end: 3 } },
+    { map: {...} }
+  ]
+}
+```
+
+## Next Steps
+
+- [Conditions](/core-concepts/conditions) - Conditional attribute rendering
+- [Data Binding](/core-concepts/data-binding) - Learn more about data binding
+- [Attributes](/core-concepts/attributes) - Explore the attribute system

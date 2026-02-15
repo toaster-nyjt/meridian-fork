@@ -1,0 +1,321 @@
+# ODI Structure
+
+The ODI (Overview-Detail Interface) object is the root of your Meridian specification. It defines the complete structure of your interface.
+
+## ODI Interface
+
+```typescript
+interface ODI {
+  dataBinding: DataBindingType[];
+  overviews: Overview[];
+  detailViews?: DetailView[];
+  viewLayout?: ViewLayout[];
+  malleability?: Malleability;
+}
+```
+
+## Properties
+
+### dataBinding (required)
+
+An array of data binding configurations that map your data to visual attributes.
+
+```typescript
+dataBinding: DataBindingType[]
+```
+
+**Example:**
+```typescript
+dataBinding: [{
+  id: "products",
+  binding: {
+    itemId: ".id",
+    attributes: [
+      { value: ".name", roles: ["title"] },
+      { value: ".price", type: "price", roles: ["key-attribute"] }
+    ]
+  }
+}]
+```
+
+Multiple data bindings allow you to work with different types of items in the same interface.
+
+### overviews (required)
+
+An array of overview configurations that define how collections are displayed.
+
+```typescript
+overviews: Overview[]
+```
+
+**Example:**
+```typescript
+overviews: [{
+  type: "grid",
+  itemView: { type: "profile" },
+  bindingId: "products"
+}]
+```
+
+Each overview can have:
+- A specific `type` (grid, list, map, table, or custom)
+- An optional `itemView` to customize item rendering
+- `detailViews` for item detail pages
+- `bindingId` to reference a specific data binding
+
+### detailViews (optional)
+
+Top-level detail views that aren't tied to a specific overview.
+
+```typescript
+detailViews?: DetailView[]
+```
+
+**Example:**
+```typescript
+detailViews: [{
+  id: "product-detail",
+  type: "basic",
+  openIn: "new-page",
+  bindingId: "products"
+}]
+```
+
+These are useful for:
+- Standalone detail pages
+- Shared detail views across multiple overviews
+- Detail views with specific routing requirements
+
+### viewLayout (optional)
+
+Defines how multiple views are arranged spatially.
+
+```typescript
+viewLayout?: ViewLayout[]
+```
+
+**Example:**
+```typescript
+viewLayout: [
+  {
+    viewId: "overview-1",
+    groupIndex: 0,
+    type: "panels",
+    orientation: "horizontal"
+  },
+  {
+    viewId: "detail-1",
+    groupIndex: 0,
+    type: "panels"
+  }
+]
+```
+
+**Default behavior:**
+- 1 view: Full screen
+- 2 views: Side-by-side horizontally
+- 3+ views: Organized in tabs
+
+### malleability (optional)
+
+Configures which aspects of the interface users can customize.
+
+```typescript
+malleability?: Malleability
+```
+
+**Example:**
+```typescript
+malleability: {
+  content: {
+    types: ["toggle"]
+  },
+  composition: {
+    types: ["tabs", "toolbar"]
+  },
+  layout: {
+    types: ["menus"]
+  }
+}
+```
+
+See [Malleability](/advanced/malleability) for detailed documentation.
+
+## Complete Example
+
+Here's a full ODI specification:
+
+```typescript
+import { ODI } from 'meridian';
+
+const productsODI: ODI = {
+  // Data binding
+  dataBinding: [{
+    id: "products",
+    binding: {
+      itemId: ".id",
+      attributes: [
+        { value: ".name", roles: ["title"] },
+        { value: ".description", roles: ["description"] },
+        { value: ".image", type: "image", roles: ["thumbnail"] },
+        { value: ".price", type: "price", roles: ["key-attribute"] },
+        { value: ".category", roles: ["subtitle", "tag"] },
+        { value: ".rating", roles: ["rating"] }
+      ]
+    }
+  }],
+
+  // Overview
+  overviews: [{
+    id: "products-grid",
+    type: "grid",
+    itemView: {
+      type: "profile"
+    },
+    shownAttributes: ["title", "thumbnail", "key-attribute"],
+    detailViews: [{
+      type: "basic",
+      openFrom: ["title"],
+      openIn: "side-by-side",
+      shownAttributes: "all"
+    }]
+  }],
+
+  // Malleability
+  malleability: {
+    content: {
+      types: ["toggle"]
+    },
+    composition: {
+      types: ["tabs"]
+    },
+    layout: {
+      types: ["menus"]
+    }
+  }
+};
+
+export default productsODI;
+```
+
+## Best Practices
+
+### 1. Use Meaningful IDs
+Give your data bindings and views descriptive IDs:
+
+```typescript
+// Good
+dataBinding: [{ id: "user-profiles", binding: {...} }]
+
+// Avoid
+dataBinding: [{ id: "db1", binding: {...} }]
+```
+
+### 2. Start Simple
+Begin with a basic structure and add complexity as needed:
+
+```typescript
+// Start here
+const simpleODI: ODI = {
+  dataBinding: [{
+    binding: {
+      itemId: ".id",
+      attributes: [
+        { value: ".title", roles: ["title"] }
+      ]
+    }
+  }],
+  overviews: [{ type: "list" }]
+};
+```
+
+### 3. Separate Concerns
+Keep data binding separate from view configuration:
+
+```typescript
+// Data layer
+const binding = {
+  itemId: ".id",
+  attributes: [/* ... */]
+};
+
+// View layer
+const overviews = [{
+  type: "grid",
+  bindingId: "products"
+}];
+```
+
+### 4. Use Type Safety
+Leverage TypeScript for compile-time validation:
+
+```typescript
+import { ODI, DataBindingType, Overview } from 'meridian';
+
+const odi: ODI = {
+  // TypeScript will validate this structure
+  dataBinding: [/* ... */],
+  overviews: [/* ... */]
+};
+```
+
+## Common Patterns
+
+### Single Overview with Details
+Most interfaces follow this pattern:
+
+```typescript
+const odi: ODI = {
+  dataBinding: [/* ... */],
+  overviews: [{
+    type: "grid",
+    detailViews: [{
+      type: "basic",
+      openFrom: ["title"]
+    }]
+  }]
+};
+```
+
+### Multiple Overviews
+For interfaces with multiple perspectives on the same data:
+
+```typescript
+const odi: ODI = {
+  dataBinding: [/* ... */],
+  overviews: [
+    { id: "grid-view", type: "grid" },
+    { id: "map-view", type: "map" },
+    { id: "table-view", type: "table" }
+  ]
+};
+```
+
+### Hierarchical Data
+For nested or related data:
+
+```typescript
+const odi: ODI = {
+  dataBinding: [
+    { id: "categories", binding: {/* ... */} },
+    { id: "products", binding: {/* ... */} }
+  ],
+  overviews: [{
+    type: "list",
+    bindingId: "categories",
+    detailViews: [{
+      type: "basic",
+      overviews: [{
+        type: "grid",
+        bindingId: "products"
+      }]
+    }]
+  }]
+};
+```
+
+## Next Steps
+
+- [Data Binding](/core-concepts/data-binding) - Learn how to bind data to attributes
+- [Attributes](/core-concepts/attributes) - Explore the attribute system
+- [Components](/components) - Discover available overview and detail view types

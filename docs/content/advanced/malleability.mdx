@@ -1,0 +1,341 @@
+# Malleability
+
+Malleability is a core feature of Meridian that allows users to customize the interface to their needs. It operates across three dimensions: content, composition, and layout.
+
+## Malleability Interface
+
+```typescript
+interface Malleability {
+  disabled?: boolean;
+  content?: {
+    disabled?: boolean | AttributeSelectionScope;
+    types?: MalleableContentType[];
+  };
+  composition?: {
+    disabled?: boolean | ("overview" | "detail")[];
+    types?: MalleableCompositionType[];
+  };
+  layout?: {
+    disabled?: boolean | {overviewId?: string; detailId?: string}[];
+    types?: MalleableLayoutType[];
+  };
+}
+
+type MalleableContentType = "toggle" | string;
+type MalleableCompositionType = "tabs" | "toolbar" | string;
+type MalleableLayoutType = "menus" | string;
+```
+
+## Three Dimensions of Malleability
+
+### 1. Content Malleability
+
+Users can toggle which attributes are visible.
+
+**Enable:**
+```typescript
+malleability: {
+  content: {
+    types: ["toggle"]
+  }
+}
+```
+
+**Disable for specific attributes:**
+```typescript
+malleability: {
+  content: {
+    disabled: ["internal-id", "metadata"]
+  }
+}
+```
+
+**Disable completely:**
+```typescript
+malleability: {
+  content: {
+    disabled: true
+  }
+}
+```
+
+### 2. Composition Malleability
+
+Users can switch between different view types and add/remove views.
+
+**Enable:**
+```typescript
+malleability: {
+  composition: {
+    types: ["tabs", "toolbar"]
+  }
+}
+```
+
+**Tabs:** Users can switch between different overviews via tabs
+**Toolbar:** Users get a toolbar to manage views
+
+**Disable for overviews:**
+```typescript
+malleability: {
+  composition: {
+    disabled: ["overview"]
+  }
+}
+```
+
+**Disable for details:**
+```typescript
+malleability: {
+  composition: {
+    disabled: ["detail"]
+  }
+}
+```
+
+### 3. Layout Malleability
+
+Users can arrange views spatially.
+
+**Enable:**
+```typescript
+malleability: {
+  layout: {
+    types: ["menus"]
+  }
+}
+```
+
+**Disable for specific views:**
+```typescript
+malleability: {
+  layout: {
+    disabled: [
+      { overviewId: "main-grid" },
+      { detailId: "product-detail" }
+    ]
+  }
+}
+```
+
+## Complete Configuration
+
+```typescript
+const odi: ODI = {
+  dataBinding: [/* ... */],
+  overviews: [/* ... */],
+
+  malleability: {
+    // Enable all dimensions
+    content: {
+      types: ["toggle"],
+      // Prevent toggling these attributes
+      disabled: ["title", "thumbnail"]
+    },
+    composition: {
+      types: ["tabs", "toolbar"],
+      // Allow overview changes, prevent detail changes
+      disabled: ["detail"]
+    },
+    layout: {
+      types: ["menus"],
+      // Prevent layout changes for specific views
+      disabled: [
+        { overviewId: "main-overview" }
+      ]
+    }
+  }
+};
+```
+
+## Disabling Malleability
+
+### Disable Entirely
+
+```typescript
+malleability: {
+  disabled: true
+}
+```
+
+### Disable by Dimension
+
+```typescript
+malleability: {
+  content: { disabled: true },
+  composition: { disabled: true },
+  layout: { disabled: true }
+}
+```
+
+### Selective Disabling
+
+```typescript
+malleability: {
+  // Allow content toggle except for key attributes
+  content: {
+    types: ["toggle"],
+    disabled: ["title", "key-attribute", "action"]
+  },
+
+  // Allow overview composition only
+  composition: {
+    types: ["tabs"],
+    disabled: ["detail"]
+  },
+
+  // Allow layout changes except main view
+  layout: {
+    types: ["menus"],
+    disabled: [{ overviewId: "main" }]
+  }
+}
+```
+
+## User Experience
+
+When malleability is enabled, users see:
+
+### Content Toggle
+- Checkbox or toggle buttons for each attribute
+- Show/hide attributes in real-time
+- Attributes remember user preferences
+
+### Composition Controls
+- **Tabs**: Switch between overview types (grid/list/map/table)
+- **Toolbar**: Add/remove views, create nested ODIs
+
+### Layout Controls
+- **Menus**: Arrange views (tabs/panels/side-by-side)
+- Drag-and-drop interfaces
+- Resize panels
+
+## Best Practices
+
+### 1. Enable Selectively
+
+Don't enable all malleability for all interfaces:
+
+```typescript
+// E-commerce - allow content toggle
+malleability: {
+  content: { types: ["toggle"] }
+}
+
+// Dashboard - allow composition and layout
+malleability: {
+  composition: { types: ["tabs"] },
+  layout: { types: ["menus"] }
+}
+```
+
+### 2. Protect Critical Attributes
+
+Prevent users from hiding essential information:
+
+```typescript
+malleability: {
+  content: {
+    types: ["toggle"],
+    disabled: ["title", "key-attribute", "action"]
+  }
+}
+```
+
+### 3. Guide Users
+
+Provide reasonable defaults:
+
+```typescript
+overviews: [{
+  type: "grid",
+  // Start with essential attributes
+  shownAttributes: ["title", "thumbnail", "key-attribute"],
+  // Allow users to show more
+}],
+
+malleability: {
+  content: { types: ["toggle"] }
+}
+```
+
+### 4. Consider Context
+
+Different interfaces need different malleability levels:
+
+```typescript
+// Public-facing site - minimal malleability
+malleability: {
+  content: { types: ["toggle"] }
+}
+
+// Internal dashboard - full malleability
+malleability: {
+  content: { types: ["toggle"] },
+  composition: { types: ["tabs", "toolbar"] },
+  layout: { types: ["menus"] }
+}
+```
+
+## Examples
+
+### E-commerce with Content Toggle
+
+```typescript
+const odi: ODI = {
+  dataBinding: [/* ... */],
+  overviews: [{
+    type: "grid",
+    shownAttributes: ["title", "thumbnail", "key-attribute"],
+  }],
+
+  malleability: {
+    content: {
+      types: ["toggle"],
+      // Prevent hiding these
+      disabled: ["title", "thumbnail", "action"]
+    }
+  }
+};
+```
+
+### Dashboard with Full Malleability
+
+```typescript
+const odi: ODI = {
+  dataBinding: [/* ... */],
+  overviews: [
+    { id: "grid", type: "grid" },
+    { id: "table", type: "table" },
+    { id: "map", type: "map" }
+  ],
+
+  malleability: {
+    content: {
+      types: ["toggle"]
+    },
+    composition: {
+      types: ["tabs", "toolbar"]
+    },
+    layout: {
+      types: ["menus"]
+    }
+  }
+};
+```
+
+### Fixed Interface (No Malleability)
+
+```typescript
+const odi: ODI = {
+  dataBinding: [/* ... */],
+  overviews: [{
+    type: "grid",
+    shownAttributes: ["title", "thumbnail", "key-attribute"]
+  }],
+
+  malleability: {
+    disabled: true
+  }
+};
+```

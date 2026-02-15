@@ -1,0 +1,71 @@
+# Meridian: A Design Framework for Malleable Overview-Detail Interfaces
+
+Welcome to the Meridian documentation. Meridian is a powerful React-based framework for building malleable overview-detail interfaces (ODIs) using a declarative JSON specification.
+
+## What is Meridian?
+
+Meridian is a design framework that enables developers to create flexible, interactive data exploration interfaces. It provides:
+
+- **Declarative JSON Specification**: Define your entire interface using a simple, type-safe JSON structure
+- **Malleable Interfaces**: Built-in support for user customization of content, composition, and layout
+- **Reusable Components**: Pre-built overview types (grid, list, map, table) and detail views
+- **Data Binding**: Powerful attribute system with transformations, conditions, and nested structures
+- **Type Safety**: Full TypeScript support with comprehensive type definitions
+
+## Key Features
+
+### Overview-Detail Pattern
+Meridian implements the overview-detail pattern, allowing users to browse collections of data in an overview and dive into details when needed.
+
+### Malleability
+Users can customize three dimensions of the interface:
+- **Content**: Toggle attributes on/off
+- **Composition**: Switch between different views and layouts
+- **Layout**: Arrange views in tabs, panels, or side-by-side
+
+### Flexible Data Binding
+The attribute system supports:
+- Conditional rendering based on item properties
+- Data transformations (map, filter, slice)
+- Nested attributes and attribute groups
+- Role-based attribute selection
+- Custom attribute types
+
+## Research Background
+
+Meridian is based on academic research published at UIST 2025:
+
+> Bryan Min and Haijun Xia. 2025. Meridian: A Design Framework for Malleable Overview-Detail Interfaces. In The 38th Annual ACM Symposium on User Interface Software and Technology (UIST '25), September 28-October 1, 2025, Busan, Republic of Korea. ACM, New York, NY, USA, 13 pages. https://doi.org/10.1145/3746059.3747654
+
+## Quick Example
+
+```typescript
+import { ODI } from 'meridian';
+
+const myODI: ODI = {
+  dataBinding: [{
+    binding: {
+      itemId: ".id",
+      attributes: [
+        { value: ".title", roles: ["title"] },
+        { value: ".description", roles: ["description"] },
+        { value: ".image", type: "image", roles: ["thumbnail"] }
+      ]
+    }
+  }],
+  overviews: [{
+    type: "grid",
+    detailViews: [{
+      type: "basic",
+      openFrom: ["title"]
+    }]
+  }]
+};
+```
+
+## Next Steps
+
+- [Getting Started](/getting-started) - Set up Meridian in your project
+- [Core Concepts](/core-concepts) - Learn about the fundamental concepts
+- [Examples](/examples) - Explore real-world examples
+- [API Reference](/api) - Dive into the complete API documentation

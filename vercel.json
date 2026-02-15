@@ -1,0 +1,5 @@
+{
+  "buildCommand": "npm install && cd examples/gallery && npm install && npm run build",
+  "outputDirectory": "examples/gallery/.next",
+  "installCommand": "npm install && cd examples/gallery && npm install"
+}
