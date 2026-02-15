@@ -1,4 +1,4 @@
-import { useODI } from "@meridian-ui/meridian";
+import { useODI } from "meridian-ui";
 import { AttributeStyleView } from "./style-view/attribute-style-view";
 export const SidebarRight = () => {
   const { selectedItemEntity, getSelectedAttributeSet } = useODI();

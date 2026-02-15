@@ -1,15 +1,15 @@
 import {
   getAttributesByRole,
   getAttributesWithoutRoles,
-} from "@meridian-ui/meridian";
-import { Role, ItemViewConfig } from "@meridian-ui/meridian";
+} from "meridian-ui";
+import { Role, ItemViewConfig } from "meridian-ui";
 import {
   FetchedAttributeValueType,
   FetchedItemType,
   ViewOptions,
-} from "@meridian-ui/meridian";
-import { useODI } from "@meridian-ui/meridian";
-import { Attribute } from "@meridian-ui/meridian";
+} from "meridian-ui";
+import { useODI } from "meridian-ui";
+import { Attribute } from "meridian-ui";
 
 export interface ItemSynonymType extends ItemViewConfig {
   type: "synonym";

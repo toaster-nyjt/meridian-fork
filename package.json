@@ -1,7 +1,17 @@
 {
-  "name": "@meridian-ui/meridian",
+  "name": "meridian-ui",
   "type": "module",
-  "version": "1.1.1",
+  "version": "1.0.1",
+  "description": "A React component library for building malleable overview-detail interfaces with the Meridian design framework",
+  "keywords": [
+    "react",
+    "components",
+    "overview-detail",
+    "data-visualization",
+    "ui-library",
+    "meridian",
+    "interface-design"
+  ],
   "main": "./dist/cjs/index.cjs",
   "module": "./dist/esm/index.js",
   "types": "./dist/index.d.ts",
@@ -70,10 +80,6 @@
   "publishConfig": {
     "access": "public"
   },
-  "files": [
-    "dist"
-  ],
-  "sideEffects": [
-    "*.css"
-  ]
+  "files": ["dist"],
+  "sideEffects": ["*.css"]
 }

@@ -3,7 +3,7 @@ import {
   ItemViewTypeConfig,
   OverviewTypeConfig,
   OverviewBasicList,
-} from "@meridian-ui/meridian";
+} from "meridian-ui";
 import { ItemViewBuilderTemplate } from "./builder-template-item-view";
 import { ItemViewBuilderFreeform } from "./builder-freeform-item-view";
 import { mapDefault, OverviewMap } from "./map-overview";

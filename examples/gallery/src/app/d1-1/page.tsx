@@ -1,7 +1,7 @@
 "use client";
 
 import { r1ODI } from "@/views/d2-1/att.meridian";
-import { MeridianWrapper, MeridianOverview } from "@meridian-ui/meridian";
+import { MeridianWrapper, MeridianOverview } from "meridian-ui";
 import ATTItems from "@/views/d2-1/r1-data.json";
 import { useRouter } from "next/navigation";
 import { meridianConfig } from "@/views/d2-1/r1-config";

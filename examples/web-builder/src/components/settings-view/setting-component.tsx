@@ -1,6 +1,6 @@
 import { useDataUploadStore } from "@/store/data-upload.store";
 import { useState, useRef, useEffect } from "react";
-import { useODI } from "@meridian-ui/meridian";
+import { useODI } from "meridian-ui";
 import { hundredToHex } from "@/helpers/data.helper";
 
 interface ODISettingProps {

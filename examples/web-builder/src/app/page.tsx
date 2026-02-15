@@ -2,12 +2,12 @@
 
 import { Navbar } from "../components/navbar";
 import { customItemViews, customOverviews } from "@/meridian-views/views.index";
-import { ODI } from "@meridian-ui/meridian";         
+import { ODI } from "meridian-ui";         
 import { SidebarLeft } from "../components/sidebar-left"; 
 import { useDataUploadStore } from "@/store/data-upload.store";
 import { limitData } from "@/helpers/data.helper";
 import { SidebarRight } from "../components/sidebar-right";
-import { MeridianWrapper } from "@meridian-ui/meridian";
+import { MeridianWrapper } from "meridian-ui";
 import { ODISpace } from "../components/odi-view/odi-space";
 export default function Home() {
   const { data } = useDataUploadStore();

@@ -1,13 +1,13 @@
 import {
   getAttributesByRole,
   getAttributesWithoutRoles,
-} from "@meridian-ui/meridian";
-import { ItemViewConfig } from "@meridian-ui/meridian";
+} from "meridian-ui";
+import { ItemViewConfig } from "meridian-ui";
 import {
   FetchedItemType,
   ViewOptions,
-} from "@meridian-ui/meridian";
-import { Attribute } from "@meridian-ui/meridian";
+} from "meridian-ui";
+import { Attribute } from "meridian-ui";
 
 
 export interface ItemPlayerType extends ItemViewConfig {

@@ -1,4 +1,4 @@
-import { useODI } from "@meridian-ui/meridian";
+import { useODI } from "meridian-ui";
 
 
 import { useState } from "react";

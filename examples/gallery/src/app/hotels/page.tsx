@@ -1,7 +1,7 @@
 "use client";
 
-import { MeridianWrapper } from "@meridian-ui/meridian";
-import { MeridianOverview } from "@meridian-ui/meridian";
+import { MeridianWrapper } from "meridian-ui";
+import { MeridianOverview } from "meridian-ui";
 import hotelsData from "@/views/hotels/hotels.data.json";
 import { useParams } from "next/navigation";
 import { hotelsODI } from "@/views/hotels/hotels.meridian";

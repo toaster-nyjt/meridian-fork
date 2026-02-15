@@ -2,11 +2,11 @@ import {
   getAttributesByRole,
   getAttributesWithoutRoles,
   getRoles,
-} from "@meridian-ui/meridian";
-import { DetailViewConfig, Role } from "@meridian-ui/meridian";
-import { FetchedItemType } from "@meridian-ui/meridian";
-import { useODI } from "@meridian-ui/meridian";
-import { Attribute } from "@meridian-ui/meridian";
+} from "meridian-ui";
+import { DetailViewConfig, Role } from "meridian-ui";
+import { FetchedItemType } from "meridian-ui";
+import { useODI } from "meridian-ui";
+import { Attribute } from "meridian-ui";
 import { useCallback, useEffect, useState } from "react";
 import { MalleabilitySemZoom } from "@/app/d2-3/[id]/malleability-semzoom";
 

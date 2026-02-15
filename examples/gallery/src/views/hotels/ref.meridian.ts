@@ -1,4 +1,4 @@
-import { ODI } from "@meridian-ui/meridian";
+import { ODI } from "meridian-ui";
 
 
 export const hotelsODI: ODI = {

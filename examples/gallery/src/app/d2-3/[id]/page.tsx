@@ -1,9 +1,9 @@
 "use client";
 
-import { MeridianWrapper } from "@meridian-ui/meridian";
+import { MeridianWrapper } from "meridian-ui";
 import {
   MeridianDetail,
-} from "@meridian-ui/meridian";
+} from "meridian-ui";
 import { r3Config } from "@/views/d2-3/r3-config";
 import r3Data from "@/views/d2-3/r3-data.json";
 import { r3ODI } from "@/views/d2-3/thesaurus.meridian";

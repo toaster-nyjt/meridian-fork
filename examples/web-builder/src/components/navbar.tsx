@@ -1,6 +1,6 @@
-import { useODI } from "@meridian-ui/meridian";
+import { useODI } from "meridian-ui";
 import { useState } from "react";
-import { convertFetchedODIToODI } from "@meridian-ui/meridian";
+import { convertFetchedODIToODI } from "meridian-ui";
 
 export const Navbar = () => {
   const { odi } = useODI();

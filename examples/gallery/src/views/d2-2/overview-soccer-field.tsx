@@ -1,12 +1,12 @@
-import { OverviewConfig } from "@meridian-ui/meridian";
+import { OverviewConfig } from "meridian-ui";
 import {
   FetchedAttributeValueType,
   ViewOptions,
-} from "@meridian-ui/meridian";
-import { MeridianItem } from "@meridian-ui/meridian";
-import { useODI } from "@meridian-ui/meridian";
-import { Attribute } from "@meridian-ui/meridian";
-import { getAttributesByRole } from "@meridian-ui/meridian";
+} from "meridian-ui";
+import { MeridianItem } from "meridian-ui";
+import { useODI } from "meridian-ui";
+import { Attribute } from "meridian-ui";
+import { getAttributesByRole } from "meridian-ui";
 
 export interface OverviewSoccerFieldType extends OverviewConfig {
   type: "soccer-field";

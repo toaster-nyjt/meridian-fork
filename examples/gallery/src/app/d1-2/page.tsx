@@ -4,7 +4,7 @@ import {
   MeridianWrapper,
   MeridianOverview,
   useODI,
-} from "@meridian-ui/meridian";
+} from "meridian-ui";
 import menuData from "@/views/menu/menu.data.json";
 import { useRouter } from "next/navigation";
 import { menuConfig } from "@/views/menu/menu.config";

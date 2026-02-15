@@ -1,7 +1,7 @@
 import { defaultMalleabilityDimension } from "../../../../../src/renderer/renderer.defaults";
 import { MalleableDimension } from "../../../../../src/spec/spec";
 import { SettingComponent } from "./setting-component";
-import { useODI } from "@meridian-ui/meridian";
+import { useODI } from "meridian-ui";
 
 export const SettingsMalleability = () => {
   const { odi, setODI } = useODI();

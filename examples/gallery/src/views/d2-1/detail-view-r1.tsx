@@ -1,12 +1,12 @@
 import {
   getAttributesByRole,
   getAttributesWithoutRoles,
-} from "@meridian-ui/meridian";
-import { DetailViewConfig, Role } from "@meridian-ui/meridian";
-import { FetchedItemType } from "@meridian-ui/meridian";
-import { useODI } from "@meridian-ui/meridian";
-import { Attribute } from "@meridian-ui/meridian";
-// import "@meridian-ui/meridian/components/detail-views/detail-view.scss";
+} from "meridian-ui";
+import { DetailViewConfig, Role } from "meridian-ui";
+import { FetchedItemType } from "meridian-ui";
+import { useODI } from "meridian-ui";
+import { Attribute } from "meridian-ui";
+// import "meridian-ui/components/detail-views/detail-view.scss";
 
 export interface DetailViewR1Type extends DetailViewConfig {
   type: "r1";

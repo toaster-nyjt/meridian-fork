@@ -3,18 +3,18 @@ import {
   APIProvider,
   Map,
 } from "@vis.gl/react-google-maps";
-import { MeridianItem } from "@meridian-ui/meridian";
+import { MeridianItem } from "meridian-ui";
 import {
   OverviewConfig,
   AttributeType,
-} from "@meridian-ui/meridian";
-import { useODI } from "@meridian-ui/meridian";
+} from "meridian-ui";
+import { useODI } from "meridian-ui";
 import { useState, useCallback } from "react";
 import {
   FetchedItemType,
   ViewOptions,
   FetchedAttributeValueType,
-} from "@meridian-ui/meridian";
+} from "meridian-ui";
 // import { useDragStore } from '@/store/drag.store';
 
 export interface OverviewMapType extends OverviewConfig {

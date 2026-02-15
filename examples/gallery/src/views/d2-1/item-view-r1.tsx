@@ -1,16 +1,16 @@
 import {
   getAttributesByRole,
   getAttributesWithoutRoles,
-} from "@meridian-ui/meridian";
-import { Role, ItemViewConfig } from "@meridian-ui/meridian";
+} from "meridian-ui";
+import { Role, ItemViewConfig } from "meridian-ui";
 import {
   FetchedAttributeGroupType,
   FetchedAttributeValueType,
   FetchedItemType,
   ViewOptions,
-} from "@meridian-ui/meridian";
-import { useODI } from "@meridian-ui/meridian";
-import { Attribute } from "@meridian-ui/meridian";
+} from "meridian-ui";
+import { useODI } from "meridian-ui";
+import { Attribute } from "meridian-ui";
 // import "meridian/src/components/item-views/item-view.scss";
 
 export interface ItemViewR1Type extends ItemViewConfig {

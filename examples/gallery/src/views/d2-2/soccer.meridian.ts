@@ -1,4 +1,4 @@
-import { BindingItemType, DataBindingType, ODI } from "@meridian-ui/meridian";
+import { BindingItemType, DataBindingType, ODI } from "meridian-ui";
 
 export const r2MatchBinding: BindingItemType = {
   itemId: ".id",

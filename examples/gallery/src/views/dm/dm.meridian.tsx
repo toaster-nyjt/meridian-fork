@@ -1,4 +1,4 @@
-import { ODI } from "@meridian-ui/meridian"; 
+import { ODI } from "meridian-ui"; 
 import { r2MatchBinding, r2PlayersBinding } from "../d2-2/soccer.meridian";
 
 export const dmODI: ODI = {

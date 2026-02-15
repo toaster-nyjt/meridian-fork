@@ -1,12 +1,12 @@
 import {
   getAttributesByRole,
   getAttributesWithoutRoles,
-} from "@meridian-ui/meridian";
-import { DetailViewConfig } from "@meridian-ui/meridian";
-import { FetchedItemType } from "@meridian-ui/meridian";
-import { useODI } from "@meridian-ui/meridian";
-import { Attribute } from "@meridian-ui/meridian";
-import { isAttributeType } from "@meridian-ui/meridian";
+} from "meridian-ui";
+import { DetailViewConfig } from "meridian-ui";
+import { FetchedItemType } from "meridian-ui";
+import { useODI } from "meridian-ui";
+import { Attribute } from "meridian-ui";
+import { isAttributeType } from "meridian-ui";
 
 export interface DetailPlayer extends DetailViewConfig {
   type: "player";

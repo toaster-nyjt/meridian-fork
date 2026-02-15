@@ -1,10 +1,10 @@
 "use client";
 
 import { r2ODI } from "@/views/d2-2/soccer.meridian";
-import { MeridianWrapper } from "@meridian-ui/meridian";
+import { MeridianWrapper } from "meridian-ui";
 import {
   MeridianOverview,
-} from "@meridian-ui/meridian";
+} from "meridian-ui";
 import { useRouter } from "next/navigation";
 import { r2Config } from "@/views/d2-2/r2-config";
 import { useEffect, useState } from "react";

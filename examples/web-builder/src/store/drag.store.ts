@@ -1,6 +1,6 @@
 import { create } from "zustand";
 import { Attribute } from "./data-upload.store";
-import { Role } from "@meridian-ui/meridian";
+import { Role } from "meridian-ui";
 
 interface DragStore {
   draggedItem: Attribute | null;

@@ -1,9 +1,9 @@
 import {
   FetchedAttributeValueType,
-} from "@meridian-ui/meridian";
-import { isAttributeType } from "@meridian-ui/meridian";
-import { AttributeProps } from "@meridian-ui/meridian";
-import { useODI } from "@meridian-ui/meridian";
+} from "meridian-ui";
+import { isAttributeType } from "meridian-ui";
+import { AttributeProps } from "meridian-ui";
+import { useODI } from "meridian-ui";
 
 export const AttributeJerseyNumber = ({
   attribute,

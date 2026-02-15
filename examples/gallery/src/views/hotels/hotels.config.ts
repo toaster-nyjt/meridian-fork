@@ -1,5 +1,5 @@
 import { OverviewMap } from "./map-overview";
-import { DetailView } from "@meridian-ui/meridian";
+import { DetailView } from "meridian-ui";
 
 
 export const hotelsConfig = {

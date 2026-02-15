@@ -5,7 +5,7 @@ import {
 } from "@/store/data-upload.store";
 import { useDragStore } from "@/store/drag.store";
 import { AttributeDraggable } from "./attribute-draggable";
-import { resolveValue } from "@meridian-ui/meridian";
+import { resolveValue } from "meridian-ui";
 
 interface AttributesViewProps {
   initialFileName?: string;

@@ -1,4 +1,4 @@
-import { BindingItemType, DataBindingType, ODI } from "@meridian-ui/meridian";
+import { BindingItemType, DataBindingType, ODI } from "meridian-ui";
 
 const r3WordsBinding: BindingItemType = {
   itemId: ".term",

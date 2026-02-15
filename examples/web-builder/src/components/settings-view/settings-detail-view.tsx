@@ -11,7 +11,7 @@ import {
   AttributeSelectionScope,
 } from "../../../../../src/spec/spec";
 import { SettingComponent } from "./setting-component";
-import { useODI } from "@meridian-ui/meridian";
+import { useODI } from "meridian-ui";
 
 export const SettingsDetailView = () => {
   const { odi, setODI, addNewDetailView } = useODI();

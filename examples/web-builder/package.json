@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@meridian-ui/meridian": "^1.1.0",
+    "meridian-ui": "^1.0.1",
     "interactjs": "^1.10.27",
     "next": "15.2.3",
     "react": "^19.0.0",

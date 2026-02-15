@@ -7,7 +7,7 @@ import {
   FetchedItemType,
   FetchedAttributeType,
   useODI,
-} from "@meridian-ui/meridian";
+} from "meridian-ui";
 import { useDragStore } from "@/store/drag.store";
 import interact from "interactjs";
 import { useStyleStore } from "@/store/style.store";

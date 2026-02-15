@@ -1,8 +1,8 @@
 import {
   FetchedAttributeGroupType,
-} from "@meridian-ui/meridian";
-import { isAttributeType } from "@meridian-ui/meridian";
-import { AttributeProps } from "@meridian-ui/meridian";
+} from "meridian-ui";
+import { isAttributeType } from "meridian-ui";
+import { AttributeProps } from "meridian-ui";
 
 export const AttributePriceMonthly = (props: AttributeProps) => {
   const { attribute, options } = props;

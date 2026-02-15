@@ -1,12 +1,12 @@
 import {
   getAttributesByRole,
   getAttributesWithoutRoles,
-} from "@meridian-ui/meridian";
-import { Role, ItemViewConfig } from "@meridian-ui/meridian";
-import { FetchedItemType, ViewOptions } from "@meridian-ui/meridian";
-import { useODI } from "@meridian-ui/meridian";
-import { Attribute } from "@meridian-ui/meridian";
-import "@meridian-ui/meridian/styles";
+} from "meridian-ui";
+import { Role, ItemViewConfig } from "meridian-ui";
+import { FetchedItemType, ViewOptions } from "meridian-ui";
+import { useODI } from "meridian-ui";
+import { Attribute } from "meridian-ui";
+import "meridian-ui/styles";
 import { useState } from "react";
 
 export interface ItemProfileType extends ItemViewConfig {

@@ -1,4 +1,4 @@
-import { MeridianOverview, useODI } from "@meridian-ui/meridian";
+import { MeridianOverview, useODI } from "meridian-ui";
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 import {
   useEffect,

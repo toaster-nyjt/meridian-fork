@@ -12,7 +12,7 @@ import {
   FetchedItemType,
   ViewOptions,
   FetchedAttributeValueType,
-} from "@meridian-ui/meridian";
+} from "meridian-ui";
 import { useState, useCallback } from "react";
 import { useDragStore } from "@/store/drag.store";
 

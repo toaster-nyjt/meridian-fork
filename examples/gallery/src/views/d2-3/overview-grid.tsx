@@ -1,6 +1,6 @@
-import { MeridianItem } from "@meridian-ui/meridian";
-import { OverviewConfig } from "@meridian-ui/meridian";
-import { ViewOptions } from "@meridian-ui/meridian";
+import { MeridianItem } from "meridian-ui";
+import { OverviewConfig } from "meridian-ui";
+import { ViewOptions } from "meridian-ui";
 
 export interface OverviewGridType extends OverviewConfig {
   type: "grid";

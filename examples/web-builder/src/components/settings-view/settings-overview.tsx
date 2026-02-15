@@ -8,7 +8,7 @@ import {
   AttributeSelectionScope,
   OverviewConfig,
 } from "../../../../../src/spec/spec";
-import { useODI } from "@meridian-ui/meridian";
+import { useODI } from "meridian-ui";
 import { SettingComponent } from "./setting-component";
 import { customOverviews } from "@/meridian-views/views.index";
 import { useUsageUploadStore } from "@/store/usage-upload.store";
