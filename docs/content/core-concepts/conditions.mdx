@@ -1,0 +1,749 @@
+# Conditions
+
+Conditions allow you to show or hide attributes based on data properties. This enables dynamic, context-aware interfaces that adapt to your data.
+
+## AttributeConditionType
+
+```typescript
+interface AttributeConditionType {
+  and?: AttributeConditionType[];
+  or?: AttributeConditionType[];
+  not?: AttributeConditionType[];
+  exists?: string;
+  comparison?: {
+    field: string;
+    operator: Operator;
+    value: string | number;
+  };
+}
+
+type Operator = "==" | "!=" | ">" | "<" | ">=" | "<=";
+```
+
+## Basic Conditions
+
+### Exists Condition
+
+Check if a field exists:
+
+```typescript
+{
+  condition: {
+    exists: ".salePrice"
+  },
+  attributes: [
+    { value: "On Sale!", roles: ["badge"] }
+  ]
+}
+```
+
+### Comparison Condition
+
+Compare field values:
+
+```typescript
+{
+  condition: {
+    comparison: {
+      field: ".inStock",
+      operator: "==",
+      value: true
+    }
+  },
+  attributes: [
+    { value: "Available", roles: ["badge"] }
+  ]
+}
+```
+
+## Comparison Operators
+
+### Equality (==)
+
+```typescript
+{
+  condition: {
+    comparison: {
+      field: ".status",
+      operator: "==",
+      value: "active"
+    }
+  },
+  attributes: [
+    { value: ".activeFeatures", roles: ["spec"] }
+  ]
+}
+```
+
+### Inequality (!=)
+
+```typescript
+{
+  condition: {
+    comparison: {
+      field: ".category",
+      operator: "!=",
+      value: "archived"
+    }
+  },
+  attributes: [
+    { value: ".title", roles: ["title"] }
+  ]
+}
+```
+
+### Greater Than (`>`)
+
+```typescript
+{
+  condition: {
+    comparison: {
+      field: ".price",
+      operator: ">",
+      value: 1000
+    }
+  },
+  attributes: [
+    { value: "Premium", roles: ["badge"] }
+  ]
+}
+```
+
+### Less Than (`<`)
+
+```typescript
+{
+  condition: {
+    comparison: {
+      field: ".quantity",
+      operator: "<",
+      value: 10
+    }
+  },
+  attributes: [
+    { value: "Low Stock", roles: ["badge"] }
+  ]
+}
+```
+
+### Greater Than or Equal (`>=`)
+
+```typescript
+{
+  condition: {
+    comparison: {
+      field: ".rating",
+      operator: ">=",
+      value: 4
+    }
+  },
+  attributes: [
+    { value: "Highly Rated", roles: ["badge"] }
+  ]
+}
+```
+
+### Less Than or Equal (`<=`)
+
+```typescript
+{
+  condition: {
+    comparison: {
+      field: ".price",
+      operator: "<=",
+      value: 50
+    }
+  },
+  attributes: [
+    { value: "Budget Friendly", roles: ["badge"] }
+  ]
+}
+```
+
+## Logical Operators
+
+### AND Condition
+
+All conditions must be true:
+
+```typescript
+{
+  condition: {
+    and: [
+      {
+        comparison: {
+          field: ".inStock",
+          operator: "==",
+          value: true
+        }
+      },
+      {
+        comparison: {
+          field: ".price",
+          operator: "<",
+          value: 100
+        }
+      }
+    ]
+  },
+  attributes: [
+    { value: "Great Deal!", roles: ["badge"] }
+  ]
+}
+```
+
+### OR Condition
+
+Any condition can be true:
+
+```typescript
+{
+  condition: {
+    or: [
+      {
+        comparison: {
+          field: ".category",
+          operator: "==",
+          value: "featured"
+        }
+      },
+      {
+        comparison: {
+          field: ".rating",
+          operator: ">=",
+          value: 4.5
+        }
+      }
+    ]
+  },
+  attributes: [
+    { value: "⭐", roles: ["badge"] }
+  ]
+}
+```
+
+### NOT Condition
+
+Negate a condition:
+
+```typescript
+{
+  condition: {
+    not: [{
+      exists: ".discontinued"
+    }]
+  },
+  attributes: [
+    { value: ".price", type: "price", roles: ["key-attribute"] }
+  ]
+}
+```
+
+## Complex Conditions
+
+### Nested Logic
+
+Combine AND, OR, and NOT:
+
+```typescript
+{
+  condition: {
+    and: [
+      {
+        or: [
+          { comparison: { field: ".category", operator: "==", value: "electronics" } },
+          { comparison: { field: ".category", operator: "==", value: "computers" } }
+        ]
+      },
+      {
+        comparison: {
+          field: ".inStock",
+          operator: "==",
+          value: true
+        }
+      },
+      {
+        not: [{
+          comparison: {
+            field: ".refurbished",
+            operator: "==",
+            value: true
+          }
+        }]
+      }
+    ]
+  },
+  attributes: [
+    { value: "Buy Now", type: "button", roles: ["action"] }
+  ]
+}
+
+// Shows "Buy Now" if:
+// - Category is electronics OR computers
+// - AND in stock
+// - AND NOT refurbished
+```
+
+## Real-World Examples
+
+### E-commerce: Dynamic Pricing Display
+
+```typescript
+const product = {
+  id: "1",
+  name: "Product",
+  price: 99.99,
+  salePrice: 79.99,
+  memberPrice: 69.99,
+  inStock: true
+};
+
+attributes: [
+  { value: ".name", roles: ["title"] },
+
+  // Show member price if it exists
+  {
+    condition: {
+      exists: ".memberPrice"
+    },
+    attributes: [
+      {
+        value: ".memberPrice",
+        type: "price",
+        label: "Member Price",
+        roles: ["key-attribute"]
+      },
+      {
+        value: ".price",
+        type: "price",
+        label: "Regular",
+        roles: ["subtitle"]
+      }
+    ]
+  },
+
+  // Otherwise show sale price if it exists
+  {
+    condition: {
+      and: [
+        { not: [{ exists: ".memberPrice" }] },
+        { exists: ".salePrice" }
+      ]
+    },
+    attributes: [
+      {
+        value: ".salePrice",
+        type: "price",
+        label: "Sale",
+        roles: ["key-attribute"]
+      },
+      {
+        value: ".price",
+        type: "price",
+        label: "Was",
+        roles: ["subtitle"]
+      }
+    ]
+  },
+
+  // Otherwise show regular price
+  {
+    condition: {
+      and: [
+        { not: [{ exists: ".memberPrice" }] },
+        { not: [{ exists: ".salePrice" }] }
+      ]
+    },
+    attributes: [
+      {
+        value: ".price",
+        type: "price",
+        roles: ["key-attribute"]
+      }
+    ]
+  },
+
+  // Show stock status badge
+  {
+    condition: {
+      comparison: {
+        field: ".inStock",
+        operator: "==",
+        value: false
+      }
+    },
+    attributes: [
+      { value: "Out of Stock", roles: ["badge"] }
+    ]
+  }
+]
+```
+
+### Content Platform: Status-based Display
+
+```typescript
+const article = {
+  id: "1",
+  title: "Article Title",
+  status: "published",
+  views: 1500,
+  isPremium: true,
+  publishDate: "2025-11-01"
+};
+
+attributes: [
+  { value: ".title", roles: ["title"] },
+
+  // Published content
+  {
+    condition: {
+      comparison: {
+        field: ".status",
+        operator: "==",
+        value: "published"
+      }
+    },
+    attributes: [
+      { value: ".publishDate", roles: ["subtitle"] },
+      { value: ".views", label: "Views", roles: ["key-attribute"] }
+    ]
+  },
+
+  // Draft content
+  {
+    condition: {
+      comparison: {
+        field: ".status",
+        operator: "==",
+        value: "draft"
+      }
+    },
+    attributes: [
+      { value: "Draft", roles: ["badge"] }
+    ]
+  },
+
+  // Premium badge
+  {
+    condition: {
+      and: [
+        {
+          comparison: {
+            field: ".isPremium",
+            operator: "==",
+            value: true
+          }
+        },
+        {
+          comparison: {
+            field: ".status",
+            operator: "==",
+            value: "published"
+          }
+        }
+      ]
+    },
+    attributes: [
+      { value: "Premium", roles: ["badge"] }
+    ]
+  }
+]
+```
+
+### Real Estate: Property Filters
+
+```typescript
+const property = {
+  id: "1",
+  address: "123 Main St",
+  price: 450000,
+  bedrooms: 3,
+  bathrooms: 2,
+  squareFeet: 1800,
+  status: "available",
+  hasGarage: true,
+  yearBuilt: 2010
+};
+
+attributes: [
+  { value: ".address", roles: ["title"] },
+  { value: ".price", type: "price", roles: ["key-attribute"] },
+
+  // New construction
+  {
+    condition: {
+      comparison: {
+        field: ".yearBuilt",
+        operator: ">=",
+        value: 2020
+      }
+    },
+    attributes: [
+      { value: "New Construction", roles: ["badge"] }
+    ]
+  },
+
+  // Family-friendly (3+ bedrooms)
+  {
+    condition: {
+      comparison: {
+        field: ".bedrooms",
+        operator: ">=",
+        value: 3
+      }
+    },
+    attributes: [
+      { value: "Family Home", roles: ["tag"] }
+    ]
+  },
+
+  // Spacious (2000+ sq ft)
+  {
+    condition: {
+      comparison: {
+        field: ".squareFeet",
+        operator: ">=",
+        value: 2000
+      }
+    },
+    attributes: [
+      { value: "Spacious", roles: ["tag"] }
+    ]
+  },
+
+  // Show garage if exists
+  {
+    condition: {
+      comparison: {
+        field: ".hasGarage",
+        operator: "==",
+        value: true
+      }
+    },
+    attributes: [
+      { value: "Garage Included", roles: ["spec"] }
+    ]
+  },
+
+  // Status-based actions
+  {
+    condition: {
+      comparison: {
+        field: ".status",
+        operator: "==",
+        value: "available"
+      }
+    },
+    attributes: [
+      { value: "Schedule Viewing", type: "button", roles: ["action"] }
+    ]
+  },
+
+  {
+    condition: {
+      comparison: {
+        field: ".status",
+        operator: "==",
+        value: "pending"
+      }
+    },
+    attributes: [
+      { value: "Offer Pending", roles: ["badge"] }
+    ]
+  }
+]
+```
+
+## Using Internal Attributes
+
+Use internal attributes for cleaner conditional logic:
+
+```typescript
+binding: {
+  itemId: ".id",
+
+  // Define internal attributes for conditions
+  internalAttributes: [
+    { id: "category", value: ".category" },
+    { id: "inStock", value: ".inventory.inStock" },
+    { id: "rating", value: ".reviews.averageRating" }
+  ],
+
+  attributes: [
+    { value: ".title", roles: ["title"] },
+
+    // Use internal attributes in conditions
+    {
+      condition: {
+        and: [
+          { comparison: { field: ".category", operator: "==", value: "electronics" } },
+          { comparison: { field: ".inStock", operator: "==", value: true } },
+          { comparison: { field: ".rating", operator: ">=", value: 4 } }
+        ]
+      },
+      attributes: [
+        { value: "Recommended", roles: ["badge"] }
+      ]
+    }
+  ]
+}
+```
+
+## Type-based Conditional Rendering
+
+Show different attributes based on item type:
+
+```typescript
+binding: {
+  itemId: ".id",
+  internalAttributes: [
+    { id: "type", value: ".type" }
+  ],
+  attributes: [
+    // Product attributes
+    {
+      condition: {
+        comparison: {
+          field: ".type",
+          operator: "==",
+          value: "product"
+        }
+      },
+      attributes: [
+        { value: ".productName", roles: ["title"] },
+        { value: ".price", type: "price", roles: ["key-attribute"] },
+        { value: ".description", roles: ["description"] }
+      ]
+    },
+
+    // Service attributes
+    {
+      condition: {
+        comparison: {
+          field: ".type",
+          operator: "==",
+          value: "service"
+        }
+      },
+      attributes: [
+        { value: ".serviceName", roles: ["title"] },
+        { value: ".hourlyRate", type: "price", label: "$/hour", roles: ["key-attribute"] },
+        { value: ".duration", label: "Duration", roles: ["spec"] }
+      ]
+    },
+
+    // Event attributes
+    {
+      condition: {
+        comparison: {
+          field: ".type",
+          operator: "==",
+          value: "event"
+        }
+      },
+      attributes: [
+        { value: ".eventName", roles: ["title"] },
+        { value: ".date", roles: ["subtitle"] },
+        { value: ".location", roles: ["description"] },
+        { value: ".ticketPrice", type: "price", roles: ["key-attribute"] }
+      ]
+    }
+  ]
+}
+```
+
+## Best Practices
+
+### 1. Use Descriptive Internal Attributes
+
+```typescript
+// Good
+internalAttributes: [
+  { id: "stock-status", value: ".inventory.status" },
+  { id: "member-tier", value: ".user.membershipLevel" }
+]
+
+// Avoid
+internalAttributes: [
+  { id: "s", value: ".inventory.status" },
+  { id: "t", value: ".user.membershipLevel" }
+]
+```
+
+### 2. Handle All Cases
+
+```typescript
+// Good - handles all scenarios
+{
+  condition: { exists: ".salePrice" },
+  attributes: [/* sale price */]
+},
+{
+  condition: { not: [{ exists: ".salePrice" }] },
+  attributes: [/* regular price */]
+}
+
+// Avoid - missing else case
+{
+  condition: { exists: ".salePrice" },
+  attributes: [/* sale price */]
+}
+// What if no sale price?
+```
+
+### 3. Keep Conditions Simple
+
+```typescript
+// Good - simple and readable
+{
+  condition: {
+    comparison: { field: ".inStock", operator: "==", value: true }
+  },
+  attributes: [...]
+}
+
+// Avoid - overly complex
+{
+  condition: {
+    and: [
+      {
+        or: [
+          { and: [/* ... */] },
+          { not: [/* ... */] }
+        ]
+      }
+    ]
+  },
+  attributes: [...]
+}
+```
+
+### 4. Document Complex Logic
+
+```typescript
+{
+  // Show "Hot Deal" badge when:
+  // - Item is in stock
+  // - Price is under $100
+  // - Rating is 4+ stars
+  // - Has more than 50 reviews
+  condition: {
+    and: [
+      { comparison: { field: ".inStock", operator: "==", value: true } },
+      { comparison: { field: ".price", operator: "<", value: 100 } },
+      { comparison: { field: ".rating", operator: ">=", value: 4 } },
+      { comparison: { field: ".reviewCount", operator: ">", value: 50 } }
+    ]
+  },
+  attributes: [
+    { value: "🔥 Hot Deal", roles: ["badge"] }
+  ]
+}
+```
+
+## Next Steps
+
+- [Transformations](/core-concepts/transformations) - Transform attribute data
+- [Data Binding](/core-concepts/data-binding) - Learn about data binding
+- [Attributes](/core-concepts/attributes) - Explore the attribute system
+- [Components](/components) - See conditions in action with different views

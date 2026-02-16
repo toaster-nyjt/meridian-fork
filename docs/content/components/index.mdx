@@ -1,0 +1,91 @@
+# Components Overview
+
+Meridian provides a rich set of pre-built components for creating overview-detail interfaces. Components are organized into three categories:
+
+## Overview Types
+
+Overview components display collections of items. Meridian includes:
+
+- **Grid** - Responsive grid layout
+- **List** - Vertical list layout
+- **Map** - Geographic map visualization
+- **Table** - Tabular data display
+- **Custom** - Build your own overview
+
+[Learn more about Overview Types →](/components/overviews)
+
+## Item Views
+
+Item views define how individual items appear within overviews:
+
+- **Profile** - Card-style layout with image and details
+- **Pin** - Compact pin-style layout
+- **Compact** - Minimal single-line layout
+- **Vertical** - Vertical stacked layout
+- **Custom** - Create custom item renderers
+
+[Learn more about Item Views →](/components/item-views)
+
+## Detail Views
+
+Detail views show focused information about a single item:
+
+- **Basic** - Standard detail page layout
+- **Custom** - Define your own detail views
+
+Detail views can open in different modes:
+- New page
+- Side-by-side
+- Pop-up
+- Tooltip
+- Replace current view
+
+[Learn more about Detail Views →](/components/detail-views)
+
+## Component Architecture
+
+```
+ODI
+├── Overview (Grid/List/Map/Table)
+│   ├── Item View (Profile/Pin/Compact/Vertical)
+│   │   └── Attributes
+│   └── Detail View (Basic/Custom)
+│       └── Attributes & Nested Overviews
+```
+
+## Using Components
+
+Components are specified in your ODI configuration:
+
+```typescript
+const odi: ODI = {
+  dataBinding: [/* ... */],
+  overviews: [{
+    type: "grid",              // Overview type
+    itemView: {
+      type: "profile"          // Item view type
+    },
+    detailViews: [{
+      type: "basic",           // Detail view type
+      openIn: "side-by-side"
+    }]
+  }]
+};
+```
+
+## Customization
+
+All components support:
+
+- **Attribute filtering** via `shownAttributes` and `hiddenAttributes`
+- **Custom styling** via `className` and `style` props
+- **Custom renderers** for complete control
+
+## Next Steps
+
+Explore each component type:
+
+- [Overview Types](/components/overviews) - Grid, List, Map, Table
+- [Item Views](/components/item-views) - Profile, Pin, Compact, Vertical
+- [Detail Views](/components/detail-views) - Basic and custom detail views
+- [Custom Components](/components/custom-components) - Build your own

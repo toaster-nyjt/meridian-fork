@@ -1,0 +1,955 @@
+{
+  "id": "barcelona",
+  "note": "Lineup from 1 to N goes from keeper, to defenders, to midfielders, to forwards, right positionId to left positionId",
+
+  "team1": {
+    "team": "Barcelona",
+    "teamLogo": "/examples/r2/assets/team1.png",
+    "manager": "Hans Dieter-Flick",
+    "formation": "4-2-3-1",
+    "teamStyle": "linear-gradient(90deg, #980000 20%, #000099 20%, #000099 40%, #980000 40%, #980000 60%, #000099 60%, #000099 80%, #980000 80%, #980000 100%, #000099 100%)"
+  },
+  "team2": {
+    "team": "Girona",
+    "teamLogo": "/examples/r2/assets/team2.png",
+    "manager": "Miguel Ángel Sánchez",
+    "formation": "4-4-2",
+    "teamStyle": "#FECBFE"
+  },
+  "lineup": [
+    {
+      "name": "Szczesny",
+      "team": "1",
+      "team-name": "Barcelona",
+      "positionId": "1",
+      "position": "Portero",
+      "numero": "25",
+      "id": "59936",
+      "nombre": "Wojciech",
+      "apellido": "Szczesny",
+      "nacionalidad": "Polonia",
+      "edad": 34,
+      "nacimiento": "18/04/1990",
+      "estatura": "1,95 m",
+      "peso": "90 kg",
+      "estadisticas_partido": {
+        "goles_encajados": 1,
+        "tiempo": {
+          "Total jugando": "90 min.",
+          "sustitucion": {}
+        },
+        "porteria": {
+          "paradas": 1,
+          "despejes": 0
+        },
+        "pases": {
+          "acertados": 25,
+          "fallidos": 7
+        },
+        "faltas": {
+          "recibidas": 0,
+          "cometidas": 0
+        },
+        "tarjetas": {
+          "amarillas": 0,
+          "rojas": 0
+        }
+      }
+    },
+    {
+      "name": "Koundé",
+      "team": "1",
+      "team-name": "Barcelona",
+      "positionId": "2",
+      "position": "Defensa",
+      "numero": "23",
+      "id": "220325",
+      "nombre": "Jules",
+      "apellido": "Koundé",
+      "nacionalidad": "Francia",
+      "edad": 26,
+      "nacimiento": "12/11/1998",
+      "estatura": "1,78 m",
+      "peso": "70 kg",
+      "estadisticas_partido": {
+        "goles": {
+          "marcados": 0,
+          "en_propia_puerta": 0
+        },
+        "tiempo": {
+          "Total jugando": "90 min.",
+          "sustitucion": {}
+        },
+        "remates": {
+          "totales": 0,
+          "a_puerta": 0
+        },
+        "pases": {
+          "acertados": 65,
+          "fallidos": 7
+        },
+        "faltas": {
+          "recibidas": 1,
+          "cometidas": 0
+        },
+        "tarjetas": {
+          "amarillas": 0,
+          "rojas": 0
+        }
+      }
+    },
+    {
+      "name": "Araujo",
+      "team": "1",
+      "team-name": "Barcelona",
+      "positionId": "3",
+      "position": "Defensa",
+      "numero": "4",
+      "id": "445087",
+      "nombre": "Ronald",
+      "apellido": "Araujo",
+      "nacionalidad": "Uruguay",
+      "edad": 26,
+      "nacimiento": "07/03/1999",
+      "estatura": "1,88 m",
+      "peso": "79 kg",
+      "estadisticas_partido": {
+        "goles": {
+          "marcados": 0,
+          "en_propia_puerta": 0
+        },
+        "tiempo": {
+          "Total jugando": "90 min.",
+          "sustitucion": {}
+        },
+        "remates": {
+          "totales": 1,
+          "a_puerta": 1
+        },
+        "pases": {
+          "acertados": 65,
+          "fallidos": 8
+        },
+        "faltas": {
+          "recibidas": 0,
+          "cometidas": 0
+        },
+        "tarjetas": {
+          "amarillas": 0,
+          "rojas": 0
+        }
+      }
+    },
+    {
+      "name": "Cubarsí",
+      "team": "1",
+      "team-name": "Barcelona",
+      "positionId": "4",
+      "position": "Defensa",
+      "numero": "2",
+      "id": "593110",
+      "nombre": "Pau",
+      "apellido": "Cubarsí",
+      "nacionalidad": "España",
+      "edad": 18,
+      "nacimiento": "22/01/2007",
+      "estatura": "1,74 m",
+      "peso": "74 kg",
+      "estadisticas_partido": {
+        "goles": {
+          "marcados": 0,
+          "en_propia_puerta": 0
+        },
+        "tiempo": {
+          "Total jugando": "9 min.",
+          "sustitucion": {
+            "entro_por": "Íñigo"
+          }
+        },
+        "remates": {
+          "totales": 0,
+          "a_puerta": 0
+        },
+        "pases": {
+          "acertados": 13,
+          "fallidos": 2
+        },
+        "faltas": {
+          "recibidas": 0,
+          "cometidas": 0
+        },
+        "tarjetas": {
+          "amarillas": 0,
+          "rojas": 0
+        }
+      }
+    },
+    {
+      "name": "Gerard",
+      "team": "1",
+      "team-name": "Barcelona",
+      "positionId": "5",
+      "position": "Defensa",
+      "numero": "35",
+      "id": "523234",
+      "nombre": "Gerard",
+      "apellido": "Martín Langreo",
+      "nacionalidad": "España",
+      "edad": 21,
+      "nacimiento": "14/04/2003",
+      "estatura": "1,80 m",
+      "peso": "75 kg",
+      "estadisticas_partido": {
+        "goles": {
+          "marcados": 0,
+          "en_propia_puerta": 0
+        },
+        "tiempo": {
+          "Total jugando": "90 min.",
+          "sustitucion": {}
+        },
+        "remates": {
+          "totales": 0,
+          "a_puerta": 0
+        },
+        "pases": {
+          "acertados": 50,
+          "fallidos": 7
+        },
+        "faltas": {
+          "recibidas": 1,
+          "cometidas": 1
+        },
+        "tarjetas": {
+          "amarillas": 0,
+          "rojas": 0
+        }
+      }
+    },
+    {
+      "name": "Balde",
+      "team": "1",
+      "team-name": "Barcelona",
+      "positionId": "6",
+      "position": "Defensa",
+      "numero": "3",
+      "id": "493019",
+      "nombre": "Alejandro",
+      "apellido": "Balde Martínez",
+      "nacionalidad": "España",
+      "edad": 22,
+      "nacimiento": "18/03/2003",
+      "estatura": "1,74 m",
+      "peso": "74 kg",
+      "estadisticas_partido": {
+        "goles": {
+          "marcados": 0,
+          "en_propia_puerta": 0
+        },
+        "tiempo": {
+          "Total jugando": "9 min.",
+          "sustitucion": {
+            "entro_por": "Eric Garcia"
+          }
+        },
+        "remates": {
+          "totales": 1,
+          "a_puerta": 1
+        },
+        "pases": {
+          "acertados": 3,
+          "fallidos": 0
+        },
+        "faltas": {
+          "recibidas": 0,
+          "cometidas": 0
+        },
+        "tarjetas": {
+          "amarillas": 0,
+          "rojas": 0
+        }
+      }
+    },
+    {
+      "name": "Pablo Torre",
+      "team": "1",
+      "team-name": "Barcelona",
+      "positionId": "7",
+      "position": "Centrocampista",
+      "numero": "14",
+      "id": "522627",
+      "nombre": "Pablo",
+      "apellido": "Torre",
+      "nacionalidad": "España",
+      "edad": 22,
+      "nacimiento": "03/04/2003",
+      "estatura": "1,74 m",
+      "peso": "68 kg",
+      "estadisticas_partido": {
+        "goles": {
+          "marcados": 0,
+          "en_propia_puerta": 0
+        },
+        "tiempo": {
+          "Total jugando": "3 min.",
+          "sustitucion": {
+            "entro_por": "Pedri"
+          }
+        },
+        "remates": {
+          "totales": 0,
+          "a_puerta": 0
+        },
+        "pases": {
+          "acertados": 3,
+          "fallidos": 0
+        },
+        "faltas": {
+          "recibidas": 0,
+          "cometidas": 0
+        },
+        "tarjetas": {
+          "amarillas": 0,
+          "rojas": 0
+        }
+      }
+    },
+    {
+      "name": "Lamine Yamal",
+      "team": "1",
+      "team-name": "Barcelona",
+      "positionId": "8",
+      "position": "Centrocampista",
+      "numero": "19",
+      "id": "593109",
+      "nombre": "Lamine",
+      "apellido": "Yamal",
+      "nacionalidad": "España",
+      "edad": 17,
+      "nacimiento": "13/07/2007",
+      "estadisticas_partido": {
+        "goles": {
+          "marcados": 0,
+          "en_propia_puerta": 0
+        },
+        "tiempo": {
+          "Total jugando": "90 min.",
+          "sustitucion": {}
+        },
+        "remates": {
+          "totales": 7,
+          "a_puerta": 1
+        },
+        "pases": {
+          "acertados": 51,
+          "fallidos": 12
+        },
+        "faltas": {
+          "recibidas": 2,
+          "cometidas": 3
+        },
+        "tarjetas": {
+          "amarillas": 0,
+          "rojas": 0
+        }
+      }
+    },
+    {
+      "name": "Ferran",
+      "team": "1",
+      "team-name": "Barcelona",
+      "positionId": "9",
+      "position": "Delantero",
+      "numero": "7",
+      "id": "224444",
+      "nombre": "Ferrán",
+      "apellido": "Torres",
+      "nacionalidad": "España",
+      "edad": 25,
+      "nacimiento": "29/02/2000",
+      "estatura": "1,84 m.",
+      "peso": "77 kg",
+      "estadisticas_partido": {
+        "goles": {
+          "marcados": 1,
+          "en_propia_puerta": 0
+        },
+        "tiempo": {
+          "Total jugando": "23 min.",
+          "sustitucion": {
+            "entro_por": "Fermín"
+          }
+        },
+        "remates": {
+          "totales": 1,
+          "a_puerta": 1
+        },
+        "pases": {
+          "acertados": 7,
+          "fallidos": 1
+        },
+        "faltas": {
+          "recibidas": 0,
+          "cometidas": 0
+        },
+        "tarjetas": {
+          "amarillas": 0,
+          "rojas": 0
+        }
+      }
+    },
+    {
+      "name": "De Jong",
+      "team": "1",
+      "team-name": "Barcelona",
+      "positionId": "10",
+      "position": "Centrocampista",
+      "numero": "21",
+      "id": "209712",
+      "nombre": "Frenkie",
+      "apellido": "de Jong",
+      "nacionalidad": "Países Bajos",
+      "edad": 27,
+      "nacimiento": "12/05/1997",
+      "estatura": "1,80 m.",
+      "peso": "70 kg",
+      "estadisticas_partido": {
+        "goles": {
+          "marcados": 0,
+          "en_propia_puerta": 0
+        },
+        "tiempo": {
+          "Total jugando": "24 min.",
+          "sustitucion": {
+            "entro_por": "Gavi"
+          }
+        },
+        "remates": {
+          "totales": 0,
+          "a_puerta": 0
+        },
+        "pases": {
+          "acertados": 16,
+          "fallidos": 0
+        },
+        "faltas": {
+          "recibidas": 1,
+          "cometidas": 0
+        },
+        "tarjetas": {
+          "amarillas": 0,
+          "rojas": 0
+        }
+      }
+    },
+    {
+      "name": "Lewandowski",
+      "team": "1",
+      "team-name": "Barcelona",
+      "positionId": "11",
+      "position": "Delantero",
+      "numero": "9",
+      "id": "56764",
+      "nombre": "Robert",
+      "apellido": "Lewandowski",
+      "nacionalidad": "Polonia",
+      "edad": 36,
+      "nacimiento": "21/08/1988",
+      "estatura": "1,85 m.",
+      "peso": "79 kg",
+      "estadisticas_partido": {
+        "goles": {
+          "marcados": 2,
+          "en_propia_puerta": 0
+        },
+        "tiempo": {
+          "Total jugando": "90 min.",
+          "sustitucion": {}
+        },
+        "remates": {
+          "totales": 6,
+          "a_puerta": 4
+        },
+        "pases": {
+          "acertados": 8,
+          "fallidos": 6
+        },
+        "faltas": {
+          "recibidas": 0,
+          "cometidas": 0
+        },
+        "tarjetas": {
+          "amarillas": 0,
+          "rojas": 0
+        }
+      }
+    },
+    {
+      "name": "Gazziniga",
+      "team": "2",
+      "team-name": "Girona",
+      "positionId": "1",
+      "position": "Portero",
+      "numero": "13",
+      "id": "59937",
+      "nombre": "Paulo",
+      "apellido": "Gazzaniga",
+      "nacionalidad": "Argentina",
+      "edad": 33,
+      "nacimiento": "02/01/1992",
+      "estatura": "1,96 m",
+      "peso": "90 kg",
+      "estadisticas_partido": {
+        "goles_encajados": 4,
+        "tiempo": {
+          "Total jugando": "90 min.",
+          "sustitucion": {}
+        },
+        "porteria": {
+          "paradas": 6,
+          "despejes": 2
+        },
+        "pases": {
+          "acertados": 15,
+          "fallidos": 13
+        },
+        "faltas": {
+          "recibidas": 0,
+          "cometidas": 0
+        },
+        "tarjetas": {
+          "amarillas": 0,
+          "rojas": 0
+        }
+      }
+    },
+    {
+      "name": "Francés",
+      "team": "2",
+      "team-name": "Girona",
+      "positionId": "2",
+      "position": "Defensa",
+      "numero": "16",
+      "id": "59938",
+      "nombre": "Alejandro",
+      "apellido": "Francés",
+      "nacionalidad": "España",
+      "edad": 23,
+      "nacimiento": "01/01/2002",
+      "estatura": "1,80 m",
+      "peso": "70 kg",
+      "estadisticas_partido": {
+        "goles": {
+          "marcados": 0,
+          "en_propia_puerta": 0
+        },
+        "tiempo": {
+          "Total jugando": "90 min.",
+          "sustitucion": {}
+        },
+        "remates": {
+          "totales": 0,
+          "a_puerta": 0
+        },
+        "pases": {
+          "acertados": 21,
+          "fallidos": 9
+        },
+        "faltas": {
+          "recibidas": 1,
+          "cometidas": 0
+        },
+        "tarjetas": {
+          "amarillas": 0,
+          "rojas": 0
+        }
+      }
+    },
+    {
+      "name": "Blind",
+      "team": "2",
+      "team-name": "Girona",
+      "positionId": "3",
+      "position": "Defensa",
+      "numero": "17",
+      "id": "59939",
+      "nombre": "Daley",
+      "apellido": "Blind",
+      "nacionalidad": "Países Bajos",
+      "edad": 35,
+      "nacimiento": "09/03/1990",
+      "estatura": "1,80 m",
+      "peso": "72 kg",
+      "estadisticas_partido": {
+        "goles": {
+          "marcados": 0,
+          "en_propia_puerta": 0
+        },
+        "tiempo": {
+          "Total jugando": "90 min.",
+          "sustitucion": {}
+        },
+        "remates": {
+          "totales": 0,
+          "a_puerta": 0
+        },
+        "pases": {
+          "acertados": 26,
+          "fallidos": 11
+        },
+        "faltas": {
+          "recibidas": 1,
+          "cometidas": 0
+        },
+        "tarjetas": {
+          "amarillas": 0,
+          "rojas": 0
+        }
+      }
+    },
+    {
+      "name": "Krejci",
+      "team": "2",
+      "team-name": "Girona",
+      "positionId": "4",
+      "position": "Defensa",
+      "numero": "18",
+      "id": "59940",
+      "nombre": "Ladislav",
+      "apellido": "Krejci",
+      "nacionalidad": "República Checa",
+      "edad": 25,
+      "nacimiento": "20/04/1999",
+      "estatura": "1,74 m",
+      "peso": "74 kg",
+      "estadisticas_partido": {
+        "goles": {
+          "marcados": 0,
+          "en_propia_puerta": 1
+        },
+        "tiempo": {
+          "Total jugando": "90 min.",
+          "sustitucion": {}
+        },
+        "remates": {
+          "totales": 1,
+          "a_puerta": 1
+        },
+        "pases": {
+          "acertados": 34,
+          "fallidos": 9
+        },
+        "faltas": {
+          "recibidas": 0,
+          "cometidas": 1
+        },
+        "tarjetas": {
+          "amarillas": 0,
+          "rojas": 0
+        }
+      }
+    },
+    {
+      "name": "Miguel",
+      "team": "2",
+      "team-name": "Girona",
+      "positionId": "5",
+      "position": "Defensa",
+      "numero": "3",
+      "id": "59941",
+      "nombre": "Miguel",
+      "apellido": "Ortega Gutierrez",
+      "nacionalidad": "España",
+      "edad": 23,
+      "nacimiento": "27/07/2001",
+      "estatura": "1,75 m",
+      "peso": "70 kg",
+      "estadisticas_partido": {
+        "goles": {
+          "marcados": 0,
+          "en_propia_puerta": 0
+        },
+        "tiempo": {
+          "Total jugando": "90 min.",
+          "sustitucion": {}
+        },
+        "remates": {
+          "totales": 0,
+          "a_puerta": 0
+        },
+        "pases": {
+          "acertados": 21,
+          "fallidos": 2
+        },
+        "faltas": {
+          "recibidas": 3,
+          "cometidas": 2
+        },
+        "tarjetas": {
+          "amarillas": 0,
+          "rojas": 0
+        }
+      }
+    },
+    {
+      "name": "Misehouy",
+      "team": "2",
+      "team-name": "Girona",
+      "positionId": "6",
+      "position": "Centrocampista",
+      "numero": "27",
+      "id": "59942",
+      "nombre": "Gabriel",
+      "apellido": "Misehouy",
+      "nacionalidad": "Países Bajos",
+      "edad": 19,
+      "nacimiento": "18/07/2005",
+      "estatura": "1,74 m",
+      "peso": "74 kg",
+      "estadisticas_partido": {
+        "goles": {
+          "marcados": 0,
+          "en_propia_puerta": 0
+        },
+        "tiempo": {
+          "Total jugando": "10 min.",
+          "sustitucion": {
+            "entro_por": "Arnau"
+          }
+        },
+        "remates": {
+          "totales": 0,
+          "a_puerta": 0
+        },
+        "pases": {
+          "acertados": 8,
+          "fallidos": 0
+        },
+        "faltas": {
+          "recibidas": 0,
+          "cometidas": 0
+        },
+        "tarjetas": {
+          "amarillas": 0,
+          "rojas": 0
+        }
+      }
+    },
+    {
+      "name": "Jhon Solis",
+      "team": "2",
+      "team-name": "Girona",
+      "positionId": "7",
+      "position": "Centrocampista",
+      "numero": "22",
+      "id": "59943",
+      "nombre": "Jhon",
+      "apellido": "Solis",
+      "nacionalidad": "Colombia",
+      "edad": 20,
+      "nacimiento": "03/10/2004",
+      "estatura": "1,75 m",
+      "peso": "70 kg",
+      "estadisticas_partido": {
+        "goles": {
+          "marcados": 0,
+          "en_propia_puerta": 0
+        },
+        "tiempo": {
+          "Total jugando": "19 min.",
+          "sustitucion": {
+            "entro_por": "Arthur Melo"
+          }
+        },
+        "remates": {
+          "totales": 0,
+          "a_puerta": 0
+        },
+        "pases": {
+          "acertados": 12,
+          "fallidos": 0
+        },
+        "faltas": {
+          "recibidas": 0,
+          "cometidas": 1
+        },
+        "tarjetas": {
+          "amarillas": 0,
+          "rojas": 0
+        }
+      }
+    },
+    {
+      "name": "Y. Herrera",
+      "team": "2",
+      "team-name": "Girona",
+      "positionId": "8",
+      "position": "Centrocampista",
+      "numero": "21",
+      "id": "59944",
+      "nombre": "Yangel",
+      "apellido": "Herrera",
+      "nacionalidad": "Venezuela",
+      "edad": 27,
+      "nacimiento": "07/01/1998",
+      "estatura": "1,82 m",
+      "peso": "62 kg",
+      "estadisticas_partido": {
+        "goles": {
+          "marcados": 0,
+          "en_propia_puerta": 0
+        },
+        "tiempo": {
+          "Total jugando": "90 min.",
+          "sustitucion": {}
+        },
+        "remates": {
+          "totales": 1,
+          "a_puerta": 0
+        },
+        "pases": {
+          "acertados": 14,
+          "fallidos": 6
+        },
+        "faltas": {
+          "recibidas": 1,
+          "cometidas": 2
+        },
+        "tarjetas": {
+          "amarillas": 1,
+          "rojas": 0
+        }
+      }
+    },
+    {
+      "name": "Portu",
+      "team": "2",
+      "team-name": "Girona",
+      "positionId": "9",
+      "position": "Delantero",
+      "numero": "24",
+      "id": "59945",
+      "nombre": "Cristian",
+      "apellido": "Portugués Manzanera",
+      "nacionalidad": "España",
+      "edad": 32,
+      "nacimiento": "21/05/1992",
+      "estatura": "1,78 m.",
+      "peso": "70 kg",
+      "estadisticas_partido": {
+        "goles": {
+          "marcados": 0,
+          "en_propia_puerta": 0
+        },
+        "tiempo": {
+          "Total jugando": "31 min.",
+          "sustitucion": {
+            "entro_por": "Asprilla"
+          }
+        },
+        "remates": {
+          "totales": 0,
+          "a_puerta": 0
+        },
+        "pases": {
+          "acertados": 2,
+          "fallidos": 5
+        },
+        "faltas": {
+          "recibidas": 0,
+          "cometidas": 1
+        },
+        "tarjetas": {
+          "amarillas": 0,
+          "rojas": 0
+        }
+      }
+    },
+    {
+      "name": "Stuani",
+      "team": "2",
+      "team-name": "Girona",
+      "positionId": "10",
+      "position": "Delantero",
+      "numero": "7",
+      "id": "59946",
+      "nombre": "Cristhian",
+      "apellido": "Stuani",
+      "nacionalidad": "Uruguay",
+      "edad": 38,
+      "nacimiento": "12/10/1986",
+      "estatura": "1,86 m.",
+      "peso": "76 kg",
+      "estadisticas_partido": {
+        "goles": {
+          "marcados": 0,
+          "en_propia_puerta": 0
+        },
+        "tiempo": {
+          "Total jugando": "19 min.",
+          "sustitucion": {
+            "entro_por": "Tsygankov"
+          }
+        },
+        "remates": {
+          "totales": 0,
+          "a_puerta": 0
+        },
+        "pases": {
+          "acertados": 3,
+          "fallidos": 0
+        },
+        "faltas": {
+          "recibidas": 0,
+          "cometidas": 1
+        },
+        "tarjetas": {
+          "amarillas": 0,
+          "rojas": 0
+        }
+      }
+    },
+    {
+      "name": "Danjuma",
+      "team": "2",
+      "team-name": "Girona",
+      "positionId": "11",
+      "position": "Delantero",
+      "numero": "11",
+      "id": "59947",
+      "nombre": "Arnaut",
+      "apellido": "Danjuma",
+      "nacionalidad": "Países Bajos",
+      "edad": 28,
+      "nacimiento": "31/01/1997",
+      "estatura": "1,78 m.",
+      "peso": "74 kg",
+      "estadisticas_partido": {
+        "goles": {
+          "marcados": 1,
+          "en_propia_puerta": 0
+        },
+        "tiempo": {
+          "Total jugando": "90 min.",
+          "sustitucion": {}
+        },
+        "remates": {
+          "totales": 1,
+          "a_puerta": 1
+        },
+        "pases": {
+          "acertados": 12,
+          "fallidos": 2
+        },
+        "faltas": {
+          "recibidas": 0,
+          "cometidas": 1
+        },
+        "tarjetas": {
+          "amarillas": 0,
+          "rojas": 0
+        }
+      }
+    }
+  ]
+}

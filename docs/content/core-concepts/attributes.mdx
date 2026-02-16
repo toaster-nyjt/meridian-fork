@@ -1,0 +1,455 @@
+# Attributes
+
+Attributes are the fundamental building blocks of Meridian. They represent pieces of data that can be displayed in your interface.
+
+## AttributeType Interface
+
+```typescript
+interface AttributeType {
+  id?: string;
+  itemId?: string;
+  value?: string;
+  label?: string;
+  roles?: Role[];
+  type?: AttributeValueType;
+  internalAttributes?: AttributeType[];
+  attributes?: AttributeType[];
+  transform?: AttributeTransformType[];
+  condition?: AttributeConditionType;
+}
+```
+
+## Basic Attributes
+
+The simplest attribute just needs a `value` path:
+
+```typescript
+{ value: ".title" }
+```
+
+This tells Meridian to extract the `title` field from your data.
+
+## Attribute Properties
+
+### id
+Optional identifier for the attribute. Useful for referencing or debugging:
+
+```typescript
+{ id: "product-title", value: ".title", roles: ["title"] }
+```
+
+### value
+Path to the data field using dot notation:
+
+```typescript
+{ value: ".title" }           // Top-level field
+{ value: ".user.name" }       // Nested field
+{ value: ".items[0]" }        // Array element
+{ value: ".colors[0].hex" }   // Nested in array
+```
+
+### label
+Display label for the attribute:
+
+```typescript
+{
+  value: ".price",
+  label: "Sale Price",
+  type: "price"
+}
+```
+
+The label is shown when using certain layouts or when `showLabel` is enabled.
+
+### type
+Defines how the attribute should be rendered:
+
+```typescript
+type AttributeValueType =
+  | "string"          // Plain text (default)
+  | "number"          // Numeric value
+  | "link"            // Hyperlink
+  | "image"           // Image display
+  | "boolean"         // True/false value
+  | "price"           // Currency formatted number
+  | "button"          // Button element
+  | "element"         // React element
+  | "overview"        // Nested overview
+  | string;           // Custom types
+```
+
+**Examples:**
+
+```typescript
+// Image
+{ value: ".thumbnail", type: "image", roles: ["thumbnail"] }
+
+// Link
+{ value: ".url", type: "link", label: "View Details" }
+
+// Price
+{ value: ".price", type: "price", roles: ["key-attribute"] }
+
+// Button
+{ value: "Add to Cart", type: "button", roles: ["action"] }
+
+// Custom type
+{ value: ".rating", type: "star-rating", roles: ["rating"] }
+```
+
+### roles
+Semantic labels that describe the attribute's purpose:
+
+```typescript
+{ value: ".title", roles: ["title"] }
+{ value: ".description", roles: ["description", "subtitle"] }
+```
+
+See [Attribute Roles](/core-concepts/roles) for the complete list.
+
+## Attribute Groups
+
+Attributes can contain nested attributes to create hierarchical structures:
+
+```typescript
+{
+  label: "Product Details",
+  attributes: [
+    { value: ".title", roles: ["title"] },
+    { value: ".description", roles: ["description"] },
+    {
+      label: "Pricing",
+      attributes: [
+        { value: ".price", type: "price", label: "Regular" },
+        { value: ".salePrice", type: "price", label: "Sale" }
+      ]
+    }
+  ]
+}
+```
+
+This creates a nested structure in the UI.
+
+## Transformations
+
+Transform attribute values before display:
+
+```typescript
+{
+  value: ".tags",
+  transform: [
+    { map: "." },                    // Map each array item
+    { filter: ".featured == true" }  // Filter results
+  ],
+  roles: ["tag"]
+}
+```
+
+See [Transformations](/core-concepts/transformations) for details.
+
+## Conditions
+
+Show attributes conditionally:
+
+```typescript
+{
+  condition: {
+    comparison: {
+      field: ".inStock",
+      operator: "==",
+      value: true
+    }
+  },
+  attributes: [
+    { value: "Available Now", roles: ["badge"] }
+  ]
+}
+```
+
+See [Conditions](/core-concepts/conditions) for details.
+
+## Attribute Types in Detail
+
+### String (default)
+
+```typescript
+{ value: ".title" }
+{ value: ".description", roles: ["description"] }
+```
+
+### Number
+
+```typescript
+{ value: ".quantity", type: "number" }
+{ value: ".views", type: "number", label: "Views" }
+```
+
+### Image
+
+```typescript
+{ value: ".imageUrl", type: "image", roles: ["thumbnail"] }
+
+// Multiple images
+{
+  value: ".images",
+  type: "image",
+  transform: [{ map: "." }],
+  roles: ["thumbnail"]
+}
+```
+
+### Link
+
+```typescript
+{ value: ".url", type: "link", label: "View More" }
+{ value: "", type: "link", label: "Details", roles: ["action"] }
+```
+
+### Price
+
+```typescript
+{ value: ".price", type: "price", roles: ["key-attribute"] }
+
+// Custom price display
+{
+  label: "Monthly Payment",
+  type: "price",
+  value: ".monthlyPrice"
+}
+```
+
+### Button
+
+```typescript
+{ value: "Add to Cart", type: "button", roles: ["action"] }
+{ value: "Learn More", type: "button" }
+```
+
+### Element (React Component)
+
+```typescript
+{
+  value: <CustomComponent data={data} />,
+  type: "element"
+}
+```
+
+### Overview (Nested)
+
+```typescript
+{
+  type: "overview",
+  id: "related-products",
+  value: ".relatedProducts"
+}
+```
+
+## Custom Attribute Types
+
+You can define custom attribute types with custom renderers:
+
+```typescript
+// Define custom type
+import { attributeTypesMap } from 'meridian';
+
+attributeTypesMap['star-rating'] = {
+  view: ({ attribute, item }) => (
+    <div className="star-rating">
+      {'⭐'.repeat(Math.floor(attribute.value))}
+    </div>
+  )
+};
+
+// Use in binding
+{
+  value: ".rating",
+  type: "star-rating",
+  roles: ["rating"]
+}
+```
+
+## Complex Examples
+
+### Product with Multiple Image Gallery
+
+```typescript
+{
+  label: "Images",
+  value: ".images",
+  type: "image-gallery",
+  roles: ["thumbnail"],
+  transform: [{
+    map: {
+      attributes: [
+        { value: ".url", type: "image" },
+        { value: ".alt" }
+      ]
+    }
+  }]
+}
+```
+
+### Conditional Pricing
+
+```typescript
+{
+  label: "Price",
+  attributes: [
+    // Show sale price if exists
+    {
+      condition: {
+        exists: ".salePrice"
+      },
+      attributes: [
+        {
+          value: ".salePrice",
+          type: "price",
+          roles: ["key-attribute"]
+        },
+        {
+          value: ".regularPrice",
+          type: "price",
+          label: "Regular",
+          roles: ["subtitle"]
+        }
+      ]
+    },
+    // Otherwise show regular price
+    {
+      condition: {
+        not: [{ exists: ".salePrice" }]
+      },
+      attributes: [
+        {
+          value: ".regularPrice",
+          type: "price",
+          roles: ["key-attribute"]
+        }
+      ]
+    }
+  ]
+}
+```
+
+### Specification List
+
+```typescript
+{
+  label: "Specifications",
+  value: ".specs",
+  roles: ["spec"],
+  transform: [{
+    map: {
+      attributes: [
+        { value: ".label", roles: ["title"] },
+        { value: ".value" }
+      ]
+    }
+  }]
+}
+```
+
+## Internal Attributes
+
+Internal attributes store data for conditional logic without displaying:
+
+```typescript
+binding: {
+  itemId: ".id",
+  internalAttributes: [
+    { id: "category", value: ".category" },
+    { id: "status", value: ".status" }
+  ],
+  attributes: [
+    {
+      condition: {
+        and: [
+          { comparison: { field: ".category", operator: "==", value: "electronics" } },
+          { comparison: { field: ".status", operator: "==", value: "active" } }
+        ]
+      },
+      attributes: [
+        { value: ".warranty", roles: ["spec"] }
+      ]
+    }
+  ]
+}
+```
+
+## Styling Attributes
+
+Attributes support CSS customization through className and style:
+
+```typescript
+{
+  value: ".title",
+  roles: ["title"],
+  className: "text-2xl font-bold",
+  style: { color: '#333', marginBottom: '8px' }
+}
+```
+
+Note: The `className` and `style` properties are applied at the rendering level.
+
+## Best Practices
+
+### 1. Use Descriptive Labels
+
+```typescript
+// Good
+{ value: ".price", label: "Monthly Payment", type: "price" }
+
+// Avoid
+{ value: ".price", label: "P", type: "price" }
+```
+
+### 2. Assign Appropriate Roles
+
+```typescript
+// Good - semantic roles
+{ value: ".name", roles: ["title"] }
+{ value: ".bio", roles: ["description"] }
+
+// Avoid - vague roles
+{ value: ".name", roles: ["text"] }
+```
+
+### 3. Group Related Attributes
+
+```typescript
+{
+  label: "Contact Information",
+  attributes: [
+    { value: ".email", type: "link" },
+    { value: ".phone" },
+    { value: ".address" }
+  ]
+}
+```
+
+### 4. Use Consistent Types
+
+```typescript
+// All prices use type: "price"
+{ value: ".basePrice", type: "price" }
+{ value: ".salePrice", type: "price" }
+{ value: ".shipping", type: "price" }
+```
+
+### 5. Leverage Transformations
+
+```typescript
+// Transform arrays into displayable lists
+{
+  value: ".features",
+  transform: [{ map: "." }],
+  roles: ["spec"]
+}
+```
+
+## Next Steps
+
+- [Roles](/core-concepts/roles) - Learn about semantic roles
+- [Transformations](/core-concepts/transformations) - Transform attribute data
+- [Conditions](/core-concepts/conditions) - Conditional rendering
+- [Components](/components) - See how attributes are rendered in different views

@@ -1,0 +1,307 @@
+# E-commerce Example
+
+A complete e-commerce product catalog implementation with Meridian.
+
+## Features
+
+- Product grid and list views
+- Conditional pricing (regular, sale, member prices)
+- Image galleries
+- Product specifications
+- Ratings and reviews
+- Related products
+- Add to cart actions
+
+## Data Structure
+
+```typescript
+interface Product {
+  id: string;
+  type: "product";
+  title: string;
+  brand: string;
+  description: string;
+  badge?: string;
+  rating: number;
+  reviews: number;
+  price: number;
+  salePrice?: number;
+  memberPrice?: number;
+  images: string[];
+  features: string[];
+  capacity: {
+    size: string;
+    price: number;
+    salePrice?: number;
+  }[];
+  category: string;
+  inStock: boolean;
+}
+```
+
+## ODI Specification
+
+```typescript
+import { ODI } from 'meridian';
+
+const ecommerceODI: ODI = {
+  dataBinding: [{
+    id: "products",
+    binding: {
+      itemId: ".id",
+      internalAttributes: [
+        { id: "type", value: ".type" },
+        { id: "inStock", value: ".inStock" }
+      ],
+      attributes: [
+        // Basic info
+        { value: ".title", roles: ["title"] },
+        { value: ".brand", roles: ["subtitle"] },
+        { value: ".description", roles: ["description"] },
+        { value: ".category", roles: ["tag"] },
+
+        // Images
+        {
+          value: ".images",
+          type: "image",
+          roles: ["thumbnail"],
+          transform: [{ map: "." }]
+        },
+
+        // Ratings
+        { value: ".rating", roles: ["rating"] },
+        { value: ".reviews", label: "Reviews", roles: ["reviews"] },
+
+        // Badge
+        {
+          value: ".badge",
+          roles: ["badge"],
+          condition: { exists: ".badge" }
+        },
+
+        // Pricing - member price if exists
+        {
+          condition: { exists: ".memberPrice" },
+          attributes: [
+            {
+              value: ".memberPrice",
+              type: "price",
+              label: "Member Price",
+              roles: ["key-attribute"]
+            },
+            {
+              value: ".price",
+              type: "price",
+              label: "Regular",
+              roles: ["subtitle"]
+            }
+          ]
+        },
+
+        // Pricing - sale price if exists (and no member price)
+        {
+          condition: {
+            and: [
+              { not: [{ exists: ".memberPrice" }] },
+              { exists: ".salePrice" }
+            ]
+          },
+          attributes: [
+            {
+              value: ".salePrice",
+              type: "price",
+              label: "Sale",
+              roles: ["key-attribute"]
+            },
+            {
+              value: ".price",
+              type: "price",
+              label: "Was",
+              roles: ["subtitle"]
+            }
+          ]
+        },
+
+        // Pricing - regular price only
+        {
+          condition: {
+            and: [
+              { not: [{ exists: ".memberPrice" }] },
+              { not: [{ exists: ".salePrice" }] }
+            ]
+          },
+          attributes: [
+            {
+              value: ".price",
+              type: "price",
+              roles: ["key-attribute"]
+            }
+          ]
+        },
+
+        // Features
+        {
+          label: "Features",
+          value: ".features",
+          roles: ["spec"],
+          transform: [{ map: "." }]
+        },
+
+        // Capacity options
+        {
+          label: "Storage Options",
+          value: ".capacity",
+          roles: ["spec"],
+          transform: [{
+            map: {
+              attributes: [
+                { value: ".size", roles: ["title"] },
+                { value: ".price", type: "price", label: "Price" },
+                {
+                  value: ".salePrice",
+                  type: "price",
+                  label: "Sale",
+                  condition: { exists: ".salePrice" }
+                }
+              ]
+            }
+          }]
+        },
+
+        // Stock status
+        {
+          condition: {
+            comparison: { field: ".inStock", operator: "==", value: false }
+          },
+          attributes: [
+            { value: "Out of Stock", roles: ["badge"] }
+          ]
+        },
+
+        // Actions
+        {
+          value: "Add to Cart",
+          type: "button",
+          roles: ["action"],
+          condition: {
+            comparison: { field: ".inStock", operator: "==", value: true }
+          }
+        },
+        {
+          value: "View Details",
+          type: "link",
+          roles: ["action"]
+        }
+      ]
+    }
+  }],
+
+  overviews: [{
+    id: "products-overview",
+    type: "grid",
+    itemView: { type: "profile" },
+
+    // Show essential info in grid
+    shownAttributes: [
+      "title",
+      "brand",
+      "thumbnail",
+      "key-attribute",
+      "rating",
+      "reviews",
+      "badge"
+    ],
+
+    className: "grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-6",
+
+    detailViews: [{
+      id: "product-detail",
+      type: "basic",
+      openFrom: ["title", "thumbnail"],
+      openIn: "side-by-side",
+
+      // Show everything in detail
+      shownAttributes: "all",
+
+      // Related products
+      overviews: [{
+        id: "related",
+        type: "grid",
+        bindingId: "products",
+        itemView: { type: "profile" },
+        shownAttributes: ["thumbnail", "title", "key-attribute"],
+        className: "grid-cols-2 gap-4"
+      }]
+    }]
+  }],
+
+  malleability: {
+    content: {
+      types: ["toggle"],
+      disabled: ["title", "thumbnail", "action"]
+    },
+    composition: {
+      types: ["tabs"]
+    }
+  }
+};
+
+export default ecommerceODI;
+```
+
+## Usage
+
+```tsx
+import { MeridianRenderer } from 'meridian';
+import ecommerceODI from './ecommerce-odi';
+import productsData from './products.json';
+
+function ProductCatalog() {
+  return (
+    <MeridianRenderer
+      odi={ecommerceODI}
+      data={productsData}
+      onOpenDetailNewPage={(item) => {
+        // Handle navigation to product detail page
+        router.push(`/products/${item.itemId}`);
+      }}
+    />
+  );
+}
+```
+
+## Sample Data
+
+```json
+[
+  {
+    "id": "iphone-15",
+    "type": "product",
+    "title": "iPhone 15 Pro",
+    "brand": "Apple",
+    "description": "The most powerful iPhone ever with titanium design.",
+    "badge": "New",
+    "rating": 4.8,
+    "reviews": 1247,
+    "price": 999,
+    "salePrice": 899,
+    "images": [
+      "/images/iphone-1.jpg",
+      "/images/iphone-2.jpg"
+    ],
+    "features": [
+      "A17 Pro chip",
+      "Titanium design",
+      "Action button",
+      "48MP Main camera"
+    ],
+    "capacity": [
+      { "size": "128GB", "price": 999, "salePrice": 899 },
+      { "size": "256GB", "price": 1099, "salePrice": 999 },
+      { "size": "512GB", "price": 1299, "salePrice": 1199 }
+    ],
+    "category": "Smartphones",
+    "inStock": true
+  }
+]
+```

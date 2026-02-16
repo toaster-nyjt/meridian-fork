@@ -1,0 +1,38 @@
+# Ignore development folders
+src/
+examples/
+node_modules/
+types/
+
+# Ignore configuration files
+*.config.js
+*.config.mjs
+*.config.ts
+*.mts
+tsconfig.json
+rollup.config.js
+rollup.config.dts.js
+tailwind.config.js
+postcss.config.mjs
+webpack.config.js
+vitest.config.ts
+vercel.json
+eslint.config.mts
+
+# Ignore logs and lockfiles
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+pnpm-lock.yaml
+
+# Ignore versioned tarballs
+*.tgz
+
+# Ignore git and Vercel
+.git/
+.gitignore
+
+# Ignore IDE/editor files
+.vscode/
+.DS_Store

@@ -1,0 +1,198 @@
+# Getting Started
+
+This guide will help you set up Meridian in your React project and create your first overview-detail interface.
+
+## Installation
+
+Meridian can be installed via npm:
+
+```bash
+npm install meridian
+```
+
+Or using pnpm:
+
+```bash
+pnpm add meridian
+```
+
+## Requirements
+
+- React 18.x or higher
+- TypeScript 5.x (recommended)
+- Node.js 16.x or higher
+
+## Dependencies
+
+Meridian includes the following dependencies:
+- `react` and `react-dom` (peer dependencies)
+- `zustand` - State management
+- `interactjs` - Interactive drag and drop
+- `react-beautiful-dnd` - Drag and drop functionality
+- `@vis.gl/react-google-maps` - Map visualization support
+- `tailwindcss` - Styling
+
+## Basic Setup
+
+### 1. Import Meridian Styles
+
+In your application's main entry point, import the Meridian CSS:
+
+```typescript
+import 'meridian/dist/meridian.css';
+```
+
+### 2. Create Your First ODI Specification
+
+Create a new file for your ODI specification:
+
+```typescript
+// my-odi.ts
+import { ODI } from 'meridian';
+
+export const myODI: ODI = {
+  dataBinding: [{
+    binding: {
+      itemId: ".id",
+      attributes: [
+        { value: ".title", roles: ["title"] },
+        { value: ".description", roles: ["description"] },
+        { value: ".image", type: "image", roles: ["thumbnail"] },
+        { value: ".price", type: "price", roles: ["key-attribute"] }
+      ]
+    }
+  }],
+  overviews: [{
+    type: "grid",
+    detailViews: [{
+      type: "basic",
+      openFrom: ["title"]
+    }]
+  }]
+};
+```
+
+### 3. Render Your ODI
+
+Use the Meridian renderer to display your ODI:
+
+```tsx
+import { MeridianRenderer } from 'meridian';
+import { myODI } from './my-odi';
+
+function App() {
+  const data = [
+    {
+      id: "1",
+      title: "Product 1",
+      description: "A great product",
+      image: "https://example.com/image1.jpg",
+      price: 29.99
+    },
+    {
+      id: "2",
+      title: "Product 2",
+      description: "Another great product",
+      image: "https://example.com/image2.jpg",
+      price: 39.99
+    }
+  ];
+
+  return (
+    <MeridianRenderer
+      odi={myODI}
+      data={data}
+    />
+  );
+}
+
+export default App;
+```
+
+## Working with Local Development
+
+If you're developing Meridian locally alongside your application:
+
+### Using npm link
+
+1. In the Meridian root directory:
+```bash
+npm link meridian
+```
+
+2. In your application directory:
+```bash
+npm link
+npm install
+```
+
+3. Run your application:
+```bash
+npm run dev
+```
+
+## Next.js Setup
+
+For Next.js applications, ensure you import Meridian CSS in your `_app.tsx` or root layout:
+
+```tsx
+// app/layout.tsx (App Router)
+import 'meridian/dist/meridian.css';
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
+  return (
+    <html lang="en">
+      <body>{children}</body>
+    </html>
+  );
+}
+```
+
+## TypeScript Configuration
+
+For optimal TypeScript support, ensure your `tsconfig.json` includes:
+
+```json
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "types": ["react", "react-dom"]
+  }
+}
+```
+
+## Troubleshooting
+
+### Module Not Found
+If you encounter module resolution issues, ensure:
+- Meridian is properly installed in `node_modules`
+- Your bundler configuration supports both CJS and ESM exports
+- The main entry point is correctly configured
+
+### CSS Not Loading
+Make sure to import the CSS file:
+```typescript
+import 'meridian/dist/meridian.css';
+```
+
+### TypeScript Errors
+Ensure you have the correct type definitions:
+```bash
+npm install --save-dev @types/react @types/react-dom
+```
+
+## What's Next?
+
+Now that you have Meridian set up, you can:
+
+- Learn about [Core Concepts](/core-concepts) to understand the ODI specification
+- Explore [Components](/components) to see available overview and detail view types
+- Check out [Examples](/examples) for real-world use cases
+- Dive into the [API Reference](/api) for detailed documentation

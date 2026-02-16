@@ -1,0 +1,438 @@
+# Attribute Roles
+
+Roles are semantic labels that describe the purpose and presentation of attributes. They help Meridian understand how to display and position attributes in different views.
+
+## Role Type
+
+```typescript
+type Role =
+  | "title"
+  | "subtitle"
+  | "description"
+  | "key-attribute"
+  | "action"
+  | "link"
+  | "tag"
+  | "badge"
+  | "thumbnail"
+  | "caption"
+  | "spec"
+  | "footer"
+  | string;  // Custom roles
+```
+
+## Standard Roles
+
+### title
+Primary heading or name of an item.
+
+```typescript
+{ value: ".productName", roles: ["title"] }
+```
+
+**Typical usage:**
+- Product names
+- Article headlines
+- Person names
+- Location names
+
+**Display:** Usually rendered prominently with larger font size.
+
+### subtitle
+Secondary text that supports the title.
+
+```typescript
+{ value: ".brand", roles: ["subtitle"] }
+{ value: ".author", roles: ["subtitle"] }
+```
+
+**Typical usage:**
+- Brand names
+- Author names
+- Categories
+- Dates
+
+**Display:** Smaller font, often gray or muted color.
+
+### description
+Longer explanatory text about the item.
+
+```typescript
+{ value: ".productDescription", roles: ["description"] }
+{ value: ".summary", roles: ["description"] }
+```
+
+**Typical usage:**
+- Product descriptions
+- Article summaries
+- Biographical information
+
+**Display:** Body text size, may be truncated in overview.
+
+### key-attribute
+Important highlighted information.
+
+```typescript
+{ value: ".price", type: "price", roles: ["key-attribute"] }
+{ value: ".score", roles: ["key-attribute"] }
+```
+
+**Typical usage:**
+- Prices
+- Scores/ratings
+- Key metrics
+- Important statistics
+
+**Display:** Emphasized, often larger or bold.
+
+### action
+Interactive elements that trigger actions.
+
+```typescript
+{ value: "Add to Cart", type: "button", roles: ["action"] }
+{ value: "Learn More", type: "link", roles: ["action"] }
+```
+
+**Typical usage:**
+- Buttons
+- Call-to-action links
+- Interactive controls
+
+**Display:** Styled as buttons or prominent links.
+
+### link
+Hyperlinks or navigational elements.
+
+```typescript
+{ value: ".url", type: "link", roles: ["link"] }
+{ value: ".website", type: "link", roles: ["link"] }
+```
+
+**Typical usage:**
+- External links
+- Documentation links
+- Resource URLs
+
+**Display:** Styled as underlined or colored text.
+
+### tag
+Categorical labels or keywords.
+
+```typescript
+{ value: ".category", roles: ["tag"] }
+{ value: ".tags", transform: [{ map: "." }], roles: ["tag"] }
+```
+
+**Typical usage:**
+- Categories
+- Keywords
+- Topics
+- Classification labels
+
+**Display:** Small pill-shaped elements, often with background color.
+
+### badge
+Status indicators or highlights.
+
+```typescript
+{ value: "New", roles: ["badge"] }
+{ value: ".status", roles: ["badge"] }
+```
+
+**Typical usage:**
+- Status indicators (New, Sale, Featured)
+- Achievement badges
+- Notification counts
+
+**Display:** Small colored labels, often positioned absolutely.
+
+### thumbnail
+Preview images.
+
+```typescript
+{ value: ".imageUrl", type: "image", roles: ["thumbnail"] }
+{ value: ".avatar", type: "image", roles: ["thumbnail"] }
+```
+
+**Typical usage:**
+- Product photos
+- Profile pictures
+- Article images
+- Location photos
+
+**Display:** Sized appropriately for the view type.
+
+### caption
+Descriptive text for images or media.
+
+```typescript
+{ value: ".imageCaption", roles: ["caption"] }
+{ value: ".photoCredit", roles: ["caption"] }
+```
+
+**Typical usage:**
+- Image captions
+- Photo credits
+- Media descriptions
+
+**Display:** Small italic text below images.
+
+### spec
+Technical specifications or detailed attributes.
+
+```typescript
+{ value: ".specifications", roles: ["spec"] }
+{
+  value: ".features",
+  transform: [{ map: "." }],
+  roles: ["spec"]
+}
+```
+
+**Typical usage:**
+- Product specifications
+- Technical details
+- Feature lists
+- Property details
+
+**Display:** Often in lists or tables, may be hidden in overview.
+
+### footer
+Bottom-aligned content.
+
+```typescript
+{ value: ".footnote", roles: ["footer"] }
+{
+  label: "Additional Info",
+  attributes: [/* ... */],
+  roles: ["footer"]
+}
+```
+
+**Typical usage:**
+- Additional information
+- Footnotes
+- Secondary actions
+- Metadata
+
+**Display:** Positioned at bottom, often with subtle styling.
+
+## Multiple Roles
+
+Attributes can have multiple roles:
+
+```typescript
+{ value: ".category", roles: ["subtitle", "tag"] }
+{ value: ".mainFeature", roles: ["key-attribute", "description"] }
+```
+
+This allows the same attribute to be:
+- Selected by different role-based queries
+- Styled with multiple role-specific styles
+- Positioned according to multiple contexts
+
+## Custom Roles
+
+Define your own semantic roles:
+
+```typescript
+{ value: ".rating", roles: ["rating"] }
+{ value: ".reviewCount", roles: ["reviews"] }
+{ value: ".availability", roles: ["stock-status"] }
+```
+
+Custom roles are useful for:
+- Domain-specific concepts
+- Special styling hooks
+- Selective attribute filtering
+
+## Role-Based Selection
+
+Use roles to control which attributes appear in different views:
+
+```typescript
+{
+  type: "grid",
+  shownAttributes: ["title", "thumbnail", "key-attribute"],
+  detailViews: [{
+    type: "basic",
+    shownAttributes: "all"
+  }]
+}
+```
+
+### AttributeSelectionScope
+
+```typescript
+type AttributeSelectionScope =
+  | (string | Role | "item")[]  // Array of roles/IDs
+  | "all";                       // All attributes
+```
+
+**Examples:**
+
+```typescript
+// Show specific roles
+shownAttributes: ["title", "subtitle", "thumbnail"]
+
+// Show by attribute IDs
+shownAttributes: ["product-name", "price", "image"]
+
+// Show all
+shownAttributes: "all"
+
+// Include item-level actions
+shownAttributes: ["title", "description", "item"]
+```
+
+## Hiding Attributes
+
+Hide specific attributes:
+
+```typescript
+{
+  type: "grid",
+  hiddenAttributes: ["spec", "footer", "description"]
+}
+```
+
+Useful for:
+- Simplifying overview displays
+- Progressive disclosure
+- Responsive design
+
+## Role-Based Styling
+
+Roles can influence styling through CSS classes:
+
+```css
+/* CSS for role-based styling */
+.attribute-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.attribute-subtitle {
+  color: #666;
+  font-size: 0.875rem;
+}
+
+.attribute-key-attribute {
+  color: #0066cc;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.attribute-badge {
+  background: #ff4444;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+}
+```
+
+## Best Practices
+
+### 1. Use Semantic Roles
+
+Choose roles based on meaning, not appearance:
+
+```typescript
+// Good - semantic
+{ value: ".price", roles: ["key-attribute"] }
+
+// Avoid - presentation
+{ value: ".price", roles: ["large-text"] }
+```
+
+### 2. Be Consistent
+
+Use the same roles for similar attributes across your application:
+
+```typescript
+// All titles use "title"
+{ value: ".productName", roles: ["title"] }
+{ value: ".articleTitle", roles: ["title"] }
+{ value: ".userName", roles: ["title"] }
+```
+
+### 3. Combine Roles Thoughtfully
+
+```typescript
+// Good - complementary roles
+{ value: ".category", roles: ["subtitle", "tag"] }
+
+// Questionable - conflicting roles
+{ value: ".text", roles: ["title", "description"] }
+```
+
+### 4. Document Custom Roles
+
+```typescript
+// Custom roles for your domain
+const CUSTOM_ROLES = {
+  RATING: "rating",           // Star rating 1-5
+  STOCK_STATUS: "stock",      // In stock / Out of stock
+  DELIVERY_TIME: "delivery"   // Estimated delivery
+};
+
+{ value: ".rating", roles: [CUSTOM_ROLES.RATING] }
+```
+
+## Role Examples by Domain
+
+### E-commerce
+
+```typescript
+attributes: [
+  { value: ".name", roles: ["title"] },
+  { value: ".brand", roles: ["subtitle"] },
+  { value: ".price", type: "price", roles: ["key-attribute"] },
+  { value: ".description", roles: ["description"] },
+  { value: ".image", type: "image", roles: ["thumbnail"] },
+  { value: ".rating", roles: ["rating"] },
+  { value: ".inStock", roles: ["badge"] },
+  { value: ".category", roles: ["tag"] },
+  { value: ".specifications", roles: ["spec"] },
+  { value: "Add to Cart", type: "button", roles: ["action"] }
+]
+```
+
+### Social Media
+
+```typescript
+attributes: [
+  { value: ".username", roles: ["title"] },
+  { value: ".timestamp", roles: ["subtitle"] },
+  { value: ".content", roles: ["description"] },
+  { value: ".avatar", type: "image", roles: ["thumbnail"] },
+  { value: ".likes", roles: ["key-attribute"] },
+  { value: ".hashtags", roles: ["tag"] },
+  { value: ".verified", roles: ["badge"] },
+  { value: "View Profile", type: "link", roles: ["action"] }
+]
+```
+
+### Real Estate
+
+```typescript
+attributes: [
+  { value: ".address", roles: ["title"] },
+  { value: ".neighborhood", roles: ["subtitle"] },
+  { value: ".price", type: "price", roles: ["key-attribute"] },
+  { value: ".description", roles: ["description"] },
+  { value: ".photos", type: "image", roles: ["thumbnail"] },
+  { value: ".bedrooms", roles: ["spec"] },
+  { value: ".squareFeet", roles: ["spec"] },
+  { value: ".status", roles: ["badge"] },
+  { value: ".propertyType", roles: ["tag"] },
+  { value: "Schedule Tour", type: "button", roles: ["action"] }
+]
+```
+
+## Next Steps
+
+- [Transformations](/core-concepts/transformations) - Transform attribute values
+- [Conditions](/core-concepts/conditions) - Conditional attribute rendering
+- [Components](/components) - See how roles affect different view types
