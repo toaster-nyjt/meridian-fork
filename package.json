@@ -21,7 +21,7 @@
       "require": "./dist/cjs/index.cjs",
       "types": "./dist/index.d.ts"
     },
-    "./styles": "./dist/esm/meridian.css"
+    "./styles": "./dist/esm/dist/meridian.css"
   },
   "scripts": {
     "build": "rollup -c",
