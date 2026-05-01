@@ -10,7 +10,10 @@ export interface OverviewBasicGridType extends OverviewConfig {
 export const OverviewBasicGrid = (options: ViewOptions) => {
   return (
     <div className="overview-basic-grid">
-      <div className="overview-basic-container">
+      <div
+        className={`overview-basic-container ${options.overview.className ?? ''}`}
+        style={options.overview.style}
+      >
         {options.items.map((item, index) => (
           <div key={index} className="overview-basic-item">
             <MeridianItem
@@ -18,6 +21,8 @@ export const OverviewBasicGrid = (options: ViewOptions) => {
               item={item}
               itemView={options.overview.itemView}
               index={index}
+              className={options.overview.itemClassName}
+              style={options.overview.itemStyle}
             />
           </div>
         ))}

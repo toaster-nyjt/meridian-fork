@@ -45,7 +45,10 @@ export const OverviewBasicTable = (options: ViewOptions) => {
   const detailToOpen = findItemDetailViewToOpen(options, odi);
 
   return (
-    <div className="overview-basic overview-basic-table">
+    <div
+      className={`overview-basic overview-basic-table ${options.overview.className ?? ''}`}
+      style={options.overview.style}
+    >
       <div className="table-container">
         <table>
           <thead>
@@ -59,9 +62,11 @@ export const OverviewBasicTable = (options: ViewOptions) => {
             {options.items.map((item, index) => (
               <tr
                 key={index}
+                className={options.overview.itemClassName}
                 style={{
                   cursor:
                     detailToOpen && !highlightAttributes ? "pointer" : "auto",
+                  ...options.overview.itemStyle,
                 }}
                 onClick={(e) => {
                   if (detailToOpen && !highlightAttributes) {

@@ -117,7 +117,10 @@ export const OverviewBasicMap = (options: ViewOptions) => {
   );
 
   return (
-    <div className="w-full h-full flex flex-col items-center py-8 px-4">
+    <div
+      className={`w-full h-full flex flex-col items-center py-8 px-4 ${options.overview.className ?? ''}`}
+      style={options.overview.style}
+    >
       {/* <div className="flex flex-row flex-wrap gap-4">
         {options.items.map((item, index) => (
           <div key={index} className="w-[500px]">
@@ -222,6 +225,8 @@ export const OverviewBasicMap = (options: ViewOptions) => {
                         options={options}
                         index={index}
                         itemView={options.overview.itemView}
+                        className={options.overview.itemClassName}
+                        style={options.overview.itemStyle}
                       />
                     </div>
                   </AdvancedMarker>

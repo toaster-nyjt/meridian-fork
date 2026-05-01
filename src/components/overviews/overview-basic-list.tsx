@@ -9,13 +9,11 @@ export interface OverviewBasicListType extends OverviewConfig {
 
 export const OverviewBasicList = (options: ViewOptions) => {
   return (
-    <div
-      className="overview-basic"
-      // style={{
-      //   backgroundColor: 'red',
-      // }}
-    >
-      <div className={`overview-basic-container ${options.overview.className}`}>
+    <div className="overview-basic">
+      <div
+        className={`overview-basic-container ${options.overview.className ?? ''}`}
+        style={options.overview.style}
+      >
         {options.items.map((item, index) => (
           <MeridianItem
             key={index}
@@ -23,6 +21,8 @@ export const OverviewBasicList = (options: ViewOptions) => {
             item={item}
             itemView={options.overview.itemView}
             index={index}
+            className={options.overview.itemClassName}
+            style={options.overview.itemStyle}
           />
         ))}
       </div>
