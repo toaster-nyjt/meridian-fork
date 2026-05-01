@@ -23,7 +23,7 @@ To view the hotels specification from the video figure, navigate to: `examples/g
 First, in the root directory, run
 
 ```
-npm link meridian-ui
+npm link
 ```
 
 (`meridian` being the name of the root directory)
@@ -31,7 +31,7 @@ npm link meridian-ui
 Then navigate to `examples/gallery`, and run:
 
 ```
-npm link
+npm link meridian-ui
 npm install
 ```
 
@@ -46,13 +46,13 @@ npm run dev
 Similar to running the gallery website, first should run
 
 ```
-npm link meridian-ui
+npm link
 ```
 
 Then navigate to `examples/web-builder`, and run:
 
 ```
-npm link
+npm link meridian-ui
 npm install
 ```
 
