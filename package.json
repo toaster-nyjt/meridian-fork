@@ -26,6 +26,7 @@
   "scripts": {
     "build": "rollup -c",
     "test": "vitest",
+    "watch": "rollup -c -w",
     "test:run": "vitest run",
     "lint": "eslint . --ext .ts,.tsx,.js,.jsx",
     "lint:fix": "eslint . --ext .ts,.tsx,.js,.jsx --fix"
