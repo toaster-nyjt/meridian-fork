@@ -25,8 +25,8 @@ export interface InitMeridianProps {
   customItemViewTypes?: ItemViewTypeConfig[];
   customDetailViewTypes?: DetailViewTypeConfig<CustomDetailViewType>[];
   customAttributeTypes?: AttributeTypeConfig[];
-  onOpenDetailNewPage: (item: FetchedItemType) => void; // Routing function
-  onOpenOverviewNewPage: () => void; // Routing function
+  onOpenDetailNewPage?: (item: FetchedItemType) => void; // Routing function
+  onOpenOverviewNewPage?: () => void; // Routing function
   onAction?: React.MouseEventHandler<HTMLButtonElement>;
   overviewIdToShow?: string;
   isNewPage?: boolean;
@@ -80,8 +80,8 @@ export const MeridianWrapper = ({
         customAttributeTypes,
       },
       {
-        onOpenDetailNewPage,
-        onOpenOverviewNewPage,
+        onOpenDetailNewPage: onOpenDetailNewPage ?? (()=>{}),
+        onOpenOverviewNewPage: onOpenOverviewNewPage ?? (()=>{}),
       }
     );
   }, [dataInitial, odiInitial, customOverviewTypes, customItemViewTypes, customDetailViewTypes, customAttributeTypes, onOpenDetailNewPage, onOpenOverviewNewPage, initialize]);
