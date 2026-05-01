@@ -39,7 +39,7 @@ Meridian includes the following dependencies:
 In your application's main entry point, import the Meridian CSS:
 
 ```typescript
-import 'meridian/dist/meridian.css';
+import 'meridian-ui/styles';
 ```
 
 ### 2. Create Your First ODI Specification
@@ -48,7 +48,7 @@ Create a new file for your ODI specification:
 
 ```typescript
 // my-odi.ts
-import { ODI } from 'meridian';
+import { ODI } from 'meridian-ui';
 
 export const myODI: ODI = {
   dataBinding: [{
@@ -77,7 +77,7 @@ export const myODI: ODI = {
 Use the Meridian renderer to display your ODI:
 
 ```tsx
-import { MeridianRenderer } from 'meridian';
+import { MeridianRenderer } from 'meridian-ui';
 import { myODI } from './my-odi';
 
 function App() {
@@ -117,12 +117,12 @@ If you're developing Meridian locally alongside your application:
 
 1. In the Meridian root directory:
 ```bash
-npm link meridian
+npm link
 ```
 
 2. In your application directory:
 ```bash
-npm link
+npm link meridian-ui
 npm install
 ```
 
@@ -137,7 +137,7 @@ For Next.js applications, ensure you import Meridian CSS in your `_app.tsx` or r
 
 ```tsx
 // app/layout.tsx (App Router)
-import 'meridian/dist/meridian.css';
+import 'meridian-ui/styles';
 
 export default function RootLayout({
   children,
@@ -179,7 +179,7 @@ If you encounter module resolution issues, ensure:
 ### CSS Not Loading
 Make sure to import the CSS file:
 ```typescript
-import 'meridian/dist/meridian.css';
+import 'meridian-ui/styles';
 ```
 
 ### TypeScript Errors

@@ -56,7 +56,7 @@ npm link
 npm install
 ```
 
-To run the gallery app, run:
+To run the web-builder app, run:
 
 ```
 npm run dev
