@@ -31,7 +31,6 @@ export interface BindingItemType {
   pathToItems?: string; // Path to the collection of data items. Default is '.' which is itself.
 
   roles?: Role[];
-
   attributes: AttributeType[];
   internalAttributes?: AttributeType[];
 }
@@ -100,6 +99,8 @@ export interface OverviewConfig {
 
   bindingId?: string;
   attributeBindingId?: string;
+  googleMapsAPIKey?: string;
+  googleMapsAPIId?: string;
   items?: FetchedItemType[];
 
   // ---- PRESENTATION ----

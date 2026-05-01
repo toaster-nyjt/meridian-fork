@@ -38,23 +38,18 @@ export const basicMapDefault: Partial<OverviewBasicMapType> = {
   ],
 };
 
-interface MapAttributes {
-  coordinates: (Position | undefined)[];
-  googleMapsAPIKey: string | undefined;
-}
-
-const getMapData = (items: FetchedItemType[]): MapAttributes => {
-  let googleMapsAPIKey: string | undefined;
-
+const getCoords = (items: FetchedItemType[]): (Position | undefined)[] => {
   const coordinates = items.map((item) => {
     // Collect coordinates from internalAttributes
     const latAttribute = item.internalAttributes?.find(
-      (attr) => attr && typeof attr === "object" && attr.id === "lat"
-    );
+      (attr) => attr && 'path' in attr && typeof attr === "object" 
+      && (attr as FetchedAttributeValueType).path === ".lat"
+    ) as FetchedAttributeValueType || undefined;
 
     const lngAttribute = item.internalAttributes?.find(
-      (attr) => attr && typeof attr === "object" && attr.id === "lng"
-    );
+      (attr) => attr && 'path' in attr && typeof attr === "object" 
+      && (attr as FetchedAttributeValueType).path === ".lng"
+    ) as FetchedAttributeValueType || undefined;
 
     const numberCoordinate = {
       lat: parseFloat(
@@ -74,31 +69,29 @@ const getMapData = (items: FetchedItemType[]): MapAttributes => {
     // }
 
     // Optional: Check attributes as a fallback for information
-    if (!googleMapsAPIKey) {
-      const apiKeyAttr = item.attributes.find(
-        (attr) => attr && "value" in attr && attr.id === "googleMapsAPIKey"
-      );
-      if (apiKeyAttr) {
-        googleMapsAPIKey = String((apiKeyAttr as any).value);
-      }
-    }
+    // if (!googleMapsAPIKey) {
+    //   const apiKeyAttr = item.attributes.find(
+    //     (attr) => attr && "value" in attr && attr.id === "googleMapsAPIKey"
+    //   );
+    //   if (apiKeyAttr) {
+    //     googleMapsAPIKey = String((apiKeyAttr as any).value);
+    //   }
+    // }
     return numberCoordinate;
   });
 
-  return {
-    coordinates,
-    googleMapsAPIKey,
-  };
+  return coordinates;
 };
 
 export const OverviewBasicMap = (options: ViewOptions) => {
   const mapOverview = options.overview as OverviewBasicMapType;
 
   const { odi, setSelectedItemEntity, highlightAttributes } = useODI();
+  const [hoveredItemId, setHoveredItemId] = useState("");
 
-  const { coordinates, googleMapsAPIKey } = getMapData(
-    odi?.dataBinding[0].items ?? []
-  );
+  const coordinates = getCoords(odi?.dataBinding[0].items ?? []);
+  const googleMapsAPIKey = options.overview.googleMapsAPIKey;
+  const googleMapsAPIId = options.overview.googleMapsAPIId;
 
   // console.log(coordinates, googleMapsAPIKey);
 
@@ -106,8 +99,6 @@ export const OverviewBasicMap = (options: ViewOptions) => {
   if (!coordinates?.every((p) => p && p.lat && p.lng)) {
     return <>No positions</>;
   }
-
-  const [hoveredItemId, setHoveredItemId] = useState("");
 
   const { defaultCenter, defaultZoom } = calculateMapBounds(coordinates);
 
@@ -138,7 +129,7 @@ export const OverviewBasicMap = (options: ViewOptions) => {
         <APIProvider apiKey={googleMapsAPIKey ?? ""}>
           <Map
             key={"map" + mapOverview.id}
-            mapId={"311ade41f7abdcb7"}
+            mapId={googleMapsAPIId}
             style={{
               width: "100%",
               height: "100%",
