@@ -1,4 +1,4 @@
-import { ODI } from "meridian/src/spec/spec";
+import { ODI } from "meridian-ui";
 
 export const galleryODI: ODI = {
   dataBinding: [{

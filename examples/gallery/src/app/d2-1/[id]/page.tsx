@@ -13,7 +13,7 @@ export default function R1Detail() {
 
   return (
     <div>
-      <MeridianWrapper data={[dataLists]} odi={r1ODI} {...meridianConfig}>
+      <MeridianWrapper data={dataLists} odi={r1ODI} {...meridianConfig}>
         {/* Pass the found item to MeridianDetail */}
         <MeridianDetail itemId={itemId} detailId="new-page-detail" />
       </MeridianWrapper>
