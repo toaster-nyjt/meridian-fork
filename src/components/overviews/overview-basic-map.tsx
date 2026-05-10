@@ -346,7 +346,7 @@ const calculateMapBounds = (positions: (Position | undefined)[]): MapBounds => {
   let defaultZoom = Math.floor(Math.min(latZoom, lngZoom));
 
   // Add a zoom boost to get closer by default
-  const zoomBoost = 50; // Increase this value for more zoom
+  const zoomBoost = 5; // Increase this value for more zoom
   defaultZoom += zoomBoost;
 
   // Constrain zoom to reasonable limits
