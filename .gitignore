@@ -44,4 +44,5 @@ next-env.d.ts
 
 
 # bundling 
+/dist
 .rollup.cache
