@@ -47,5 +47,5 @@ export function useTrackUserConfig(timeRef : any) {
         return () => window.removeEventListener('beforeunload', handleBeforeUnload);
     }, []);
 
-    return { getOdiSnapshot };
+    return getOdiSnapshot;
 }

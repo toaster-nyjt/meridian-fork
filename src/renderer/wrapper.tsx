@@ -90,7 +90,7 @@ export const MeridianWrapper = ({
 
   // Tracks user configuration of UI
   const timeRef = useRef(Date.now());
-  const { getOdiSnapshot } = useTrackUserConfig(timeRef);
+  const getOdiSnapshot = useTrackUserConfig(timeRef);
 
   // Add a class name that combines the base class with a conditional popup-active class
   const wrapperClassName = `odi-wrapper relative ${selectedItemEntity?.detail.openIn === "pop-up" ? "popup-active" : ""
