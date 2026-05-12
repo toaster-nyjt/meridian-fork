@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@vis.gl/react-google-maps": "^1.5.2",
-    "meridian-ui": "^1.0.1",
+    "meridian-ui": "file:../../",
     "next": "15.2.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

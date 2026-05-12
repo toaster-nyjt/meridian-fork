@@ -260,10 +260,10 @@ export const ItemViewBuilderFreeform: React.FC<{
   return (
     <div
       className={`resize relative ${
-        options.overview.type === "grid" ? "w-[500px]" : "w-[960px]"
+        options.overview.type === "grid" ? "w-125" : "w-240"
       } ${
         isHighlighted ? "bg-blue-50" : ""
-      } h-[160px] min-w-[160px] select-none relative flex flex-col gap-4 p-2 transition border-2 border-gray-300 rounded-md hover:border-2 hover:border-blue-400 resize-drag`}
+      } h-40 min-w-40 select-none relative flex flex-col gap-4 p-2 transition border-2 border-gray-300 rounded-md hover:border-2 hover:border-blue-400 resize-drag`}
       style={{ ...itemViewStyles[options.viewType] }}
       onDragOver={handleDragOver}
       onDragEnter={handleDragEnter}
@@ -292,7 +292,7 @@ export const ItemViewBuilderFreeform: React.FC<{
               ` absolute attrId:${attr?.path} drag-resize align-start
               ${
                 "type" in attr! && attr.type === "image"
-                  ? "w-[200px] h-[240px] overflow-hidden"
+                  ? "w-50 h-60 overflow-hidden"
                   : ""
               }`
             }
