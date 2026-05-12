@@ -1,6 +1,5 @@
 "use client";
-
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { skeletonODI } from "../assets/dummy-data/skeleton";
 import { ODI } from "../spec/spec";
 import { FetchedItemType } from "../spec/spec.internal";
@@ -16,7 +15,9 @@ import {
 } from "./renderer.defaults";
 import { SettingsPanel } from "../components/malleability/console/console-view";
 import "./renderer.scss";
+import { useTrackUserConfig } from "../helpers/userconfig.helper";
 // import { MalleabilitySemZoom } from "@/examples/gallery/src/app/d2-3/[id]/malleability-semzoom";
+
 
 export interface InitMeridianProps {
   data?: any;
@@ -62,6 +63,7 @@ export const MeridianWrapper = ({
     malleabilityConsoleOpen,
     setMalleabilityConsoleOpen,
     initialize,
+    activeOverview,
   } = useODI();
   // console.log("wrapper: odi", odi);
   // console.log("wrapper: odiInitial", odiInitial);
@@ -85,6 +87,10 @@ export const MeridianWrapper = ({
       }
     );
   }, [dataInitial, odiInitial, customOverviewTypes, customItemViewTypes, customDetailViewTypes, customAttributeTypes, onOpenDetailNewPage, onOpenOverviewNewPage, initialize]);
+
+  // Tracks user configuration of UI
+  const timeRef = useRef(Date.now());
+  const { getOdiSnapshot } = useTrackUserConfig(timeRef);
 
   // Add a class name that combines the base class with a conditional popup-active class
   const wrapperClassName = `odi-wrapper relative ${selectedItemEntity?.detail.openIn === "pop-up" ? "popup-active" : ""
@@ -166,6 +172,7 @@ export const MeridianWrapper = ({
               {lastSelected.view === "overview" && (
                 <button
                   onClick={() => {
+                    console.log(getOdiSnapshot());
                     setSpecShownAttributes("hide");
                     // Reset selection
                     clearSelection();
@@ -178,6 +185,7 @@ export const MeridianWrapper = ({
               {lastSelected.view === "detail" && (
                 <button
                   onClick={() => {
+                    console.log(getOdiSnapshot());
                     setSpecShownAttributes("show");
                     // Reset selection
                     clearSelection();
